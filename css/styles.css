@@ -30,15 +30,11 @@
     line-height: 20px;
 }
 
-.areaPlans {
-    background-color: dimgrey;
-    object-fit: cover;
-    height: 600px;
-    width: 600px;
-}
-
-.priority1IMG {
+.areaPlanIMGIMG {
     resize: both;
     object-fit: cover;
     width: 100%;
+    background-color: darkslategray;
 }
+
+
