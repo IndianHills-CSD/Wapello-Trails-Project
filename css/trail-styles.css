@@ -3,12 +3,12 @@
 /* Trail Maps Page */
 
 
-h1 {
+.page-title {
     padding: 0 75px;
     margin-top: 90px;
 }
 
-h2 {
+.activities {
     padding: 0 150px;
     margin: 15px 0;
 }
