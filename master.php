@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Wapello Trails</title>
-<link rel="stylesheet" href="css/styles.css?v=<?=time();?>">
+<link rel="stylesheet" href="css/masterstyle.css?v=<?=time();?>">
 </head>
 <body>
 	<header>
