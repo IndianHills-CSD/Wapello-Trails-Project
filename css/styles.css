@@ -115,9 +115,25 @@ button#myBtn:focus {
 
 /* Trail Maps Page */
 
+
+h1 {
+    padding: 0 75px;
+    margin-top: 90px;
+}
+
+h2 {
+    padding: 0 150px;
+    margin: 15px 0;
+}
+
+.area-plan-heading {
+    padding: 0 150px;
+    margin: -35px 0 15px 0;
+}
+
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
     margin: 0;
@@ -127,31 +143,47 @@ button#myBtn:focus {
 .flex-item {
     display: flex;
     padding: 5px;
-    margin-top: 10px;
     object-fit: cover;
     height: 400px;
     width: 400px;
+    flex: 1 0 25%;
+    margin: 65px 65px 0 65px;
 }
 
 .flex-item > img {
     resize: both;
     object-fit: cover;
     width: 100%;
+    align-items: baseline;
 }
 
 .trailName {
     line-height: 20px;
+    align-items: baseline;
+    display: flex;
+    flex: 1 0 25%;
+    margin: 0 65px;
 }
 
-.areaPlans {
-    background-color: dimgrey;
+.areaPlanIMG {
+    display: flex;
+    padding: 40px;
+    margin-top: 5px;
     object-fit: cover;
-    height: 600px;
-    width: 600px;
 }
 
-.priority1IMG {
+.area-plan-img > img {
     resize: both;
     object-fit: cover;
     width: 100%;
+    padding: 60px 0;
 }
+
+.p-info {
+    display: flex;
+    margin: 0;
+    object-fit: cover;
+    padding: 0 225px;
+}
+
+
