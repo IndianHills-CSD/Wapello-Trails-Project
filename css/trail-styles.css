@@ -2,27 +2,6 @@
 
 /* Trail Maps Page */
 
-.colors {
-    #1A535C
-    #2d8c9b
-    #4ecdc4
-    #F7FFF7
-    #FF6B6B
-    #FFE66D
-
-    #264653
-    #2A9D8F
-    #E9C46A
-    #F4A261
-    #E76F51
-
-    #2B2D42
-    #8D99AE
-    #EDF2F4
-    #EF233C
-    #D90429
-}
-
 /* Global Styles */
 .flex-container {
     display: flex;
@@ -33,20 +12,11 @@
     list-style: none;
 }
 
-.head-container {
-    text-align: justify;
-    padding: 2%;
-    background-color: #2d8c9b;
-}
-
-.body-container {
-    padding: 2%;
-}
-
 header {
     width: 100%;
     height: 300px;
-    background-color: #FF6B6B;
+    color: #11151C;
+    background-color: #7D4E57;
     padding: 0 ;
     margin: 0;
 }
@@ -56,10 +26,19 @@ header > h1 {
     text-align: center;
 }
 
+header > h4 {
+    text-align: center;
+}
+
+hr {
+    background-color: #11151C;
+}
+
 footer {
     width: 100%;
     height: 300px;
-    background-color: #FFE66D;
+    background-color: #212D40;
+    color: #737c9f;
     padding: 0 ;
     margin: 0;
 }
@@ -68,15 +47,31 @@ footer > h1 {
     text-align: center;
     padding-top: 7%;
 }
+
 /* Title and activity container */
+.head-container {
+    text-align: justify;
+    padding: 2%;
+    background-color: #7D4E57;
+    color: #11151C;
+}
+
+.body-container {
+    padding: 2%;
+    background-color: #364156;
+}
+
 .page-title {
-    background-color: #2d8c9b;
+    color: #fff;
+    background-color: #7D4E57;
+    color: #212D40;
     margin: 0;
     padding: 1% 0 0 5%;
 }
 
 .activities {
-    background-color: #2d8c9b;
+    background-color: #7D4E57;
+    color: #11151C;
     margin: 0;
     padding: .5% 0 .5% 8%;
 }
@@ -85,11 +80,17 @@ footer > h1 {
     display: flex;
     margin: 0;
     object-fit: cover;
-    background-color: #2d8c9b;
+    background-color: #7D4E57;
     padding: .2% 11% 1% 11%;
 }
 
 /* Map thumbnails and text areas */
+.maps-hr {
+    background-color: #364156;
+    color: #364156;
+    margin: 0;
+    padding: 0;
+}
 .map-thumb {
     display: flex;
     object-fit: cover;
@@ -97,7 +98,7 @@ footer > h1 {
     width: 400px;
     flex: 1 0 25%;
     padding: 1%;
-    background-color: #F7FFF7;
+    background-color: #364156;
 
 }
 
@@ -108,8 +109,8 @@ footer > h1 {
     align-items: baseline;
     margin: 0;
     padding: 2%;
-    background-color: #F7FFF7;
-    border: 4px solid #FF6B6B;
+    background-color: #364156;
+    border: 2px solid #D66853;
 }
 
 .trailName {
@@ -118,7 +119,8 @@ footer > h1 {
     flex: 1 0 25%;
     margin: 0;
     padding-left: 1.7%;
-    background-color: #F7FFF7;
+    background-color: #364156;
+    color: #D66853;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -131,7 +133,8 @@ footer > h1 {
     margin: 0;
     padding: 0 2% 0 1.7%;
     text-align: justify;
-    background-color: #F7FFF7;
+    background-color: #364156;
+    color: #FFF;
 }
 
 /* Area Plan Styling */
@@ -142,13 +145,14 @@ footer > h1 {
     padding: 3%;
     margin: 0;
     list-style: none;
-    background-color: #F7FFF7;
+    background-color: #364156;
 }
 
 .areaPlanIMG {
     display: flex;
     object-fit: cover;
-    background-color: #F7FFF7;
+    background-color: #364156;
+    color: #FFF;
     margin: 0;
     padding: 5% 0 0 0;
 }
@@ -157,15 +161,17 @@ footer > h1 {
      resize: both;
      object-fit: cover;
      width: 100%;
-     background-color: #fff;
+     background-color: #364156;
+     color: #FFF;
      margin: 0;
-     padding: 2% 0;
-     border: 1px solid black;
+     padding: 1%;
+     border: 3px solid #7D4E57;
  }
 
 .area-plan-heading {
     padding: .5% 0 .5% 8%;
-    background-color: #F7FFF7;
+    background-color: #364156;
+    color: #FFF;
     margin: 0;
 }
 
@@ -174,7 +180,8 @@ footer > h1 {
     margin: 0;
     padding: .2% 11% 1% 11%;
     object-fit: cover;
-    background-color: #F7FFF7;
+    background-color: #364156;
+    color: #FFF;
 }
 
 
