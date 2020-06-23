@@ -30,14 +30,18 @@ header > h4 {
     text-align: center;
 }
 
-hr {
-    background-color: #11151C;
+hr.header-hr {
+    border: 1px solid #11151C;
+    margin-inline-start: 3%;
+    margin-inline-end: 3%;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 footer {
     width: 100%;
     height: 300px;
-    background-color: #212D40;
+    background-color: #11151C;
     color: #737c9f;
     padding: 0 ;
     margin: 0;
@@ -46,6 +50,8 @@ footer {
 footer > h1 {
     text-align: center;
     padding-top: 7%;
+    background-color: #11151C;
+    margin: 0;
 }
 
 /* Title and activity container */
@@ -62,7 +68,6 @@ footer > h1 {
 }
 
 .page-title {
-    color: #fff;
     background-color: #7D4E57;
     color: #212D40;
     margin: 0;
@@ -85,12 +90,16 @@ footer > h1 {
 }
 
 /* Map thumbnails and text areas */
-.maps-hr {
-    background-color: #364156;
-    color: #364156;
-    margin: 0;
-    padding: 0;
+/*
+hr.maps-hr {
+    border: 1px solid #11151C;
+    margin-inline-start: 3%;
+    margin-inline-end: 3%;
+    margin-block-start: -3%;
+    margin-block-end: 1%;
 }
+*/
+
 .map-thumb {
     display: flex;
     object-fit: cover;
@@ -99,7 +108,6 @@ footer > h1 {
     flex: 1 0 25%;
     padding: 1%;
     background-color: #364156;
-
 }
 
 .map-thumb > img {
@@ -138,6 +146,22 @@ footer > h1 {
 }
 
 /* Area Plan Styling */
+.plans-page-title {
+    background-color: #364156;
+    color: #D66853;
+    font-size: 2em;
+    margin: 0;
+    padding: 2% 0 0 5%;
+}
+
+hr.plans-hr {
+    border: 1px solid #D66853;
+    padding: 0;
+    margin-inline-start: 3%;
+    margin-inline-end: 3%;
+    margin-block-start: 3%;
+}
+
 .area-plan-container {
     display: flex;
     flex-wrap: wrap;
@@ -152,20 +176,19 @@ footer > h1 {
     display: flex;
     object-fit: cover;
     background-color: #364156;
-    color: #FFF;
     margin: 0;
     padding: 5% 0 0 0;
 }
 
 .area-plan-img > img {
-     resize: both;
-     object-fit: cover;
-     width: 100%;
-     background-color: #364156;
-     color: #FFF;
-     margin: 0;
-     padding: 1%;
-     border: 3px solid #7D4E57;
+    resize: both;
+    object-fit: cover;
+    width: 100%;
+    align-items: baseline;
+    margin: 0;
+    padding: 2%;
+    background-color: #364156;
+    border: 2px solid #D66853;
  }
 
 .area-plan-heading {
