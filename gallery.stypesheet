@@ -1,0 +1,104 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+
+#topnav{
+  background-color: #abb8cc;
+  width: 100%;
+  height: 50px;
+	color: #fff;
+  text-align: center;
+  position: fixed;
+	text-decoration: none;
+
+
+}
+
+#topnav a:hover {
+  color:#cdd199;
+    text-decoration: none;
+}
+
+ #topnav a{
+  color: #fff;
+  display: inline-block;
+  padding:15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.container{
+  width: 100%;
+  background-color: grey;
+  overflow: visible;
+  left: 0;
+  /*text-align: center;*/
+
+}
+
+
+#sublink {
+  position: relative;
+  top: 45px;
+  text-align: center;
+  background-color: #becfd4;
+}
+
+#sublink li {
+  display: inline-block;
+  padding: 5px;
+
+
+}
+#sublink li a{
+  display: block;
+  padding: 15px;
+  text-align: center;
+  color: #608791;
+  text-decoration: none;
+
+}
+
+#sublink li a:hover{
+  background-color: #a5b8b4;
+
+}
+
+#imgtext{
+  text-align: center;
+}
+
+/*#allpics{
+  /*flex contianer
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}*/
+
+#chief-wapello{
+  color: green;
+}
+
+#trail{
+  color: ash;
+}
+
+#volunteer{
+  color: purple;
+}
+
+
+
+footer{
+  text-align: center;
+  height: 50px;
+  border: solid;
+  background-color: #abc0c9;
+  color: #fff;
+  padding:30px;
+  clear: both;
+}
