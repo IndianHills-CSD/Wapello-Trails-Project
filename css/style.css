@@ -116,11 +116,3 @@ img {
   background: #a9bec2;
   padding:30px;
 }
-
-footer{
-  text-align: center;
-  background: #1c3b2e;
-  color: #fff;
-  padding:30px;
-}
-footer.content{display:inline;}
