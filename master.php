@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Wapello Trails</title>
-<link rel="stylesheet" href="css/styles.css?v=<?=time();?>">
+<link rel="stylesheet" href="css/masterstyle.css?v=<?=time();?>">
 </head>
 <body>
 	<header>
@@ -11,7 +11,7 @@
 			<ul class="nav-links">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Gallery</a></li>
-				<li><a href="trails.php">Trails</a></li>
+				<li><a href="#">Trails</a></li>
 			</ul>
 		</nav>
 	</header>
