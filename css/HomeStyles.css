@@ -1,0 +1,17 @@
+/*the styles for the home page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.ConContainer {
+    margin: 0% 20% 0% 20%;
+    background: #6494AA;
+    color: #F5FBEF;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
