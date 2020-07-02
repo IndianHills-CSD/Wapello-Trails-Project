@@ -59,6 +59,13 @@ footer {
 	padding: 30px 10%;
 }
 
+
+@media only screen and (max-width: 1000px) {
+  .footerInfo {
+		display: inline;
+  }
+}
+
 .contact {
 	text-align: center;
 	height: 200px;
@@ -110,4 +117,62 @@ button#myBtn:focus {
 
 .toTop {
 	height: 60px;
+}
+
+div.dropdown {
+	display: none;
+	width: 80px;
+}
+
+div.dropbtn {
+	color: #808080;
+	text-align: center;
+}
+
+div.drop-content {
+	border-radius: 10px;
+}
+
+a.drop:first-child {
+	border-radius: 2px 2px 0px 0px;
+}
+
+a.drop:last-child {
+	border-radius: 0px 0px 2px 2px;
+}
+
+div.drop-content a{
+	background-color: #8f8f8f;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	width: 80px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+	div.dropdown {
+		display: block;
+		float: right;
+	}
+
+	h1.nav {
+		display: inline-block;
+	}
+
+	div.dropdown a {
+		display: none;
+	}
+
+
+	header {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.dropdown:hover a {
+	  display: block;
+	}
 }
