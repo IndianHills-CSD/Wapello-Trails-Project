@@ -2,6 +2,12 @@
 
 /* Trail Maps Page */
 
+/* Google Maps JS API */
+
+html, body {
+    height: 100%;
+}
+
 /* Global Styles */
 * {
     box-sizing: border-box;
@@ -57,21 +63,20 @@ section.body-container {
 .map-thumb {
     display: flex;
     object-fit: cover;
-    height: 400px;
-    width: 400px;
     flex: 1 0 25%;
-    padding: 1%;
+    padding: 1.5%;
+    height: 100%;
+    width: 100%;
 }
 
-.map-thumb > img {
+/*
+.map-thumb > iframe {
     resize: both;
     object-fit: cover;
     width: 100%;
     align-items: baseline;
-    padding: 2%;
-    border: 2px solid #FE5F55;
 }
-
+*/
 .trailName {
     align-items: baseline;
     display: flex;
