@@ -24,18 +24,25 @@
 	<title>Trails</title>
 </head>
 
-<header>
-	<h1 class="nav">Wapello Trails</h1>
-	<nav>
-		<ul class="nav-links">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Trails</a></li>
-		</ul>
-	</nav>
-</header>
-
 <body>
+	<nav>
+		<div class="logo">
+			<h1 class="nav">Wapello Trails</h1>
+		</div>
+
+		<ul class="nav-links">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="trails.html">Trails</a></li>
+		</ul>
+
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
 	<section class="head-container">
 		<h1 class="page-title">Activities</h1>
 			<!--
@@ -190,7 +197,6 @@
 						<p class="plan-p-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed augue lacus viverra vitae. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Risus nullam eget felis eget. Amet justo donec enim diam vulputate ut. In hac habitasse platea dictumst quisque. Vestibulum sed arcu non odio euismod lacinia at quis risus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Curabitur vitae nunc sed velit dignissim sodales. Mi eget mauris pharetra et. Neque volutpat ac tincidunt vitae semper. Diam phasellus vestibulum lorem sed. Viverra aliquet eget sit amet tellus cras. Hendrerit dolor magna eget est. Ornare massa eget egestas purus.</p>
 					</div>  <!-- END .area-plan-container -->
 	</section>  <!-- END .body-container -->
-</body>
 
 <footer>
 	<div class="footerInfo">
@@ -221,5 +227,20 @@
 			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
 		</div>
 	</div>
+
+	<div class="toTop">
+		<button onclick="topFunction()" id="myBtn">Back to Top</button>
+	</div>
 </footer>
+
+<script>
+	var mybutton = document.getElementById("myBtn");
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<script src="js/master.js"></script>
+</body>
 </html>

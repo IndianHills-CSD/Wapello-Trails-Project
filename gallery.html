@@ -11,16 +11,23 @@
 
  </head>
   <body>
-    <header>
-  		<h1 class="nav">Wapello Trails</h1>
-  		<nav>
-  			<ul class="nav-links">
-  				<li><a href="#">Home</a></li>
-  				<li><a href="#">Gallery</a></li>
-  				<li><a href="#">Trails</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+    <nav>
+  		<div class="logo">
+  			<h1 class="nav">Wapello Trails</h1>
+  		</div>
+
+			<ul class="nav-links">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="trails.html">Trails</a></li>
+			</ul>
+
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+  	</nav>
 
     <main class="container">
       <section class="slideshow-container">
@@ -198,7 +205,7 @@
   			</div>
   		</div>
 
-  		<div class="toTop">
+      <div class="toTop">
   			<button onclick="topFunction()" id="myBtn">Back to Top</button>
   		</div>
   	</footer>
@@ -211,5 +218,6 @@
   		  document.documentElement.scrollTop = 0;
   		}
   	</script>
+  	<script src="js/master.js"></script>
   </body>
 </html>
