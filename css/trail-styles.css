@@ -65,7 +65,7 @@ section.body-container {
 }
 
 .legend-head {
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .legend-container {
@@ -85,66 +85,67 @@ section.body-container {
 }
 
 .legend-box > li {
-    padding: 5%;
+    /*border: 1px solid red;*/
+    padding: 2%;
 }
 
 .square1 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square2 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square3 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square4 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square5 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square6 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square7 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .square8 {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .parking-icon {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
 .shelter-icon {
-    height: 10%;
-    width: 10%;
+    height: 25px;
+    width: 25px;
     background: #24252A;
 }
 
