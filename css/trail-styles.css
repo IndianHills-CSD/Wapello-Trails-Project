@@ -86,70 +86,55 @@ section.body-container {
 
 .color-code {
     list-style: none;
-    padding: 2%;
 }
 
 .legend-box > li {
     padding: 2%;
 }
 
-.square1 {
+.color-code > li {
+    margin: 75%;
     height: 25px;
     width: 25px;
+}
+
+.square1 {
     background: #24252A;
 }
 
 .square2 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .square3 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .square4 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .square5 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .square6 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .square7 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .square8 {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .parking-icon {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
 .shelter-icon {
-    height: 25px;
-    width: 25px;
     background: #24252A;
 }
 
