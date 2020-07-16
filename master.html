@@ -3,31 +3,27 @@
 <head>
 <title>Wapello Trails</title>
 <link rel="stylesheet" href="css/masterstyle.css?v=<?=time();?>">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-	<header>
-		<h1 class="nav">Wapello Trails</h1>
-		<div class="dropdown">
-			<div class="dropbtn">
-				<i class="fas fa-bars"></i>
-			</div>
-			<div class="drop-content">
-				<a class = "drop" href="#">Home</a>
-				<a class = "drop" href="#">Gallery</a>
-				<a class = "drop" href="#">Trails</a>
-			</div>
+	<nav>
+		<div class="logo">
+			<h1 class="nav">Wapello Trails</h1>
 		</div>
-		<nav>
-			<ul class="nav-links">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Trails</a></li>
-			</ul>
-		</nav>
-	</header>
 
-	<div="content">
+			<ul class="nav-links">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="trails.html">Trails</a></li>
+			</ul>
+
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+	</nav>
+
+	<div id="content">
 		<h1>Content</h1>
 		<h1>Content</h1>
 		<h1>Content</h1>
@@ -100,12 +96,12 @@
 	</footer>
 
 	<script>
-		var mybutton = document.getElementById("myBtn");
-
 		function topFunction() {
+			var mybutton = document.getElementById("myBtn");
 		  document.body.scrollTop = 0;
 		  document.documentElement.scrollTop = 0;
 		}
 	</script>
+	<script src="js/master.js"></script>
 </body>
 </html>

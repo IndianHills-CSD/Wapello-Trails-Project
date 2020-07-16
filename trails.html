@@ -11,18 +11,24 @@
 	<title>Trails</title>
 </head>
 
-<header>
-	<h1 class="nav">Wapello Trails</h1>
-	<nav>
-		<ul class="nav-links">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Trails</a></li>
-		</ul>
-	</nav>
-</header>
-
 <body>
+	<nav>
+		<div class="logo">
+			<h1 class="nav">Wapello Trails</h1>
+		</div>
+
+		<ul class="nav-links">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="trails.html">Trails</a></li>
+		</ul>
+
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
 
 	<section class="head-container">
 		<h1 class="page-title">Activities</h1>
@@ -201,6 +207,20 @@
 			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
 		</div>
 	</div>
+
+	<div class="toTop">
+		<button onclick="topFunction()" id="myBtn">Back to Top</button>
+	</div>
 </footer>
 
+<script>
+	var mybutton = document.getElementById("myBtn");
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<script src="js/master.js"></script>
+</body>
 </html>
