@@ -1,16 +1,13 @@
 <!Doctype html>
-<html>
+<html lang="en">
  <head>
    <meta charset="UTF-8">
    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
    <title> Gallery Page </title>
-   <link rel="stylesheet" href="css/masterstyle.css?v=<?=time();?>">
-   <link  rel="stylesheet" type="text/css" href="css/Style.css">
-   <link  rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-   <script src="js/lightbox-plus-jquery.min.js"></script>
-
+   <link  rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="js/slide-img.js"></script>
  </head>
-  <body>
+ <body>
     <nav>
   		<div class="logo">
   			<h1 class="nav">Wapello Trails</h1>
@@ -29,113 +26,285 @@
 			</div>
   	</nav>
 
-    <main class="container">
-      <section class="slideshow-container">
-        <div class="content-wrapper">
-          <h2>This is a slide show</h2>
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 10</div>
-            <img src="images/img01.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Chief Wapello carving Images</i></div>
-          </div>
+  <!-- Container for the image gallery -->
+	<main class="container">
 
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 10</div>
-            <img src="images/img02.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Chief Wapello carving Images</i></div>
-          </div>
+      <h2 style="text-align:center"><strong>Wapello Trail Gallery</strong></h2>
+  		<div class="flex-img">
+  			<div class="item">
+  				<img src="images/img-01.jpg" onclick="openModal(); currentSlide(01)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img-02.jpg"  onclick="openModal();currentSlide(02)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img-03.jpg"  onclick="openModal(); currentSlide(03)" >
+  			</div>
+  			<div class="item">
+  				<img src="images/img04.jpg"  onclick="openModal();currentSlide(04)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img05.jpg"  onclick="openModal();currentSlide(05)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img06.jpg"  onclick="openModal();currentSlide(06)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img07.jpg"  onclick="openModal();currentSlide(07)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img08.jpg"  onclick="openModal();currentSlide(08)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img09.jpg"  onclick="openModal();currentSlide(09)">
+  			</div>
+  			<div class="item">
+  				<img src="images/img12.jpg"  onclick="openModal();currentSlide(10)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site.jpg" onclick="openModal(); currentSlide(11)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site02.jpg"  onclick="openModal();currentSlide(12)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site03.jpg"  onclick="openModal(); currentSlide(13)" >
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site18.jpg"  onclick="openModal();currentSlide(14)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site01.jpg" onclick="openModal(); currentSlide(15)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site05.jpg"  onclick="openModal(); currentSlide(17)" >
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site19.jpg"  onclick="openModal();currentSlide(18)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site06.jpg" onclick="openModal(); currentSlide(19)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site07.jpg"  onclick="openModal();currentSlide(20)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site08.jpg"  onclick="openModal(); currentSlide(21)" >
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site17.jpg"  onclick="openModal();currentSlide(22)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site09.jpg" onclick="openModal(); currentSlide(23)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site10.jpg"  onclick="openModal();currentSlide(24)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site11.jpg"  onclick="openModal(); currentSlide(25)" >
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site16.jpg"  onclick="openModal();currentSlide(26)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site12.jpg" onclick="openModal(); currentSlide(27)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site13.jpg"  onclick="openModal();currentSlide(28)">
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site14.jpg"  onclick="openModal(); currentSlide(29)" >
+  			</div>
+  			<div class="item">
+  				<img src="images/trail-site15.jpg"  onclick="openModal();currentSlide(30)">
+  			</div>
+  		</div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 10</div>
-            <img src="images/img03.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Chief Wapello carving Images</i></div>
-          </div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 10</div>
-            <img src="images/img04.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Volunteers working on Wabash Bridge in Wapello County, Ottumwa</i></div>
-          </div>
+  		<div id="myModal" class="modal">
+  			<span class="close cursor" onclick="closeModal()">&times;</span>
+  			<div class="slider">
+  				<div class="mySlides">
+  				  <div class="numbertext">1 / 30</div>
+  				  <img src="images/img-01.jpg" style="width:100%">
+  				   <div class="caption">Chief Wapello curving photo</div>
+  				</div>
+  				<div class="mySlides">
+  				  <div class="numbertext">2 / 30</div>
+  				  <img src="images/img-02.jpg" style="width:100%">
+  				   <div class="caption">Chief Wapello curving photo</div>
+  				</div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">5 / 10</div>
-            <img src="images/img05.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Volunteers working on Wabash Bridge in Wapello County, Ottumwa</i></div>
-          </div>
+  				<div class="mySlides">
+  				  <div class="numbertext">3 / 30</div>
+  				  <img src="images/img-03.jpg" style="width:100%">
+  				   <div class="caption">Chief Wapello curving photo</div>
+  				</div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">6 / 10</div>
-            <img src="images/img06.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Volunteers working on Wabash Bridge in Wapello County, Ottumwa</i></div>
-          </div>
-          <div class="mySlides fade">
-            <div class="numbertext">7 / 10</div>
-            <img src="images/img07.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Wabash Bridge Wapello county,ottumwa</i></div>
-          </div>
+  				<div class="mySlides">
+  				  <div class="numbertext">4 / 30</div>
+  				  <img src="images/img04.jpg" style="width:100%">
+  				   <div class="caption">Volunteer Working on the Wabash Bridge</div>
+  				</div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">8 / 10</div>
-            <img src="images/img08.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Wabash Bridge Wapello county,ottumwa</i></div>
-          </div>
+  				<div class="mySlides">
+  				  <div class="numbertext">5 / 30</div>
+  				  <img src="images/img05.jpg" style="width:100%">
+  				   <div class="caption">Volunteers on the Trail Bridge</div>
+  				</div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">9 /10</div>
-            <img src="images/img09.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Wabash Bridge Wapello county,ottumwa</i></div>
-          </div>
+  				<div class="mySlides">
+  				  <div class="numbertext">6 / 30</div>
+  				  <img src="images/img06.jpg" style="width:100%">
+  				   <div class="caption">Volunteers</div>
+  				</div>
 
-          <div class="mySlides fade">
-            <div class="numbertext">10 / 10</div>
-            <img src="images/img12.jpg" style="max-width:100%;height= auto;">
-            <div id="imgtext"><i>Wabash Bridge Wapello county,ottumwa</i></div>
-          </div>
+  				<div class="mySlides">
+  				  <div class="numbertext">7 / 30</div>
+  				  <img src="images/img07.jpg" style="width:100%">
+  				   <div class="caption"> Wabash Bridge</div>
+  				</div>
 
-          <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div><!--end of content-wrapper-->
-      </section><!--end of slide contianer-->
+  				<div class="mySlides">
+  				  <div class="numbertext">8 / 30</div>
+  				  <img src="images/img08.jpg" style="width:100%">
+  				   <div class="caption">Resting Area </div>
+  				</div>
 
+  				<div class="mySlides">
+  				  <div class="numbertext">9 / 30</div>
+  				  <img src="images/img09.jpg" style="width:100%">
+  				   <div class="caption">Resting Seat along the Bridge.</div>
+  				</div>
 
+  				<div class="mySlides">
+  				  <div class="numbertext">10 / 30</div>
+  				  <img src="images/img12.jpg" style="width:100%">
+  				   <div class="caption">Wabash Bridge at Night</div>
+  				</div>
 
-      <section class="gallery-contianer">
-  			<div id="chief-wapello" >
-  			 <a href="images/img01-bigger.jpg" data-lightbox="mygallery" data-title=" Chief Wapello carving"><img src="images/img01.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img02-bigger.jpg"data-lightbox="mygallery" data-title=" Chief Wapello carving" ><img src="images/img02.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img03-bigger.jpg" data-lightbox="mygallery" data-title=" Chief Wapello carving"><img src="images/img02.jpg" style="max-width:100%;height= auto;"></a>
-  			</div><!--end of cheif wapello-->
+  				<div class="mySlides">
+  				  <div class="numbertext">11 / 30</div>
+  				  <img src="images/trail-site.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
 
+  				<div class="mySlides">
+  				  <div class="numbertext">12 / 30</div>
+  				  <img src="images/trail-site02.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+  				<div class="mySlides">
+  				  <div class="numbertext">13 / 10</div>
+  				  <img src="images/trail-site03.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
 
-  			<div id="trail" >
-  			 <a href="images/img07-bigger.jpg" data-lightbox="mygallery" data-title=" Wabash Bridge"><img src="images/img07.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img08-bigger.jpg" data-lightbox="mygallery" data-title=" Wabash Bridge"><img src="images/img08.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img09-bigger.jpg" data-lightbox="mygallery" data-title=" Wabash Bridge"><img src="images/img09.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img12-bigger.jpg" data-lightbox="mygallery" data-title=" Wabash Bridge"><img src="images/img12.jpg" style="max-width:100%;height= auto;"></a>
-  			</div><!--end of Trail-->
+  				<div class="mySlides">
+  				  <div class="numbertext">14 / 10</div>
+  				  <img src="images/trail-site18.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
 
+  				<div class="mySlides">
+  				  <div class="numbertext">15 / 10</div>
+  				  <img src="images/trail-site01.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
 
-  			<div id="volunteer" >
-  			 <a href="images/img04-bigger.jpg" data-lightbox="mygallery" data-title=" Volunteers helped in working on the bridge"><img src="images/img04.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img05-bigger.jpg" data-lightbox="mygallery" data-title=" Volunteers helped in working on the bridge"><img src="images/img05.jpg" style="max-width:100%;height= auto;"></a>
-  			 <a href="images/img06-bigger.jpg" data-lightbox="mygallery" data-title=" Volunteers helped in working on the bridge"><img src="images/img06.jpg" style="max-width:100%;height= auto;"></a>
-  			</div><!--end of volunteer-->
-      </section>
+  				<div class="mySlides">
+  				  <div class="numbertext">17 / 30</div>
+  				  <img src="images/trail-site05.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">18 / 30</div>
+  				  <img src="images/trail-site19.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">19 / 30</div>
+  				  <img src="images/trail-site06.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">20 / 30</div>
+  				  <img src="images/trail-site07.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">21 / 30</div>
+  				  <img src="images/trail-site08.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">22 / 30</div>
+  				  <img src="images/trail-site17.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">23 / 30</div>
+  				  <img src="images/trail-site09.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+          <div class="mySlides">
+  				  <div class="numbertext">24 / 30</div>
+  				  <img src="images/trail-site10.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">25 / 30</div>
+  				  <img src="images/trail-site11.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">26 / 30</div>
+  				  <img src="images/trail-site16.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">27 / 30</div>
+  				  <img src="images/trail-site12.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">28 / 30</div>
+  				  <img src="images/trail-site13.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">29 / 30</div>
+  				  <img src="images/trail-site14.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<div class="mySlides">
+  				  <div class="numbertext">30 / 30</div>
+  				  <img src="images/trail-site15.jpg" style="width:100%">
+  				   <div class="caption">Caption Two</div>
+  				</div>
+
+  				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  			</div>
+  		</div>
 
 
       <section class="Video-container">
             <div class="content-wrapper">
-                  <h2>Chief Wapello Carving and Wabash Video</h2>
+                <h2 style="text-align:center"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
                   <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media;
@@ -149,69 +318,77 @@
                   </iframe>
             </div>
         </section>
-
-
-
-        <script>
-          var slideIndex = 0;
-          showSlides();
-
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-          }
-        </script>
     </main>
 
     <footer>
-  		<div class="footerInfo">
-  			<div class="contact">
-  				<h2 class="footer">Contact Us</h2>
-  				<p class="footer">email@gmail.com</p>
-  				<p class="footer">Name | 123-456-7899</p>
-  				<p class="footer">Name | 123-456-7899</p>
-  				<p class="footer">Name | 123-456-7899</p>
-  			</div>
-  			<div class="community">
-  				<h2 class="footer">Community</h2>
-  				<p class="footer"><a href="https://www.gopip.org/">Greater Ottumwa Partners in Progress</a></p>
-  				<p class="footer"><a href="https://www.mainstreetottumwa.com/">Main Street Ottumwa</a></p>
-  				<p class="footer"><a href="https://www.greaterottumwacvb.org/">Ottumwa Convention and Visitor Bureau</a></p>
-  				<p class="footer"><a href="https://www.orlf.org/">Legacy Foundation</a></p>
-  				<p class="footer"><a href="http://wapellocounty.org/">Wapello County</a></p>
-  			</div>
+		<div class="footerInfo">
+			<div class="contact">
+				<h2 class="footer">Contact Us</h2>
+				<p class="footer">email@gmail.com</p>
+				<p class="footer">Name | 123-456-7899</p>
+				<p class="footer">Name | 123-456-7899</p>
+				<p class="footer">Name | 123-456-7899</p>
+			</div>
+			<div class="community">
+				<h2 class="footer">Community</h2>
+				<p class="footer"><a href="https://www.gopip.org/">Greater Ottumwa Partners in Progress</a></p>
+				<p class="footer"><a href="https://www.mainstreetottumwa.com/">Main Street Ottumwa</a></p>
+				<p class="footer"><a href="https://www.greaterottumwacvb.org/">Ottumwa Convention and Visitor Bureau</a></p>
+				<p class="footer"><a href="https://www.orlf.org/">Legacy Foundation</a></p>
+				<p class="footer"><a href="http://wapellocounty.org/">Wapello County</a></p>
+			</div>
 
-  			<div class="additional">
-  				<h2 class="footer">Additional Links</h2>
-  				<p class="footer"><a href="https://soarraptors.org/">SOAR</a></p>
-  				<p class="footer"><a href="https://americangothichouse.org/">American Gothic House</a></p>
-  				<p class="footer"><a href="https://www.bikeiowa.com/">Bike Iowa</a></p>
-  				<p class="footer"><a href="http://www.jeffersoncountytrails.org/">Jeffereson County Trails</a></p>
-  				<p class="footer"><a href="https://www.traillink.com/">Trail Link</a></p>
-  				<p class="footer"><a href="https://www.inhf.org/what-we-do/trails/iowa-by-trail/">Iowa by Trail</a></p>
-  				<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
-  			</div>
-  		</div>
+			<div class="additional">
+				<h2 class="footer">Additional Links</h2>
+				<p class="footer"><a href="https://soarraptors.org/">SOAR</a></p>
+				<p class="footer"><a href="https://americangothichouse.org/">American Gothic House</a></p>
+				<p class="footer"><a href="https://www.bikeiowa.com/">Bike Iowa</a></p>
+				<p class="footer"><a href="http://www.jeffersoncountytrails.org/">Jeffereson County Trails</a></p>
+				<p class="footer"><a href="https://www.traillink.com/">Trail Link</a></p>
+				<p class="footer"><a href="https://www.inhf.org/what-we-do/trails/iowa-by-trail/">Iowa by Trail</a></p>
+				<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
+			</div>
+		</div>
 
-      <div class="toTop">
-  			<button onclick="topFunction()" id="myBtn">Back to Top</button>
-  		</div>
-  	</footer>
+		<div class="toTop">
+			<button onclick="topFunction()" id="myBtn">Back to Top</button>
+		</div>
+	</footer>
 
-  	<script>
-  		var mybutton = document.getElementById("myBtn");
+	<script>
+  //javascript for slide images
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+  //javascript for footer button
+		var mybutton = document.getElementById("myBtn");
 
   		function topFunction() {
   		  document.body.scrollTop = 0;
