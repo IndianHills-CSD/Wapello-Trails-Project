@@ -183,20 +183,6 @@ p.footer {
 	font-weight: 500;
 }
 
-
-footer {
-	background-color: #edf0f1;
-	vertical-align: baseline;
-	width: 100%;
-}
-
-.footerInfo {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 10%;
-}
-
 .contact {
 	text-align: center;
 	height: 200px;

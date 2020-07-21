@@ -6,25 +6,17 @@
 	<link rel="stylesheet" href="css/masterstyle.css">
 	<title>Home</title>
 </head>
-<body>
+<header>
+	<h1 class="nav">Wapello Trails</h1>
 	<nav>
-		<div class="logo">
-			<h1 class="nav">Wapello Trails</h1>
-		</div>
-
-			<ul class="nav-links">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="trails.html">Trails</a></li>
-			</ul>
-
-				<div class="burger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
+		<ul class="nav-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Trails</a></li>
+		</ul>
 	</nav>
-
+</header>
+<body>
 	<div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
     <div class="ticker-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
     <div class="ticker-item">Aliquam consequat varius consequat.</div>
@@ -68,6 +60,7 @@ sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 			</table>
 		</div>
 	</div>
+ </body>
  <footer>
 	<div class="footerInfo">
 		<div class="contact">
@@ -97,19 +90,5 @@ sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
 		</div>
 	</div>
-
-	<div class="toTop">
-		<button onclick="topFunction()" id="myBtn">Back to Top</button>
-	</div>
 </footer>
-
-	<script>
-		function topFunction() {
-			var mybutton = document.getElementById("myBtn");
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
-	<script src="js/master.js"></script>
-</body>
  </html>

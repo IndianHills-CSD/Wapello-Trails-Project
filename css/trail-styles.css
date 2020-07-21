@@ -80,6 +80,7 @@ section.body-container {
     flex: 1 0 15%;
 }
 
+<<<<<<< HEAD
 .legend-box-2 {
     flex: 1 0 25%;
 }
@@ -94,6 +95,8 @@ section.body-container {
     width: 10%;
 }
 
+=======
+>>>>>>> 0a953fa0d00c6b8b9eedd9e4cb10ad721ea38d60
 .square1 {
     background: #f8ff33;
 }
@@ -123,7 +126,31 @@ section.body-container {
 }
 
 .square8 {
+<<<<<<< HEAD
     background: #8a0000;
+=======
+    background: #24252A;
+}
+
+.parking-icon {
+    height: 25px;
+    width: 25px;
+    background: #24252A;
+}
+
+.shelter-icon {
+    height: 25px;
+    width: 25px;
+    background: #24252A;
+}
+
+/*
+.map-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+>>>>>>> 0a953fa0d00c6b8b9eedd9e4cb10ad721ea38d60
 }
 
 .icon {
