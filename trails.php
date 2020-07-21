@@ -10,25 +10,8 @@
 
 	<title>Trails</title>
 </head>
-
+    <?php echo include 'header.php'; ?>
 <body>
-	<nav>
-		<div class="logo">
-			<h1 class="nav">Wapello Trails</h1>
-		</div>
-
-		<ul class="nav-links">
-			<li><a href="home.html">Home</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="trails.html">Trails</a></li>
-		</ul>
-
-		<div class="burger">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
-	</nav>
 
 	<section class="head-container">
 		<h1 class="page-title">Activities</h1>
@@ -177,51 +160,5 @@
        // });
 	</script>
 </body>
-
-<footer>
-	<div class="footerInfo">
-		<div class="contact">
-			<h2 class="footer">Contact Us</h2>
-			<p class="footer">email@gmail.com</p>
-			<p class="footer">Name | 123-456-7899</p>
-			<p class="footer">Name | 123-456-7899</p>
-			<p class="footer">Name | 123-456-7899</p>
-		</div>
-		<div class="community">
-			<h2 class="footer">Community</h2>
-			<p class="footer"><a href="https://www.gopip.org/">Greater Ottumwa Partners in Progress</a></p>
-			<p class="footer"><a href="https://www.mainstreetottumwa.com/">Main Street Ottumwa</a></p>
-			<p class="footer"><a href="https://www.greaterottumwacvb.org/">Ottumwa Convention and Visitor Bureau</a></p>
-			<p class="footer"><a href="https://www.orlf.org/">Legacy Foundation</a></p>
-			<p class="footer"><a href="http://wapellocounty.org/">Wapello County</a></p>
-		</div>
-
-		<div class="additional">
-			<h2 class="footer">Additional Links</h2>
-			<p class="footer"><a href="https://soarraptors.org/">SOAR</a></p>
-			<p class="footer"><a href="https://americangothichouse.org/">American Gothic House</a></p>
-			<p class="footer"><a href="https://www.bikeiowa.com/">Bike Iowa</a></p>
-			<p class="footer"><a href="http://www.jeffersoncountytrails.org/">Jeffereson County Trails</a></p>
-			<p class="footer"><a href="https://www.traillink.com/">Trail Link</a></p>
-			<p class="footer"><a href="https://www.inhf.org/what-we-do/trails/iowa-by-trail/">Iowa by Trail</a></p>
-			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
-		</div>
-	</div>
-
-	<div class="toTop">
-		<button onclick="topFunction()" id="myBtn">Back to Top</button>
-	</div>
-</footer>
-
-
-<script>
-	var mybutton = document.getElementById("myBtn");
-
-	function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
-</script>
-<script src="js/master.js"></script>
-</body>
+    <?php echo include 'footer.php'; ?>
 </html>
