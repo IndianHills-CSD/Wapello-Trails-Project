@@ -1,0 +1,7 @@
+{
+  "name": "Wapello-County-Trails",
+  "version": "1.0.0",
+  "dependencies": {
+    "mapbox-gl": "^1.11.1"
+  }
+}
