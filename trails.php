@@ -62,8 +62,8 @@
 			<li class="square6"></li>
 			<li class="square7"></li>
 			<li class="square8"></li>
-			<li class="parking-icon"></li>
-			<li class="shelter-icon"></li>
+			<li class="parking-icon"><img src="images/parking-15.svg"></li>
+			<li class="shelter-icon"><img src="images/campsite-15.svg"></li>
 		</ul>  <!-- END legend-box -->
 		<ul class="legend-box">
 			<li class="legend">Trail 6: 1.7 Miles</li>

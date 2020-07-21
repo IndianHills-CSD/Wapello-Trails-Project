@@ -73,109 +73,64 @@ section.body-container {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+    align-items: stretch;
 }
 
-.legend-box {
-    display: inline-flex;
-    flex-flow:  column wrap;
-    justify-content: space-evenly;
+.legend-box-1 {
+    flex: 1 0 15%;
+}
+
+.legend-box-2 {
+    flex: 1 0 25%;
+}
+
+.legend {
     list-style: none;
-    align-items: baseline;
-    padding-bottom: 2%;
+    margin: 10%;
 }
 
 .color-code {
-    list-style: none;
-}
-
-.legend-box > li {
-    padding: 2%;
-}
-
-.color-code > li {
-    margin: 75%;
-    height: 25px;
-    width: 25px;
+    height: 10%;
+    width: 10%;
 }
 
 .square1 {
-    background: #24252A;
+    background: #f8ff33;
 }
 
 .square2 {
-    background: #24252A;
+    background: #ff9029;
 }
 
 .square3 {
-    background: #24252A;
+    background: #21db00;
 }
 
 .square4 {
-    background: #24252A;
+    background: #ff2424;
 }
 
 .square5 {
-    background: #24252A;
+    background: #0206f2;
 }
 
 .square6 {
-    background: #24252A;
+    background: #c424f9;
 }
 
 .square7 {
-    background: #24252A;
+    background: #6800b3;
 }
 
 .square8 {
-    background: #24252A;
+    background: #8a0000;
 }
 
-.parking-icon {
-    background: #24252A;
+.icon {
+    width: 20%;
+    height: 20%;
+    margin: 0 0 0 4%;
 }
-
-.shelter-icon {
-    background: #24252A;
-}
-
-/*
-.map-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.map-thumb {
-    align-items: baseline;
-    display: flex;
-    object-fit: cover;
-    flex: 1 0 25%;
-    padding: 1.5%;
-    width: 300px;
-    height: 300px;
-}
-
-.trailName {
-    align-items: baseline;
-    display: flex;
-    flex: 1 0 25%;
-    padding-left: 1.7%;
-    color: #FE5F55;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.trail-info {
-    line-height: 20px;
-    align-items: baseline;
-    display: flex;
-    flex: 1 0 25%;
-    padding: 0 2% 0 1.7%;
-    text-align: justify;
-    color: #BDD5EA;
-}
-*/
 
 /* Area Plan Styling */
 .plans-page-title {
