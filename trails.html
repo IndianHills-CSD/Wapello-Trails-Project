@@ -11,11 +11,10 @@
 	<title>Trails</title>
 </head>
 
-<<<<<<< HEAD
 <header>
 	<h1 class="nav">Wapello Trails</h1>
 </header>
-=======
+
 <body>
 	<nav>
 		<div class="logo">
@@ -27,7 +26,6 @@
 			<li><a href="gallery.html">Gallery</a></li>
 			<li><a href="trails.html">Trails</a></li>
 		</ul>
->>>>>>> 0a953fa0d00c6b8b9eedd9e4cb10ad721ea38d60
 
 		<div class="burger">
 			<div class="line1"></div>
@@ -62,7 +60,9 @@
 		</div>  <!-- END .flex-container -->
 	</section>  <!-- END .head-container -->
 
+	<div id="menu"></div>
 	<div id="map"></div>
+
 	<!-- Div for buttons on map <div id="menu"></div>  -->
 	<h3 class="legend-head">Map Legend:</h3>
 	<!-- Legend for trail map -->
@@ -151,36 +151,53 @@
             container: 'map',
             style: 'mapbox://styles/joshua-delong/ckcfn77730anb1ilibata5gt6'
         });
-        /*
 
+        /*
    **** The following code will create clickable boxes to show and hide the different trails on the map ****
+        */
         map.on('load', function() {
            // add source and layer for trail 1
-	       map.addSource('trail-1-3.2-mile', {
+	       map.addSource('Trail_1', {
 	           type: vector,
-		       url: 'joshua-delong.ckccuis8j0lvn24prl707kt0m-36b5'
-	       })
-	       */
+		       url: 'joshua-delong.ckccuis8j0lvn24prl707kt0m-36b55'
+	       });
+	       map.addLayer({
+		       'id': 'Trail 1 - 3.2 Miles',
+		       'type': 'line',
+		       'source': 'Trail_1',
+		       'layout': {
+		           // make layer visible by default
+			       'visibility': 'visible',
+                   'line-cap': 'butt',
+			       'line-join': 'miter'
+		       },
+		       'paint': {
+		            'line-color':  '#f8ff33',
+			        'line-width': 4
+		       }
+	       });
+        });
+			/*
+	          trail-2-2.5-mile
+	          joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1
+	          trail-3-1.6-mile
+	          joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz
+	          trail-4-0.9-mile
+	          joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q
+	          trail-5-1-1-mile
+	          joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn
+	          trail-6-1-7-mile
+	          joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9
+	          trail-7-1-2-mile
+	          joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm
+	          trail-8-1-4-mile
+	          joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t
+	          parking
+	          joshua-delong.ckcky2p6z0adr23p9ky2syyeo-1cncy
+	         shelter-rest-stops
+	          joshua-delong.ckcky9clj0ag223p9qizha01k-2knvy
+	        */
 
-	        //  trail-2-2.5-mile
-	        //  joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1
-	        //  trail-3-1.6-mile
-	        //  joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz
-	        //  trail-4-0.9-mile
-	        //  joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q
-	        //  trail-5-1-1-mile
-	        //  joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn
-	        //  trail-6-1-7-mile
-	        //  joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9
-	        //  trail-7-1-2-mile
-	        //  joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm
-	        //  trail-8-1-4-mile
-	        //  joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t
-	        //  parking
-	        //  joshua-delong.ckcky2p6z0adr23p9ky2syyeo-1cncy
-	        // shelter-rest-stops
-	        //  joshua-delong.ckcky9clj0ag223p9qizha01k-2knvy
-       // });
 	</script>
 </body>
 

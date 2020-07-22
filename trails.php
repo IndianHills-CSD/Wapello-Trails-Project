@@ -10,8 +10,29 @@
 
 	<title>Trails</title>
 </head>
-    <?php echo include 'header.php'; ?>
+
+<header>
+	<h1 class="nav">Wapello Trails</h1>
+</header>
+
 <body>
+	<nav>
+		<div class="logo">
+			<h1 class="nav">Wapello Trails</h1>
+		</div>
+
+		<ul class="nav-links">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="trails.html">Trails</a></li>
+		</ul>
+
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
 
 	<section class="head-container">
 		<h1 class="page-title">Activities</h1>
@@ -39,38 +60,40 @@
 		</div>  <!-- END .flex-container -->
 	</section>  <!-- END .head-container -->
 
+	<div id="menu"></div>
 	<div id="map"></div>
+
 	<!-- Div for buttons on map <div id="menu"></div>  -->
 	<h3 class="legend-head">Map Legend:</h3>
 	<!-- Legend for trail map -->
 	<div class="legend-container">
-		<ul class="color-code">
-			<li class="square1"></li>
-			<li class="square2"></li>
-			<li class="square3"></li>
-			<li class="square4"></li>
-			<li class="square5"></li>
-		</ul>  <!-- END legend-box -->
-		<ul class="legend-box">
-			<li class="legend">Trail 1: 3.2 Miles</li>
-			<li class="legend">Trail 2: 2.5 Miles</li>
-			<li class="legend">Trail 3: 1.6 Miles</li>
-			<li class="legend">Trail 4: 0.9 Miles</li>
-			<li class="legend">Trail 5: 1.1 Miles</li>
-		</ul>   <!-- END legend-box -->
-		<ul class="color-code">
-			<li class="square6"></li>
-			<li class="square7"></li>
-			<li class="square8"></li>
-			<li class="parking-icon"><img src="images/parking-15.svg"></li>
-			<li class="shelter-icon"><img src="images/campsite-15.svg"></li>
-		</ul>  <!-- END legend-box -->
-		<ul class="legend-box">
-			<li class="legend">Trail 6: 1.7 Miles</li>
-			<li class="legend">Trail 7: 1.2 Miles</li>
-			<li class="legend">Trail 8: 1.4 Miles</li>
-			<li class="legend">Parking and Trailheads</li>
-			<li class="legend">Shelters and Rest Stops</li>
+		<ul class="legend-box-1">
+			<li class="square1 legend color-code"></li>
+			<li class="square2 legend color-code"></li>
+			<li class="square3 legend color-code"></li>
+			<li class="square4 legend color-code"></li>
+			<li class="square5 legend color-code"></li>
+		</ul>
+		<ul class="legend-box-2">
+			<li class="legend trail-name">Trail 1: 3.2 Miles</li>
+			<li class="legend trail-name">Trail 2: 2.5 Miles</li>
+			<li class="legend trail-name">Trail 3: 1.6 Miles</li>
+			<li class="legend trail-name">Trail 4: 0.9 Miles</li>
+			<li class="legend trail-name">Trail 5: 1.1 Miles</li>
+		</ul>
+		<ul class="legend-box-1">
+			<li class="square6 legend color-code"></li>
+			<li class="square7 legend color-code"></li>
+			<li class="square8 legend color-code"></li>
+			<li class="icon legend"><img src="images/parking-15.svg"></li>
+			<li class="icon legend"><img src="images/campsite-15.svg"></li>
+		</ul>
+		<ul class="legend-box-2">
+			<li class="legend trail-name">Trail 6: 1.7 Miles</li>
+			<li class="legend trail-name">Trail 7: 1.2 Miles</li>
+			<li class="legend trail-name">Trail 8: 1.4 Miles</li>
+			<li class="legend trail-name">Parking and Trailheads</li>
+			<li class="legend trail-name">Shelters and Rest Stops</li>
 		</ul>   <!-- END legend-box -->
 	</div>  <!-- END legend-container -->
 
@@ -128,37 +151,100 @@
             container: 'map',
             style: 'mapbox://styles/joshua-delong/ckcfn77730anb1ilibata5gt6'
         });
-        /*
 
+        /*
    **** The following code will create clickable boxes to show and hide the different trails on the map ****
+        */
         map.on('load', function() {
            // add source and layer for trail 1
-	       map.addSource('trail-1-3.2-mile', {
+	       map.addSource('Trail_1', {
 	           type: vector,
-		       url: 'joshua-delong.ckccuis8j0lvn24prl707kt0m-36b5'
-	       })
-	       */
+		       url: 'joshua-delong.ckccuis8j0lvn24prl707kt0m-36b55'
+	       });
+	       map.addLayer({
+		       'id': 'Trail 1 - 3.2 Miles',
+		       'type': 'line',
+		       'source': 'Trail_1',
+		       'layout': {
+		           // make layer visible by default
+			       'visibility': 'visible',
+                   'line-cap': 'butt',
+			       'line-join': 'miter'
+		       },
+		       'paint': {
+		            'line-color':  '#f8ff33',
+			        'line-width': 4
+		       }
+	       });
+        });
+			/*
+	          trail-2-2.5-mile
+	          joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1
+	          trail-3-1.6-mile
+	          joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz
+	          trail-4-0.9-mile
+	          joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q
+	          trail-5-1-1-mile
+	          joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn
+	          trail-6-1-7-mile
+	          joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9
+	          trail-7-1-2-mile
+	          joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm
+	          trail-8-1-4-mile
+	          joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t
+	          parking
+	          joshua-delong.ckcky2p6z0adr23p9ky2syyeo-1cncy
+	         shelter-rest-stops
+	          joshua-delong.ckcky9clj0ag223p9qizha01k-2knvy
+	        */
 
-	        //  trail-2-2.5-mile
-	        //  joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1
-	        //  trail-3-1.6-mile
-	        //  joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz
-	        //  trail-4-0.9-mile
-	        //  joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q
-	        //  trail-5-1-1-mile
-	        //  joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn
-	        //  trail-6-1-7-mile
-	        //  joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9
-	        //  trail-7-1-2-mile
-	        //  joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm
-	        //  trail-8-1-4-mile
-	        //  joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t
-	        //  parking
-	        //  joshua-delong.ckcky2p6z0adr23p9ky2syyeo-1cncy
-	        // shelter-rest-stops
-	        //  joshua-delong.ckcky9clj0ag223p9qizha01k-2knvy
-       // });
 	</script>
 </body>
-    <?php echo include 'footer.php'; ?>
+
+<footer>
+	<div class="footerInfo">
+		<div class="contact">
+			<h2 class="footer">Contact Us</h2>
+			<p class="footer">email@gmail.com</p>
+			<p class="footer">Name | 123-456-7899</p>
+			<p class="footer">Name | 123-456-7899</p>
+			<p class="footer">Name | 123-456-7899</p>
+		</div>
+		<div class="community">
+			<h2 class="footer">Community</h2>
+			<p class="footer"><a href="https://www.gopip.org/">Greater Ottumwa Partners in Progress</a></p>
+			<p class="footer"><a href="https://www.mainstreetottumwa.com/">Main Street Ottumwa</a></p>
+			<p class="footer"><a href="https://www.greaterottumwacvb.org/">Ottumwa Convention and Visitor Bureau</a></p>
+			<p class="footer"><a href="https://www.orlf.org/">Legacy Foundation</a></p>
+			<p class="footer"><a href="http://wapellocounty.org/">Wapello County</a></p>
+		</div>
+
+		<div class="additional">
+			<h2 class="footer">Additional Links</h2>
+			<p class="footer"><a href="https://soarraptors.org/">SOAR</a></p>
+			<p class="footer"><a href="https://americangothichouse.org/">American Gothic House</a></p>
+			<p class="footer"><a href="https://www.bikeiowa.com/">Bike Iowa</a></p>
+			<p class="footer"><a href="http://www.jeffersoncountytrails.org/">Jeffereson County Trails</a></p>
+			<p class="footer"><a href="https://www.traillink.com/">Trail Link</a></p>
+			<p class="footer"><a href="https://www.inhf.org/what-we-do/trails/iowa-by-trail/">Iowa by Trail</a></p>
+			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
+		</div>
+	</div>
+
+	<div class="toTop">
+		<button onclick="topFunction()" id="myBtn">Back to Top</button>
+	</div>
+</footer>
+
+
+<script>
+	var mybutton = document.getElementById("myBtn");
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<script src="js/master.js"></script>
+</body>
 </html>
