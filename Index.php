@@ -2,28 +2,13 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-	<link rel="stylesheet" type="text/css" href="css/HomeStyles.css">
+	<link rel="stylesheet" type="text/css" href="css/Style.php">
 	<link rel="stylesheet" href="css/masterstyle.css">
 	<title>Home</title>
 </head>
 <body>
-	<nav>
-		<div class="logo">
-			<h1 class="nav">Wapello Trails</h1>
-		</div>
 
-			<ul class="nav-links">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="trails.html">Trails</a></li>
-			</ul>
-
-				<div class="burger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-	</nav>
+	<?php include 'nav.php';?>
 
 	<div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
     <div class="ticker-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -31,12 +16,12 @@
     <div class="ticker-item">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
     <div class="ticker-item">Pellentesque auctor molestie orci ut blandit.</div>
   </div></div></div>
-	<div class="ConContainer">
+	<div class="conContainer">
 
 			<img class="center" src="images/placehold.png" width="300" height="400">
 
 
-		<p>
+		<p class="historytext">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -68,48 +53,6 @@ sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 			</table>
 		</div>
 	</div>
- <footer>
-	<div class="footerInfo">
-		<div class="contact">
-			<h2 class="footer">Contact Us</h2>
-			<p class="footer">email@gmail.com</p>
-			<p class="footer">Name | 123-456-7899</p>
-			<p class="footer">Name | 123-456-7899</p>
-			<p class="footer">Name | 123-456-7899</p>
-		</div>
-		<div class="community">
-			<h2 class="footer">Community</h2>
-			<p class="footer"><a href="https://www.gopip.org/">Greater Ottumwa Partners in Progress</a></p>
-			<p class="footer"><a href="https://www.mainstreetottumwa.com/">Main Street Ottumwa</a></p>
-			<p class="footer"><a href="https://www.greaterottumwacvb.org/">Ottumwa Convention and Visitor Bureau</a></p>
-			<p class="footer"><a href="https://www.orlf.org/">Legacy Foundation</a></p>
-			<p class="footer"><a href="http://wapellocounty.org/">Wapello County</a></p>
-		</div>
-
-		<div class="additional">
-			<h2 class="footer">Additional Links</h2>
-			<p class="footer"><a href="https://soarraptors.org/">SOAR</a></p>
-			<p class="footer"><a href="https://americangothichouse.org/">American Gothic House</a></p>
-			<p class="footer"><a href="https://www.bikeiowa.com/">Bike Iowa</a></p>
-			<p class="footer"><a href="http://www.jeffersoncountytrails.org/">Jeffereson County Trails</a></p>
-			<p class="footer"><a href="https://www.traillink.com/">Trail Link</a></p>
-			<p class="footer"><a href="https://www.inhf.org/what-we-do/trails/iowa-by-trail/">Iowa by Trail</a></p>
-			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
-		</div>
-	</div>
-
-	<div class="toTop">
-		<button onclick="topFunction()" id="myBtn">Back to Top</button>
-	</div>
-</footer>
-
-	<script>
-		function topFunction() {
-			var mybutton = document.getElementById("myBtn");
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
-	<script src="js/master.js"></script>
+ <?php include 'footer.php';?>
 </body>
  </html>

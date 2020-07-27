@@ -3,17 +3,26 @@
 ?>
 
 /*the styles for the home page */
-/*the styles for the home page */
-th{
-	border: 1px solid red;
-	}
+th{border: 1px solid black;
+	color: black;}
 tr{
-	border: 1px solid red;
+	border: 1px solid black;
 }
-td{border: 1px solid red;}
-.ConContainer {
-    background: #6494AA;
-    color: #F5FBEF;
+td{border: 1px solid black;
+	color: black;}
+	
+.milestones-con {
+	padding:3%;
+}
+.milestones{
+	border: 1px solid black;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: white;
+}
+.conContainer {
+    background: #577399;
+    color: #F7F7FF;
 }
 .center {
     display: block;
@@ -22,15 +31,7 @@ td{border: 1px solid red;}
     width: 50%;
 	height: 50%
 }
-.milestones-con {
-	padding:3%;
-}
-.milestones{
-	border: 1px solid red;
-	margin-left: auto;
-    margin-right: auto;
-	background-color: blue;
-}
+
 .newsbox{
 	background:red;
 	color: white;
@@ -73,6 +74,13 @@ td{border: 1px solid red;}
 .ticker-item{
   display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
+}
+
+.historytext{
+	padding-top: 5%;
+	padding-left:10%;
+	padding-right:10%;
+	font-size: 200%;
 }
 /*END OF HOME PAGE STYLES*/
 
