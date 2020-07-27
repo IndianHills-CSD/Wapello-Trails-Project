@@ -7,6 +7,7 @@
 	<title>Home</title>
 </head>
 <body>
+
 	<?php include 'nav.php';?>
 
 	<div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">

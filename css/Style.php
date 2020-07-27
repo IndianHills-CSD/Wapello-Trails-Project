@@ -10,7 +10,16 @@ tr{
 }
 td{border: 1px solid black;
 	color: black;}
-
+	
+.milestones-con {
+	padding:3%;
+}
+.milestones{
+	border: 1px solid black;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: white;
+}
 .conContainer {
     background: #577399;
     color: #F7F7FF;
@@ -22,15 +31,7 @@ td{border: 1px solid black;
     width: 50%;
 	height: 50%
 }
-.milestones-con {
-	padding:3%;
-}
-.milestones{
-	border: 1px solid black;
-	margin-left: auto;
-    margin-right: auto;
-	background-color: white;
-}
+
 .newsbox{
 	background:red;
 	color: white;
