@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/trail-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/Style.php">
 	<link rel="stylesheet" href="css/masterstyle.css">
 	<meta charset="UTF-8">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
@@ -121,6 +122,7 @@
 	</div>  <!-- END .area-plan-container -->
 </section>  <!-- END .body-container -->
 
+<!-- Javascript for trail map and show/hide buttons -->
 <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zaHVhLWRlbG9uZyIsImEiOiJja2MzcHZ1a3owMDl2MnBrMDE5M3J4c3UxIn0.kFA68Avg1OaqG0QMq6f7dg';
     var map = new mapboxgl.Map({
