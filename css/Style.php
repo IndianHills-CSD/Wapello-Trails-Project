@@ -3,13 +3,13 @@
 ?>
 
 /*the styles for the home page */
-th{
-	border: 1px solid red;
-	}
+th{border: 1px solid black;
+	color: black;}
 tr{
-	border: 1px solid red;
+	border: 1px solid black;
 }
-td{border: 1px solid red;}
+td{border: 1px solid black;
+	color: black;}
 
 .conContainer {
     background: #577399;
@@ -26,10 +26,10 @@ td{border: 1px solid red;}
 	padding:3%;
 }
 .milestones{
-	border: 1px solid red;
+	border: 1px solid black;
 	margin-left: auto;
     margin-right: auto;
-	background-color: blue;
+	background-color: white;
 }
 .newsbox{
 	background:red;
@@ -74,7 +74,7 @@ td{border: 1px solid red;}
   display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
 }
-<<<<<<< HEAD
+
 .historytext{
 	padding-top: 5%;
 	padding-left:10%;
