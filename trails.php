@@ -11,39 +11,12 @@
 	<title>Trails</title>
 </head>
 
-<header>
-	<h1 class="nav">Wapello Trails</h1>
-</header>
-
 <body>
-<nav>
-	<div class="logo">
-		<h1 class="nav">Wapello Trails</h1>
-	</div>
-
-	<ul class="nav-links">
-		<li><a href="home.html">Home</a></li>
-		<li><a href="gallery.html">Gallery</a></li>
-		<li><a href="trails.html">Trails</a></li>
-	</ul>
-
-	<div class="burger">
-		<div class="line1"></div>
-		<div class="line2"></div>
-		<div class="line3"></div>
-	</div>
-</nav>
+    <?php include 'nav.php'; ?>
 
 <section class="head-container">
 	<h1 class="page-title">Activities</h1>
-	<!--
-		Text area that can display possible trail activities. These could include:
-			-   Biking
-			-   Hiking
-			-   Walking
-			-   Running
-			-   Etc.
-	-->
+
 	<h2 class="activities">Walking</h2>
 	<div class="flex-container">
 		<p class="p-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Sed augue lacus viverra vitae. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Risus nullam eget felis eget. Amet justo donec enim diam vulputate ut. In hac habitasse platea dictumst quisque. Vestibulum sed arcu non odio euismod lacinia at quis risus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Curabitur vitae nunc sed velit dignissim sodales. Mi eget mauris pharetra et. Neque volutpat ac tincidunt vitae semper. Diam phasellus vestibulum lorem sed. Viverra aliquet eget sit amet tellus cras. Hendrerit dolor magna eget est. Ornare massa eget egestas purus.</p>
@@ -60,10 +33,13 @@
 	</div>  <!-- END .flex-container -->
 </section>  <!-- END .head-container -->
 
-<div id="menu"></div>
+	<p class="instruct">Use the trail buttons below to toggle the maps off and on.</p>
+
 <div id="map"></div>
 
-<!-- Div for buttons on map <div id="menu"></div>  -->
+<!-- Div for buttons on map -->
+<div id="menu"></div>
+<div id="menu"></div>
 <h3 class="legend-head">Map Legend:</h3>
 <!-- Legend for trail map -->
 <div class="legend-container">
@@ -158,16 +134,171 @@
     map.on('load', function() {
         // add source and layer for trail 1
         map.addSource('Trail_1', {
-            type: vector,
-            url: 'joshua-delong.ckccuis8j0lvn24prl707kt0m-36b55'
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckccuis8j0lvn24prl707kt0m-36b55'
         });
         map.addLayer({
-            'id': 'Trail_1',
+            'id': '1',
             'type': 'line',
             'source': 'Trail_1',
+	        'source-layer': 'Trail_1',
             'layout': {
                 // make layer visible by default
-                'visibility': 'visible',
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#f8ff33',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 2
+        map.addSource('Trail_2_-_2.5_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1'
+        });
+        map.addLayer({
+            'id': '2',
+            'type': 'line',
+            'source': 'Trail_2_-_2.5_Mile',
+            'source-layer': 'Trail_2_-_2.5_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#ff9029',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 3
+        map.addSource('Trail_3_-_1.6_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz'
+        });
+        map.addLayer({
+            'id': '3',
+            'type': 'line',
+            'source': 'Trail_3_-_1.6_Mile',
+            'source-layer': 'Trail_3_-_1.6_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#21db00',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 4
+        map.addSource('Trail_4_-_0.9_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q'
+        });
+        map.addLayer({
+            'id': '4',
+            'type': 'line',
+            'source': 'Trail_4_-_0.9_Mile',
+            'source-layer': 'Trail_4_-_0.9_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#ff2424',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 5
+        map.addSource('Trail_5_-_1.1_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn'
+        });
+        map.addLayer({
+            'id': '5',
+            'type': 'line',
+            'source': 'Trail_5_-_1.1_Mile',
+            'source-layer': 'Trail_5_-_1.1_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#0206f2',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 6
+        map.addSource('Trail_6_-_1.7_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9'
+        });
+        map.addLayer({
+            'id': '6',
+            'type': 'line',
+            'source': 'Trail_6_-_1.7_Mile',
+            'source-layer': 'Trail_6_-_1.7_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#f8ff33',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 7
+        map.addSource('Trail_7_-_1.2_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm'
+        });
+        map.addLayer({
+            'id': '7',
+            'type': 'line',
+            'source': 'Trail_7_-_1.2_Mile',
+            'source-layer': 'Trail_7_-_1.2_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
+                'line-cap': 'butt',
+                'line-join': 'miter'
+            },
+            'paint': {
+                'line-color':  '#6800b3',
+                'line-width': 4
+            }
+        });
+
+        // add source and layer for trail 8
+        map.addSource('Trail_8_-_1.4_Mile', {
+            type: 'vector',
+            url: 'mapbox://joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t'
+        });
+        map.addLayer({
+            'id': '8',
+            'type': 'line',
+            'source': 'Trail_8_-_1.4_Mile',
+            'source-layer': 'Trail_8_-_1.4_Mile',
+            'layout': {
+                // make layer visible by default
+                'visibility': 'none',
                 'line-cap': 'butt',
                 'line-join': 'miter'
             },
@@ -179,7 +310,7 @@
     });
 
     // enumerate ids of the layers
-    var toggleableLayerIds = ['Trail 1', 'Trail 2', 'Trail 3', 'Trail 4', 'Trail 5', 'Trail 6', 'Trail 7', 'Trail 8', 'Parking/Trailheads', 'Shelters/Rest Stops',];
+    var toggleableLayerIds = ['Trail 1', 'Trail 2', 'Trail 3', 'Trail 4', 'Trail 5', 'Trail 6', 'Trail 7', 'Trail 8'];
 
     // set up the corresponding toggle buttons for each layer
     for (var i = 0; i < toggleableLayerIds.length; i++) {
@@ -187,7 +318,7 @@
 
         var link = document.createElement('a');
         link.href = '#';
-        link.className = 'active';
+        link.className = '';
         link.textContent = id;
 
         link.onclick = function(e) {
@@ -210,65 +341,11 @@
         var layers = document.getElementById('menu');
         layers.appendChild(link);
     }   // END for loop
-    /*
-	  trail-2-2.5-mile
-	  joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1
-	  trail-3-1.6-mile
-	  joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz
-	  trail-4-0.9-mile
-	  joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q
-	  trail-5-1-1-mile
-	  joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn
-	  trail-6-1-7-mile
-	  joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9
-	  trail-7-1-2-mile
-	  joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm
-	  trail-8-1-4-mile
-	  joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t
-	  parking
-	  joshua-delong.ckcky2p6z0adr23p9ky2syyeo-1cncy
-	 shelter-rest-stops
-	  joshua-delong.ckcky9clj0ag223p9qizha01k-2knvy
-	*/
 
 </script>
 </body>
 
-<footer>
-	<div class="footerInfo">
-		<div class="contact">
-			<h2 class="footer">Contact Us</h2>
-			<p class="footer">email@gmail.com</p>
-			<p class="footer">Name | 123-456-7899</p>
-			<p class="footer">Name | 123-456-7899</p>
-			<p class="footer">Name | 123-456-7899</p>
-		</div>
-		<div class="community">
-			<h2 class="footer">Community</h2>
-			<p class="footer"><a href="https://www.gopip.org/">Greater Ottumwa Partners in Progress</a></p>
-			<p class="footer"><a href="https://www.mainstreetottumwa.com/">Main Street Ottumwa</a></p>
-			<p class="footer"><a href="https://www.greaterottumwacvb.org/">Ottumwa Convention and Visitor Bureau</a></p>
-			<p class="footer"><a href="https://www.orlf.org/">Legacy Foundation</a></p>
-			<p class="footer"><a href="http://wapellocounty.org/">Wapello County</a></p>
-		</div>
-
-		<div class="additional">
-			<h2 class="footer">Additional Links</h2>
-			<p class="footer"><a href="https://soarraptors.org/">SOAR</a></p>
-			<p class="footer"><a href="https://americangothichouse.org/">American Gothic House</a></p>
-			<p class="footer"><a href="https://www.bikeiowa.com/">Bike Iowa</a></p>
-			<p class="footer"><a href="http://www.jeffersoncountytrails.org/">Jeffereson County Trails</a></p>
-			<p class="footer"><a href="https://www.traillink.com/">Trail Link</a></p>
-			<p class="footer"><a href="https://www.inhf.org/what-we-do/trails/iowa-by-trail/">Iowa by Trail</a></p>
-			<p class="footer"><a href="http://www.treesforever.org/">Trees Forever</a></p>
-		</div>
-	</div>
-
-	<div class="toTop">
-		<button onclick="topFunction()" id="myBtn">Back to Top</button>
-	</div>
-</footer>
-
+<?php include 'footer.php'?>
 
 <script>
     var mybutton = document.getElementById("myBtn");

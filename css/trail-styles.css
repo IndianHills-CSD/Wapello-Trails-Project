@@ -91,12 +91,8 @@ section.body-container {
     margin: 2px;
     padding: 10px;
     text-decoration: none;
-    border-bottom: 1px solid #577399;
+    border: 1px solid #577399;
     text-align: center;
-}
-
-#menu a:last-child {
-    border: none;
 }
 
 #menu a:hover {
@@ -107,6 +103,7 @@ section.body-container {
 #menu a.active {
     background-color: #3887be;
     color: #ffffff;
+    border: 1px solid #577399;
 }
 
 #menu a.active:hover {
