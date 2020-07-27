@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-	<link rel="stylesheet" type="text/css" href="css/HomeStyles.css">
+	<link rel="stylesheet" type="text/css" href="css/Style.php">
 	<link rel="stylesheet" href="css/masterstyle.css">
 	<title>Home</title>
 </head>
@@ -31,12 +31,12 @@
     <div class="ticker-item">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
     <div class="ticker-item">Pellentesque auctor molestie orci ut blandit.</div>
   </div></div></div>
-	<div class="ConContainer">
+	<div class="conContainer">
 
 			<img class="center" src="images/placehold.png" width="300" height="400">
 
 
-		<p>
+		<p class="historytext">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
