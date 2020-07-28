@@ -12,8 +12,11 @@
 	<title>Trails</title>
 </head>
 
-<body>
+<header>
     <?php include 'nav.php'; ?>
+</header>
+
+<body>
 
 <section class="head-container">
 	<h1 class="page-title">Activities</h1>
