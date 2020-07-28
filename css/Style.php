@@ -88,23 +88,12 @@ td{border: 1px solid black;
 
 /*BEGINING OF GALLERY PAGE STYLES*/
 
-h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 10%;
-	background-color: #edf0f1;
-}
-
 /* content styles */
 .container {
-   width: 90%;
+   width: 100%;
+   color: #f2f2f2;
    margin: 0 auto;
+   padding: 20px 20px;
    background-color: #152836;
 }
 
@@ -114,6 +103,7 @@ header {
  	flex-direction: row;
  	align-items: center;
  	justify-content: center;
+	padding: 30px;
 }
 
 .item { padding: 0 10px 10px;}
@@ -122,7 +112,7 @@ header {
 .item img{
 	margin: 5px;
  	padding: 5px;
- 	border: 3px solid #FFF;
+ 	border: 1px solid #FFF;
  	cursor: pointer;
 }
 
@@ -185,7 +175,7 @@ header {
  	width: auto;
  	padding: 16px;
  	margin-top: -50px;
- 	color: #fff;
+ 	color: #f2f2f2;
  	font-weight: bold;
  	font-size: 20px;
  	transition: 0.6s ease;
@@ -223,13 +213,14 @@ header {
 }
 
 .Video-container{
-	border: dotted;
+	hieght: 400px;
+	color: #f2f2f2;
 	display: flex;
 	justify-content: center;
 }
 
-
 /*END OF GALLERY PAGE STYLES*/
+
 
 /*
     Trails Page Styles
