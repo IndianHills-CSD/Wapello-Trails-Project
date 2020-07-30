@@ -575,13 +575,13 @@ button#myBtn:focus {
 	height: 80px;
 }
 
-@media only screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
 	.nav-links {
 		width: 35%;
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
 	body {
 		overflow-x: hidden;
