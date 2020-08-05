@@ -250,30 +250,11 @@ td{border: 1px solid black;
     display: flex;
     height: 65%;
     width: 85%;
-    margin: 0 auto 0 auto;
+    margin: 3% auto 0 auto;
     background: #BDD5EA;
 }
 
 /* Clickable Buttons */
-.instruct {
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-weight: bolder;
-    font-size: 1.2em;
-}
-
-#menu {
-    display: flex;
-    z-index: 3;
-    border-radius: 2px;
-    color: #FE5F55;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 1%;
-}
-
 #menu a {
     font-size: 13px;
     color: #24252A;
@@ -298,39 +279,6 @@ td{border: 1px solid black;
 
 #menu a.active:hover {
     background: #3074a4;
-}
-
-/* Map Legend */
-.legend-head {
-    padding-left: 5%;
-}
-
-.legend-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    align-items: stretch;
-}
-
-.legend-box-1 {
-    flex: 1 0 15%;
-}
-
-.legend-box-2 {
-    flex: 1 0 25%;
-}
-
-.legend {
-    list-style: none;
-    margin: 10%;
-    color: #24252A;
-}
-
-.color-code {
-    height: 10%;
-    width: 10%;
-    margin-left: 50%;
 }
 
 .square1 {
@@ -363,12 +311,6 @@ td{border: 1px solid black;
 
 .square8 {
     background: #8a0000;
-}
-
-.icon {
-    height: 12%;
-    width: 12%;
-    margin-left: 47%;
 }
 
 /* Area Plan Styling */
