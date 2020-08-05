@@ -41,14 +41,16 @@ td{border: 1px solid black;
 /* OUTER CONTAINER */
 .tcontainer {
   width: 100%;
+  height: 3em ;
   overflow: hidden; /* Hide scroll bar */
 }
 
 /* MIDDLE CONTAINER */
 .ticker-wrap {
-  width: 100%;
-  padding-left: 100%; /* Push contents to right side of screen */
-  background-color: #eee;
+	height: 100%;
+	width: 100%;
+	padding-left: 100%; /* Push contents to right side of screen */
+	background-color: #eee;
 }
 
 /* INNER CONTAINER */
@@ -74,6 +76,7 @@ td{border: 1px solid black;
 .ticker-item{
   display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
+  font-size: 2em;
 }
 
 .historytext{
