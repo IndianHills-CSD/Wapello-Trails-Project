@@ -38,5 +38,171 @@ section.body-container {
     background-color: #577399;
 }
 
+/* Menu Styles */
+.instruct {
+    display: flex;
+    justify-content: center;
+    margin: 2% auto 2% auto;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
 
+#menu {
+    display: flex;
+    z-index: 3;
+    border-radius: 2px;
+    color: #FE5F55;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2%;
+}
 
+/* Map Legend */
+.legend-head {
+    padding-left: 5%;
+    margin-top: 4%;
+}
+
+/*
+.legend-container {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: stretch;
+    padding: 2%;
+}
+
+.legend-box-1 {
+    width: 15%;
+}
+
+.legend-box-2 {
+    width: 25%;
+}
+
+.legend {
+    height: 15%;
+    list-style: none;
+    margin: 10%;
+    color: #24252A;
+}
+
+.color-code {
+    height: 10%;
+    width: 10%;
+    margin-left: 50%;
+}
+
+.icon {
+    height: 12%;
+    width: 12%;
+    margin: 0 0 8% 49%;
+} */
+
+/* Media Queries */
+/* 480px      */
+/* 768px      */
+/* 992px      */
+
+@media (min-width: 320px) {
+    .instruct {
+        display: flex;
+        margin: 4% auto 4% auto;
+        font-weight: bolder;
+        font-size: .72em;
+    }
+
+    #menu {
+        margin: 0 auto 0 auto;
+        flex-direction: column;
+        width: 75%;
+        padding-bottom: 4%;
+    }
+
+    .legend-container {
+        margin: 5%;
+    }
+
+    .row {
+        border: none;
+        height: 48px;
+    }
+
+    .color-code {
+        width: 15%;
+        border: none;
+        margin: 2%;
+    }
+
+    .trail-name {
+        width: 35%;
+        border: none;
+        padding: 2%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    /*
+    .legend {
+        list-style: none;
+        height: 25%;
+    }
+
+    .color-code {
+        height: 15%;
+        width: 50%;
+        margin-top: 12%;
+    }
+
+    .icon {
+        height: 15%;
+        width: 50%;
+        margin-top: 12%;
+    }
+    
+    .icon > img {
+        margin: 0 auto 0 auto;
+    }
+*/
+    .plan-p-info {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) {
+    .instruct {
+        display: flex;
+        margin: 4% auto 4% auto;
+        font-weight: bolder;
+        font-size: 1em;
+        justify-content: center;
+    }
+
+    .color-code {
+        height: 10%;
+        width: 35%;
+        margin-top: 10%;
+    }
+    
+    .icon {
+        height: 5%;
+        width: 30%;
+        margin-top: 20%;
+    }
+    
+    .icon > img {
+        margin: 0 auto 0 auto;
+    }
+
+    .plan-p-info {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 992px) {
+    .icon {
+        margin: 
+    }
+
+    .icon > img {
+        margin-top: 75%;
+    }
+}
