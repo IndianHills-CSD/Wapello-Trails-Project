@@ -2,15 +2,14 @@
 <html lang="en">
 	<head>
 	   <meta charset="UTF-8">
-	   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	   <title> Gallery Page </title>
-	   <link rel="stylesheet" href="css/masterstyle.css?v=<?=time();?>">
 	   <link  rel="stylesheet" type="text/css" href="css/Style.php">
 	   <script src="js/slide-img.js"></script>
 	</head>
 	<body>
-		<?php include 'nav.php';?> 
-		
+		<?php include 'nav.php';?>
+
 		<!-- Container for the image gallery -->
 		<main class="container">
 			<h2 style="text-align:center"><strong>Wapello Trail Gallery</strong></h2>
@@ -77,7 +76,7 @@
 				</div>
 				<div class="item">
 					<img src="images/trail-site17.jpg"  onclick="openModal();currentSlide(21)">
-				</div>			
+				</div>
 				<div class="item">
 					<img src="images/trail-site09.jpg" onclick="openModal(); currentSlide(22)">
 				</div>
@@ -105,7 +104,7 @@
 				<div class="item">
 					<img src="images/trail-site20.jpg"  onclick="openModal();currentSlide(30)">
 				</div>
-				
+
 				<div class="item">
 					<img src="images/trail-site21.jpg" onclick="openModal(); currentSlide(31)">
 				</div>
@@ -138,7 +137,7 @@
 				</div>
 				<div class="item">
 					<img src="images/trail-site31.jpg"  onclick="openModal();currentSlide(41)">
-				</div>			
+				</div>
 				<div class="item">
 					<img src="images/trail-site32.jpg" onclick="openModal(); currentSlide(42)">
 				</div>
@@ -163,11 +162,11 @@
 				<div class="item">
 					<img src="images/trail-site39.jpg"  onclick="openModal();currentSlide(49)">
 				</div>
-				
+
 				<div class="item">
 					<img src="images/trail-site40.jpg"  onclick="openModal();currentSlide(50)">
 				</div>
-				
+
 				<div class="item">
 					<img src="images/trail-site41.jpg" onclick="openModal(); currentSlide(51)">
 				</div>
@@ -369,7 +368,7 @@
 					  <img src="images/trail-site21-bigger.jpg" style="width:100%">
 					   <div class="caption">Trail path</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">32 / 60</div>
 					  <img src="images/trail-site22-bigger.jpg" style="width:100%">
@@ -381,7 +380,7 @@
 					  <img src="images/trail-site23-bigger.jpg" style="width:100%">
 					   <div class="caption">Walk To Wabash Bridge</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">34 / 60</div>
 					  <img src="images/trail-site24-bigger.jpg" style="width:100%">
@@ -399,7 +398,7 @@
 					  <img src="images/trail-site26-bigger.jpg" style="width:100%">
 					   <div class="caption">Path to the Woods</div>
 					</div>
-				
+
 					<div class="mySlides">
 					  <div class="numbertext">37 / 60</div>
 					  <img src="images/trail-site27-bigger.jpg" style="width:100%">
@@ -411,9 +410,9 @@
 					  <img src="images/trail-site28-bigger.jpg" style="width:100%">
 					   <div class="caption">River View</div>
 					</div>
-					
+
 					<div class="mySlides">
-					  <div class="numbertext">39 / 60</div>					
+					  <div class="numbertext">39 / 60</div>
 					  <img src="images/trail-site29-bigger.jpg" style="width:100%">
 					   <div class="caption">Tree Path</div>
 					</div>
@@ -423,19 +422,19 @@
 					  <img src="images/trail-site30-bigger.jpg" style="width:100%">
 					   <div class="caption">Bush's on Trail Path</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">41 / 60</div>
 					  <img src="images/trail-site31-bigger.jpg" style="width:100%">
 					   <div class="caption">River Stream View</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">42 / 60</div>
 					  <img src="images/trail-site32-bigger.jpg" style="width:100%">
 					   <div class="caption">Trees on River</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">43 / 60</div>
 					  <img src="images/trail-site33-bigger.jpg" style="width:100%">
@@ -447,7 +446,7 @@
 					  <img src="images/trail-site34-bigger.jpg" style="width:100%">
 					   <div class="caption">River surface View</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">45 / 60</div>
 					  <img src="images/trail-site35-bigger.jpg" style="width:100%">
@@ -465,7 +464,7 @@
 					  <img src="images/trail-site37-bigger.jpg" style="width:100%">
 					   <div class="caption">Bush's Park </div>
 					</div>
-				
+
 					<div class="mySlides">
 					  <div class="numbertext">48 / 60</div>
 					  <img src="images/trail-site38-bigger.jpg" style="width:100%">
@@ -477,9 +476,9 @@
 					  <img src="images/trail-site39-bigger.jpg" style="width:100%">
 					   <div class="caption">Wabash Bridge on Des Moines River</div>
 					</div>
-					
+
 					<div class="mySlides">
-					  <div class="numbertext">50 / 60</div>					
+					  <div class="numbertext">50 / 60</div>
 					  <img src="images/trail-site40-bigger.jpg" style="width:100%">
 					   <div class="caption">Trail in Bushes</div>
 					</div>
@@ -489,19 +488,19 @@
 					  <img src="images/trail-site41-bigger.jpg" style="width:100%">
 					   <div class="caption">Trail between Bushes</div>
 					</div>
-					
+
 					<div class="mySlides">
 					  <div class="numbertext">52 / 60</div>
 					  <img src="images/trail-site42-bigger.jpg" style="width:100%">
 					   <div class="caption">Wabash Bridge on River</div>
-					</div>	
-					
+					</div>
+
 					<div class="mySlides">
 					  <div class="numbertext">53 / 60</div>
 					  <img src="images/trail-site43-bigger.jpg" style="width:100%">
 					   <div class="caption">River Bushes</div>
 					</div>
-				
+
 					<div class="mySlides">
 					  <div class="numbertext">54 / 60</div>
 					  <img src="images/trail-site44-bigger.jpg" style="width:100%">
@@ -512,10 +511,10 @@
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 				</div>
 			</div>
-		
+
 		  <section class="Video-container">
 				<div class="content-wrapper">
-					<h2 style="text-align:center"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
+					<h2 style="text-align:center">Chief Wapello Carving and Wabash Video</h2>
 					  <iframe width="560" height="315"
 						src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media;
@@ -531,7 +530,7 @@
 			</section>
 		</main>
 
-		<?php include 'footer.php';?> 
+		<?php include 'footer.php';?>
 
 	</body>
 </html>
