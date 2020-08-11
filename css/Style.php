@@ -41,14 +41,16 @@ td{border: 1px solid black;
 /* OUTER CONTAINER */
 .tcontainer {
   width: 100%;
+  height: 3em ;
   overflow: hidden; /* Hide scroll bar */
 }
 
 /* MIDDLE CONTAINER */
 .ticker-wrap {
-  width: 100%;
-  padding-left: 100%; /* Push contents to right side of screen */
-  background-color: #eee;
+	height: 100%;
+	width: 100%;
+	padding-left: 100%; /* Push contents to right side of screen */
+	background-color: #eee;
 }
 
 /* INNER CONTAINER */
@@ -74,6 +76,7 @@ td{border: 1px solid black;
 .ticker-item{
   display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
+  font-size: 2em;
 }
 
 .historytext{
@@ -370,6 +373,31 @@ hr.plans-hr {
 	padding: 0;
 }
 
+.logo {
+  width: 550px;
+  display: flex;
+}
+
+h1.nav {
+  padding-top: 3vh;
+  padding-left: 10%;
+  text-align: center;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+
+nav {
+	padding: 30px 10%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 15vh;
+}
+
 .nav-links {
 	display: flex;
 	list-style-type: none;
@@ -385,7 +413,7 @@ li, a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	color: #e7e8d1;
+	color: black;
 	text-decoration: none;
 }
 
@@ -407,15 +435,6 @@ li:hover, a:hover {
 	display: none;
 }
 
-h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 25px;
-	color: #e7e8d1;
-	text-decoration: none;
-	letter-spacing: 2px;
-}
-
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -428,21 +447,11 @@ h2.footer {
 p.footer {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	color: #e7e8d1;
 	padding-bottom: 5px;
 }
 
-nav {
-	padding: 30px 10%;
-	background-color: #b85042;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 8vh;
-}
-
 footer {
-	background-color: #b85042;
+	background-color: #ffffff;
 	vertical-align: baseline;
 	width: 100%;
 	height: 395px;
@@ -529,11 +538,11 @@ button#myBtn:focus {
 		overflow-x: hidden;
 	}
 	.nav-links {
-		background-color: #b85042;
+		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
 		height: 10%;
-		top: 8vh;
+		top: 20vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -541,6 +550,16 @@ button#myBtn:focus {
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
 	}
+
+  nav {
+    height: 20vh;
+  }
+
+  h1.nav {
+    font-size: 15px;
+    padding-left: 5%;
+    width: 60%;
+  }
 
 	.nav-links li {
 		opacity: 0;
