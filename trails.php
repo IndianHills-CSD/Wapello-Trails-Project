@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css/Style.php">
 	<link rel="stylesheet" href="css/masterstyle.css">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
 
@@ -50,39 +49,40 @@
 
 <h3 class="legend-head">Map Legend:</h3>
 <!-- Legend for trail map -->
-<table class="legend-container">
-    <tr class="row">
-        <td class="square1 color-code"></td>
-        <td class="trail-name">Trail 1: 3.2 Miles</td>
-        <td class="square6 color-code"></td>
-        <td class="trail-name">Trail 6: 1.7 Miles</td>
-    </tr>
-    <tr class="row">
-        <td class="square2 color-code"></td>
-        <td class="trail-name">Trail 2: 2.5 Miles</td>
-        <td class="square7 color-code"></td>
-        <td class="trail-name">Trail 7: 1.2 Miles</td>
-    </tr>
-    <tr class="row">
-        <td class="square3 color-code"></td>
-        <td class="trail-name">Trail 3: 1.6 Miles</td>
-        <td class="square8 color-code"></td>
-        <td class="trail-name">Trail 8: 1.4 Miles</td>
-    </tr>
-    <tr class="row">
-        <td class="square4 color-code"></td>
-        <td class="trail-name">Trail 4: 0.9 Miles</td>
-        <td class="square9 color-code"><img src="images/parking-15.svg"></td>
-        <td class="trail-name">Parking/ Trailheads</td>
-    </tr>
-    <tr class="row">
-        <td class="square5 color-code"></td>
-        <td class="trail-name">Trail 5: 1.1 Miles</td>
-        <td class="square10 color-code"><img src="images/campsite-15.svg"></td>
-        <td class="trail-name">Shelters</td>
-    </tr>
-</table>  <!-- END legend-container -->
-
+    <div class="legend-container">
+        <table>
+            <tr class="row">
+                <td class="square1 color-code"></td>
+                <td class="trail-name">Trail 1: 3.2 Miles</td>
+                <td class="square6 color-code"></td>
+                <td class="trail-name">Trail 6: 1.7 Miles</td>
+            </tr>
+            <tr class="row">
+                <td class="square2 color-code"></td>
+                <td class="trail-name">Trail 2: 2.5 Miles</td>
+                <td class="square7 color-code"></td>
+                <td class="trail-name">Trail 7: 1.2 Miles</td>
+            </tr>
+            <tr class="row">
+                <td class="square3 color-code"></td>
+                <td class="trail-name">Trail 3: 1.6 Miles</td>
+                <td class="square8 color-code"></td>
+                <td class="trail-name">Trail 8: 1.4 Miles</td>
+            </tr>
+            <tr class="row">
+                <td class="square4 color-code"></td>
+                <td class="trail-name">Trail 4: 0.9 Miles</td>
+                <td class="square9 icon"><img src="images/parking-15.svg"></td>
+                <td class="trail-name">Parking/ Trailheads</td>
+            </tr>
+            <tr class="row">
+                <td class="square5 color-code"></td>
+                <td class="trail-name">Trail 5: 1.1 Miles</td>
+                <td class="square10 icon"><img src="images/campsite-15.svg"></td>
+                <td class="trail-name">Shelters</td>
+            </tr>
+        </table>  <!-- END legend-container -->
+    </div>
 <section class="body-container">
 
 	<!--
