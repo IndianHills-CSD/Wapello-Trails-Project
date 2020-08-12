@@ -2,11 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Move instructions near the buttons -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/trail-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/Style.php">
 	<link rel="stylesheet" href="css/masterstyle.css">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
 
@@ -14,7 +17,8 @@
 </head>
 
 <body>
-    <?php include 'nav.php'; ?>
+
+<?php include 'nav.php'; ?>
 
 <section class="head-container">
 	<h1 class="page-title">Activities</h1>
@@ -35,46 +39,50 @@
 	</div>  <!-- END .flex-container -->
 </section>  <!-- END .head-container -->
 
-	<p class="instruct">Use the trail buttons below to toggle the maps off and on.</p>
-
 <div id="map"></div>
 
 <!-- Div for buttons on map -->
+    <em class="instruct">** Use the trail buttons below to toggle the trails off and on. **</em>
 <div id="menu"></div>
-<div id="menu"></div>
+
+<hr>
+
 <h3 class="legend-head">Map Legend:</h3>
 <!-- Legend for trail map -->
-<div class="legend-container">
-	<ul class="legend-box-1">
-		<li class="square1 legend color-code"></li>
-		<li class="square2 legend color-code"></li>
-		<li class="square3 legend color-code"></li>
-		<li class="square4 legend color-code"></li>
-		<li class="square5 legend color-code"></li>
-	</ul>
-	<ul class="legend-box-2">
-		<li class="legend trail-name">Trail 1: 3.2 Miles</li>
-		<li class="legend trail-name">Trail 2: 2.5 Miles</li>
-		<li class="legend trail-name">Trail 3: 1.6 Miles</li>
-		<li class="legend trail-name">Trail 4: 0.9 Miles</li>
-		<li class="legend trail-name">Trail 5: 1.1 Miles</li>
-	</ul>
-	<ul class="legend-box-1">
-		<li class="square6 legend color-code"></li>
-		<li class="square7 legend color-code"></li>
-		<li class="square8 legend color-code"></li>
-		<li class="icon legend"><img src="images/parking-15.svg"></li>
-		<li class="icon legend"><img src="images/campsite-15.svg"></li>
-	</ul>
-	<ul class="legend-box-2">
-		<li class="legend trail-name">Trail 6: 1.7 Miles</li>
-		<li class="legend trail-name">Trail 7: 1.2 Miles</li>
-		<li class="legend trail-name">Trail 8: 1.4 Miles</li>
-		<li class="legend trail-name">Parking and Trailheads</li>
-		<li class="legend trail-name">Shelters and Rest Stops</li>
-	</ul>   <!-- END legend-box -->
-</div>  <!-- END legend-container -->
-
+    <div class="legend-container">
+        <table>
+            <tr class="row">
+                <td class="square1 color-code"></td>
+                <td class="trail-name">Trail 1: 3.2 Miles</td>
+                <td class="square6 color-code"></td>
+                <td class="trail-name">Trail 6: 1.7 Miles</td>
+            </tr>
+            <tr class="row">
+                <td class="square2 color-code"></td>
+                <td class="trail-name">Trail 2: 2.5 Miles</td>
+                <td class="square7 color-code"></td>
+                <td class="trail-name">Trail 7: 1.2 Miles</td>
+            </tr>
+            <tr class="row">
+                <td class="square3 color-code"></td>
+                <td class="trail-name">Trail 3: 1.6 Miles</td>
+                <td class="square8 color-code"></td>
+                <td class="trail-name">Trail 8: 1.4 Miles</td>
+            </tr>
+            <tr class="row">
+                <td class="square4 color-code"></td>
+                <td class="trail-name">Trail 4: 0.9 Miles</td>
+                <td class="square9 icon"><img src="images/parking-15.svg"></td>
+                <td class="trail-name">Parking/ Trailheads</td>
+            </tr>
+            <tr class="row">
+                <td class="square5 color-code"></td>
+                <td class="trail-name">Trail 5: 1.1 Miles</td>
+                <td class="square10 icon"><img src="images/campsite-15.svg"></td>
+                <td class="trail-name">Shelters</td>
+            </tr>
+        </table>  <!-- END legend-container -->
+    </div>
 <section class="body-container">
 
 	<!--
@@ -321,7 +329,7 @@
 
         var link = document.createElement('a');
         link.href = '#';
-        link.className = '';
+        link.className = 'active';
         link.textContent = id;
 
         link.onclick = function(e) {
