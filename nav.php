@@ -8,6 +8,8 @@
     <li><a href="Index.php">Home</a></li>
     <li><a href="gallery.php">Gallery</a></li>
     <li><a href="trails.php">Trails</a></li>
+    <li><a href="projects.php">Projects</a></li>
+    <li><a href="strategicplans.php">Strategic Plans</a></li>
   </ul>
 
   <div class="burger">
