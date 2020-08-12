@@ -428,7 +428,7 @@ nav {
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	width: 35%;
+	width: 40%;
 }
 
 .nav-links a {
