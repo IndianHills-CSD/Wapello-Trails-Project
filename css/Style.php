@@ -89,13 +89,42 @@ td{border: 1px solid black;
 /*BEGINING OF GALLERY PAGE STYLES*/
 
 /* content styles */
+
+/* content styles */
 .container {
    width: 100%;
    color: #f2f2f2;
-   margin: 0 auto;
    padding: 20px 20px;
    background-color: #152836;
+   
 }
+
+.ContainerBtn{ 
+	margin: 25px;
+	padding: 25px 25px;
+	text-align:center;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
 
 .flex-img {
  	display: flex;
@@ -197,27 +226,24 @@ td{border: 1px solid black;
  }
  img { margin-bottom: -4px; }
 
- 	/* Caption text */
-.caption {
- 	color: #EEE;
- 	background-color: rgba(0, 0, 0, 0.45);
- 	bottom: 10px;
- 	font-size: 12px;
- 	font-weight: bold;
- 	left: 0;
- 	padding: 15px 20px;
- 	position: fixed;
- 	right: 0;
- 	text-align: center;
- 	margin: 0 25px  0;
+ .caption{
+	text-align: center;
+	color: #EEE;
+ 	background-color: #000;
+	padding: 12px 18px;
+	font-weight: bold;	
 }
 
 .Video-container{
-	hieght: 400px;
+	height: auto;
 	color: #f2f2f2;
+	margin: 50px 25px;
 	display: flex;
+	padding: 25px 20px;
 	justify-content: center;
 }
+.Video-container h2{ padding: 20px}
+
 
 /*END OF GALLERY PAGE STYLES*/
 

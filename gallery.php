@@ -12,39 +12,67 @@
 
 		<!-- Container for the image gallery -->
 		<main class="container">
-			<h2 style="text-align:center"><strong>Wapello Trail Gallery</strong></h2>
-			<div class="flex-img">
-				<div class="item">
+			<h1 style="text-align:center"><strong>Wapello County Trails Council Gallery</strong></h1>
+			
+			<div class="ContainerBtn">
+				<button class="btn active" data-class="all"> Show All</button>
+				<button class="btn" data-class="videos"> Videos</button>
+				<button class="btn" data-class="chief"> Chief Wapello</button>
+				<button class="btn" data-class="Volunteers"> Volunteers</button>
+				<button class="btn" data-class="wabash"> Wabash Bridge</button>
+				<button class="btn" data-class="trails"> Trails & Nature</button>		  
+			</div>
+
+			<div class="Video-container">
+				<div class="item" data-class="videos">
+					<h2 style="text-align:center"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media;
+						gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/kqGcuXj-rMk" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope;
+						picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+			
+			<h2 style="text-align:center"><strong>Photos</strong></h2>
+			<div class="flex-img">				
+				<div class="item" data-class="chief">
 					<img src="images/img-01.jpg" onclick="openModal(); currentSlide(01)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="chief">
 					<img src="images/img-02.jpg"  onclick="openModal();currentSlide(02)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="chief">
 					<img src="images/img-03.jpg"  onclick="openModal(); currentSlide(03)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="Volunteers">
 					<img src="images/img04.jpg"  onclick="openModal();currentSlide(04)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="Volunteers">
 					<img src="images/img05.jpg"  onclick="openModal();currentSlide(05)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="Volunteers">
 					<img src="images/img06.jpg"  onclick="openModal();currentSlide(06)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="wabash">
 					<img src="images/img07.jpg"  onclick="openModal();currentSlide(07)">
 				</div>
 				<div class="item">
 					<img src="images/img08.jpg"  onclick="openModal();currentSlide(08)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="wabash">
 					<img src="images/img09.jpg"  onclick="openModal();currentSlide(09)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="wabash">
 					<img src="images/img12.jpg"  onclick="openModal();currentSlide(10)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="wabash">
 					<img src="images/trail-site.jpg" onclick="openModal(); currentSlide(11)">
 				</div>
 				<div class="item">
@@ -53,130 +81,128 @@
 				<div class="item">
 					<img src="images/trail-site03.jpg"  onclick="openModal(); currentSlide(13)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site18.jpg"  onclick="openModal();currentSlide(14)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site01.jpg" onclick="openModal(); currentSlide(15)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site05.jpg"  onclick="openModal(); currentSlide(16)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site19.jpg"  onclick="openModal();currentSlide(17)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site06.jpg" onclick="openModal(); currentSlide(18)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site07.jpg"  onclick="openModal();currentSlide(19)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site08.jpg"  onclick="openModal(); currentSlide(20)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site17.jpg"  onclick="openModal();currentSlide(21)">
-				</div>
-				<div class="item">
+				</div>			
+				<div class="item" data-class="trails">
 					<img src="images/trail-site09.jpg" onclick="openModal(); currentSlide(22)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site10.jpg"  onclick="openModal();currentSlide(23)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site11.jpg"  onclick="openModal(); currentSlide(24)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site16.jpg"  onclick="openModal();currentSlide(25)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site12.jpg" onclick="openModal(); currentSlide(26)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site13.jpg"  onclick="openModal();currentSlide(27)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site14.jpg"  onclick="openModal(); currentSlide(28)" >
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site15.jpg"  onclick="openModal();currentSlide(29)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="wabash">
 					<img src="images/trail-site20.jpg"  onclick="openModal();currentSlide(30)">
 				</div>
-
-				<div class="item">
+				
+				<div class="item" data-class="trails">
 					<img src="images/trail-site21.jpg" onclick="openModal(); currentSlide(31)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site22.jpg"  onclick="openModal();currentSlide(32)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site23.jpg"  onclick="openModal(); currentSlide(33)" >
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site24.jpg"  onclick="openModal();currentSlide(34)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site25.jpg" onclick="openModal(); currentSlide(35)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site26.jpg"  onclick="openModal(); currentSlide(36)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site27.jpg"  onclick="openModal();currentSlide(37)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site28.jpg" onclick="openModal(); currentSlide(38)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site29.jpg"  onclick="openModal();currentSlide(39)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site30.jpg"  onclick="openModal(); currentSlide(40)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site31.jpg"  onclick="openModal();currentSlide(41)">
-				</div>
-				<div class="item">
+				</div>			
+				<div class="item" data-class="trails">
 					<img src="images/trail-site32.jpg" onclick="openModal(); currentSlide(42)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site33.jpg"  onclick="openModal();currentSlide(43)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site34.jpg"  onclick="openModal(); currentSlide(44)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site35.jpg"  onclick="openModal();currentSlide(45)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site36.jpg" onclick="openModal(); currentSlide(46)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site37.jpg"  onclick="openModal();currentSlide(47)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site38.jpg"  onclick="openModal(); currentSlide(48)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="wabash">
 					<img src="images/trail-site39.jpg"  onclick="openModal();currentSlide(49)">
 				</div>
-
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site40.jpg"  onclick="openModal();currentSlide(50)">
 				</div>
-
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site41.jpg" onclick="openModal(); currentSlide(51)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site42.jpg"  onclick="openModal();currentSlide(52)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site43.jpg"  onclick="openModal(); currentSlide(53)">
 				</div>
-				<div class="item">
+				<div class="item" data-class="trails">
 					<img src="images/trail-site44.jpg"  onclick="openModal();currentSlide(54)">
 				</div>
 			</div>
@@ -507,30 +533,51 @@
 					   <div class="caption">Wild Bush River</div>
 					</div>
 
+					<!--Previous and Next Button on images slideshow -->
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					<!--slideshow images caption-->
+					<div class="content-caption">
+						<p id="caption"></p>
+					</div>
+					
 				</div>
 			</div>
-
-		  <section class="Video-container">
-				<div class="content-wrapper">
-					<h2 style="text-align:center">Chief Wapello Carving and Wabash Video</h2>
-					  <iframe width="560" height="315"
-						src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media;
-						gyroscope; picture-in-picture" allowfullscreen>
-					  </iframe>
-
-					  <iframe width="560" height="315"
-						src="https://www.youtube.com/embed/kqGcuXj-rMk" frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope;
-						picture-in-picture" allowfullscreen>
-					  </iframe>
-				</div>
-			</section>
 		</main>
 
 		<?php include 'footer.php';?>
-
+		
+		<script>
+		
+			// javaScript for filter
+			const listItems = document.querySelectorAll('.ContainerBtn .btn');
+			const allimages = document.querySelectorAll('.container .item');
+			 
+			function toggleActiveClass(active){
+				listItems.forEach(item => {
+				  item.classList.remove('active');
+				})
+				active.classList.add('active');
+			}
+			 
+			function toggleimages(dataClass){
+				if(dataClass === 'all'){
+					for(let i = 0; i<allimages.length; i++){
+						allimages[i].style.display = 'block';
+					}
+				}else{
+					for(let i = 0; i<allimages.length; i++)
+						allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
+				}
+			}
+			 
+			for(let i = 0; i < listItems.length; i++){
+				listItems[i].addEventListener('click', function(){
+					toggleActiveClass(listItems[i]);
+					toggleimages(listItems[i].dataset.class);
+				});
+			}
+		</script>
 	</body>
 </html>
