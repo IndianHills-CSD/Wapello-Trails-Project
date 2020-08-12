@@ -604,3 +604,8 @@ transform:  rotate(-45deg) translate(-5px,6px);
 .toggle .line3 {
 	transform:  rotate(45deg) translate(-5px,-6px);
 }
+/* stragtice plans page*/
+.Plandesc{
+	padding: 2%;
+	font-size: 20px;
+}
