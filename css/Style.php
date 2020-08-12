@@ -99,10 +99,10 @@ td{border: 1px solid black;
    color: #f2f2f2;
    padding: 20px 20px;
    background-color: #152836;
-   
+
 }
 
-.ContainerBtn{ 
+.ContainerBtn{
 	margin: 25px;
 	padding: 25px 25px;
 	text-align:center;
@@ -234,7 +234,7 @@ td{border: 1px solid black;
 	color: #EEE;
  	background-color: #000;
 	padding: 12px 18px;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .Video-container{
@@ -634,4 +634,90 @@ transform:  rotate(-45deg) translate(-5px,6px);
 .Plandesc{
 	padding: 2%;
 	font-size: 20px;
+}
+
+
+/* Project Page Styling */
+
+
+
+div.projectContent {
+  display: flex;
+}
+
+div.filter {
+  border: 1px black solid;
+  width: 15%;
+  height: 45vh;
+  position: sticky;
+  top: 0;
+  margin-bottom: 5px;
+}
+
+div.projects {
+  width: 85%;
+}
+
+div.project1 {
+  background-color: #cfcfcf;
+  height: 30vh;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+}
+
+div.project2 {
+  background-color: #cfcfcf;
+  height: 30vh;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+}
+
+div.project3 {
+  background-color: #cfcfcf;
+  height: 30vh;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+}
+
+div.projectimage {
+  width: 33.33%;
+  border: 1px black solid;
+  display: flex;
+}
+
+div.projectdescription {
+  width: 33.33%;
+  border: 1px black solid;
+}
+
+div.projectinfo {
+  width: 33.33%;
+  border: 1px black solid;
+}
+
+div.thumbnail {
+  width: 80%;
+  background-color: #909090;
+}
+
+div.imgselection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+div.imgselection > * {
+    border: 1px black solid;
+    height: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div.projecttitle {
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
