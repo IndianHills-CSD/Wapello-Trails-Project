@@ -92,13 +92,42 @@ td{border: 1px solid black;
 /*BEGINING OF GALLERY PAGE STYLES*/
 
 /* content styles */
+
+/* content styles */
 .container {
    width: 100%;
    color: #f2f2f2;
-   margin: 0 auto;
    padding: 20px 20px;
    background-color: #152836;
+
 }
+
+.ContainerBtn{
+	margin: 25px;
+	padding: 25px 25px;
+	text-align:center;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
 
 .flex-img {
  	display: flex;
@@ -200,27 +229,24 @@ td{border: 1px solid black;
  }
  img { margin-bottom: -4px; }
 
- 	/* Caption text */
-.caption {
- 	color: #EEE;
- 	background-color: rgba(0, 0, 0, 0.45);
- 	bottom: 10px;
- 	font-size: 12px;
- 	font-weight: bold;
- 	left: 0;
- 	padding: 15px 20px;
- 	position: fixed;
- 	right: 0;
- 	text-align: center;
- 	margin: 0 25px  0;
+ .caption{
+	text-align: center;
+	color: #EEE;
+ 	background-color: #000;
+	padding: 12px 18px;
+	font-weight: bold;
 }
 
 .Video-container{
-	hieght: 400px;
+	height: auto;
 	color: #f2f2f2;
+	margin: 50px 25px;
 	display: flex;
+	padding: 25px 20px;
 	justify-content: center;
 }
+.Video-container h2{ padding: 20px}
+
 
 /*END OF GALLERY PAGE STYLES*/
 
@@ -402,7 +428,7 @@ nav {
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	width: 25%;
+	width: 40%;
 }
 
 .nav-links a {
@@ -603,4 +629,95 @@ transform:  rotate(-45deg) translate(-5px,6px);
 
 .toggle .line3 {
 	transform:  rotate(45deg) translate(-5px,-6px);
+}
+/* stragtice plans page*/
+.Plandesc{
+	padding: 2%;
+	font-size: 20px;
+}
+
+
+/* Project Page Styling */
+
+
+
+div.projectContent {
+  display: flex;
+}
+
+div.filter {
+  border: 1px black solid;
+  width: 15%;
+  height: 45vh;
+  position: sticky;
+  top: 0;
+  margin-bottom: 5px;
+}
+
+div.projects {
+  width: 85%;
+}
+
+div.project1 {
+  background-color: #cfcfcf;
+  height: 30vh;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+}
+
+div.project2 {
+  background-color: #cfcfcf;
+  height: 30vh;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+}
+
+div.project3 {
+  background-color: #cfcfcf;
+  height: 30vh;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+}
+
+div.projectimage {
+  width: 33.33%;
+  border: 1px black solid;
+  display: flex;
+}
+
+div.projectdescription {
+  width: 33.33%;
+  border: 1px black solid;
+}
+
+div.projectinfo {
+  width: 33.33%;
+  border: 1px black solid;
+}
+
+div.thumbnail {
+  width: 80%;
+  background-color: #909090;
+}
+
+div.imgselection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+div.imgselection > * {
+    border: 1px black solid;
+    height: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div.projecttitle {
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
