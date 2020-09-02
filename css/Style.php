@@ -429,6 +429,7 @@ nav {
 	list-style-type: none;
 	justify-content: space-around;
 	width: 35%;
+	z-index: 1;
 }
 
 .nav-links a {
