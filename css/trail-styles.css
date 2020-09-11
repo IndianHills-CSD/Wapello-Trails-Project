@@ -157,6 +157,9 @@ tr {
        flex-flow: row nowrap;       
        width: 75%;
    }
+    #menu a {
+        width: 125px;
+    }
 
    .color-code {
        width: 7%;

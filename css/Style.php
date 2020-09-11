@@ -130,6 +130,7 @@ td{border: 1px solid black;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  margin: 5px;
 }
 
 /* Add a background color on mouse-over */
@@ -280,12 +281,9 @@ td{border: 1px solid black;
 	padding-top: 5%;
 }
 
-@media (min-width: 320px) {
-	.Video-container > iframe {
-		padding: 20px;
+.Video-container > iframe {
+		padding: 10px;
 	}
-}
-
 
 /*END OF GALLERY PAGE STYLES*/
 
@@ -322,7 +320,6 @@ td{border: 1px solid black;
 
 /* Clickable Buttons */
 #menu a {
-	width: 125px;
     font-size: 13px;
     color: #24252A;
     display: block;
@@ -450,7 +447,7 @@ h1.nav {
   padding-top: 3vh;
   padding-left: 10%;
   text-align: center;
-  color: black;
+  color: white;
   font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 25px;
@@ -459,6 +456,7 @@ h1.nav {
 
 nav {
 	padding: 30px 10%;
+	color: white;
 	background-color: #5F506B;
 	display: flex;
 	justify-content: space-around;
@@ -482,8 +480,8 @@ li, a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	color: black;
 	text-decoration: none;
+	color: white;
 }
 
 li:hover, a:hover {
@@ -514,9 +512,14 @@ h2.footer {
 }
 
 p.footer {
+	color: black;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	padding-bottom: 5px;
+}
+
+p.footer > a {
+	color: black
 }
 
 footer {
@@ -586,6 +589,10 @@ button#myBtn:focus {
     width: 35%;
   }
 
+  li, a {
+	  color: white;
+  }
+
   .nav-links {
 		width: 45%;
 	}
@@ -599,6 +606,10 @@ button#myBtn:focus {
   .nav-links {
 		width: 55%;
 	}
+
+	li, a {
+	  color: white;
+  }
 
   .footerInfo {
 		display: inline;
@@ -630,6 +641,10 @@ button#myBtn:focus {
 		width: 100%;
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
+	}
+
+	li, a {
+		color: black;
 	}
 
   nav {
