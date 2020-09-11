@@ -2,6 +2,19 @@
     header("Content-type: text/css; charset: UTF-8");
 ?>
 
+/*
+	#533747
+	#5F506B
+	#6A6B83
+	#76949F
+	#86BBBD
+*/
+
+body {
+	background: #76949F;
+	color: white;
+}
+
 /*the styles for the home page */
 th{border: 1px solid black;
 	color: black;}
@@ -77,6 +90,7 @@ td{border: 1px solid black;
   display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
   font-size: 2em;
+  color: black;
 }
 
 .historytext{
@@ -84,6 +98,7 @@ td{border: 1px solid black;
 	padding-left:10%;
 	padding-right:10%;
 	font-size: 200%;
+	text-align: justify;
 }
 /*END OF HOME PAGE STYLES*/
 
@@ -108,26 +123,33 @@ td{border: 1px solid black;
 	text-align:center;
 }
 
-
 .btn {
   border: none;
+  width: 125px;
   outline: none;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a background color on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+	background-color: #5F506B;
+    color: #404040;
 }
 
 /* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
+.btn:active {
+	background-color: #533747;
+    color: #ffffff;
+    border: 1px solid #577399;
 }
 
+.btn:focus {
+	background-color: #533747;
+    color: #ffffff;
+    border: 1px solid #577399;
+}
 
 .flex-img {
  	display: flex;
@@ -138,7 +160,9 @@ td{border: 1px solid black;
 	padding: 30px;
 }
 
-.item { padding: 0 10px 10px;}
+.item { 
+	padding: 0 10px 10px;
+}
 
  /* Add a transparency effect for thumnbail images */
 .item img{
@@ -240,12 +264,27 @@ td{border: 1px solid black;
 .Video-container{
 	height: auto;
 	color: #f2f2f2;
-	margin: 50px 25px;
 	display: flex;
-	padding: 25px 20px;
 	justify-content: center;
+	flex-wrap: wrap;
 }
-.Video-container h2{ padding: 20px}
+
+.video-heading {
+	text-align: center;
+	color: #F7F7FF;
+	padding: 20px;
+}
+
+.page-heading {
+	text-align: center;
+	padding-top: 5%;
+}
+
+@media (min-width: 320px) {
+	.Video-container > iframe {
+		padding: 20px;
+	}
+}
 
 
 /*END OF GALLERY PAGE STYLES*/
@@ -268,7 +307,8 @@ td{border: 1px solid black;
 .p-info {
     display: flex;
     object-fit: cover;
-    padding: .2% 11% 1% 11%;
+	padding: .2% 11% 1% 11%;
+	color: #F7F7FF;
 }
 
 /* Map */
@@ -282,29 +322,31 @@ td{border: 1px solid black;
 
 /* Clickable Buttons */
 #menu a {
+	width: 125px;
     font-size: 13px;
     color: #24252A;
     display: block;
     margin: 2px;
-    padding: 10px;
+    padding: 12px 16px;
     text-decoration: none;
     border: 1px solid #577399;
-    text-align: center;
+	text-align: center;
+	background-color: white;
 }
 
 #menu a:hover {
-    background-color: #f8f8f8;
+    background-color: #5F506B;
     color: #404040;
 }
 
 #menu a.active {
-    background-color: #3887be;
+    background-color: #533747;
     color: #ffffff;
     border: 1px solid #577399;
 }
 
 #menu a.active:hover {
-    background: #3074a4;
+    background: #6A6B83;
 }
 
 .square1 {
@@ -417,7 +459,7 @@ h1.nav {
 
 nav {
 	padding: 30px 10%;
-	background-color: #ffffff;
+	background-color: #5F506B;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;

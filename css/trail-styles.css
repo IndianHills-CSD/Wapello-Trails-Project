@@ -19,23 +19,17 @@ html, body {
     list-style: none;
 }
 
-.head-container {
+tr {
+    margin-left: 15%;
+}
+
+.color-code {
+    margin: 1%;
+    width: 25%;
+}
+
+.p-info {
     text-align: justify;
-    padding: 2%;
-    color: #F7F7FF;
-}
-
-section.head-container {
-    background-color: #495867;
-}
-
-.body-container {
-    padding: 2%;
-    background-color: #577399;
-}
-
-section.body-container {
-    background-color: #577399;
 }
 
 /* Menu Styles */
@@ -51,7 +45,6 @@ section.body-container {
     display: flex;
     z-index: 3;
     border-radius: 2px;
-    color: #FE5F55;
     width: 100%;
     justify-content: center;
     margin-bottom: 2%;
@@ -60,22 +53,16 @@ section.body-container {
 /* Map Legend */
 .legend-head {
     padding-left: 5%;
-    margin-top: 4%;
 }
 
 .row {
     display: flex;
-    align-items: center;
+    text-align: left;
     justify-content: space-evenly;
     border: none;
 }
 
 /* Media Queries */
-/* 320px DONE */
-/* 480px      */
-/* 768px      */
-/* 992px      */
-
 @media (min-width: 320px) {
     .instruct {
         display: flex;
@@ -92,7 +79,7 @@ section.body-container {
     }
 
     table {
-        text-align: center;
+        text-align: left;
         margin-left: auto;
         margin-right: auto;
         width: 75%;
@@ -102,7 +89,13 @@ section.body-container {
        display: flex;
        align-items: center;
        justify-content: center;
+    }
 
+    .legend {
+        background: white;
+        padding: 2%;
+        border: 3px solid #533747;
+        margin: 2%;
     }
 
     .color-code {

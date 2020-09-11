@@ -18,9 +18,9 @@
 
 <body>
 
-<?php include 'nav.php'; ?>
+    <?php include 'nav.php';?>
 
-<section class="head-container">
+<section class="body-container">
 	<h1 class="page-title">Activities</h1>
 
 	<h2 class="activities">Walking</h2>
@@ -45,44 +45,44 @@
     <em class="instruct">** Use the trail buttons below to toggle the trails off and on. **</em>
 <div id="menu"></div>
 
-<hr>
-
-<h3 class="legend-head">Map Legend:</h3>
-<!-- Legend for trail map -->
-    <div class="legend-container">
-        <table>
-            <tr class="row">
-                <td class="square1 color-code"></td>
-                <td class="trail-name">Trail 1: 3.2 Miles</td>
-                <td class="square6 color-code"></td>
-                <td class="trail-name">Trail 6: 1.7 Miles</td>
-            </tr>
-            <tr class="row">
-                <td class="square2 color-code"></td>
-                <td class="trail-name">Trail 2: 2.5 Miles</td>
-                <td class="square7 color-code"></td>
-                <td class="trail-name">Trail 7: 1.2 Miles</td>
-            </tr>
-            <tr class="row">
-                <td class="square3 color-code"></td>
-                <td class="trail-name">Trail 3: 1.6 Miles</td>
-                <td class="square8 color-code"></td>
-                <td class="trail-name">Trail 8: 1.4 Miles</td>
-            </tr>
-            <tr class="row">
-                <td class="square4 color-code"></td>
-                <td class="trail-name">Trail 4: 0.9 Miles</td>
-                <td class="square9 icon"><img src="images/parking-15.svg"></td>
-                <td class="trail-name">Parking/ Trailheads</td>
-            </tr>
-            <tr class="row">
-                <td class="square5 color-code"></td>
-                <td class="trail-name">Trail 5: 1.1 Miles</td>
-                <td class="square10 icon"><img src="images/campsite-15.svg"></td>
-                <td class="trail-name">Shelters</td>
-            </tr>
-        </table>  <!-- END legend-container -->
-    </div>
+<div class="legend">
+    <h3 class="legend-head">Map Legend:</h3>
+    <!-- Legend for trail map -->
+        <div class="legend-container">
+            <table>
+                <tr class="row">
+                    <td class="square1 color-code"></td>
+                    <td class="trail-name">Trail 1: 3.2 Miles</td>
+                    <td class="square6 color-code"></td>
+                    <td class="trail-name">Trail 6: 1.7 Miles</td>
+                </tr>
+                <tr class="row">
+                    <td class="square2 color-code"></td>
+                    <td class="trail-name">Trail 2: 2.5 Miles</td>
+                    <td class="square7 color-code"></td>
+                    <td class="trail-name">Trail 7: 1.2 Miles</td>
+                </tr>
+                <tr class="row">
+                    <td class="square3 color-code"></td>
+                    <td class="trail-name">Trail 3: 1.6 Miles</td>
+                    <td class="square8 color-code"></td>
+                    <td class="trail-name">Trail 8: 1.4 Miles</td>
+                </tr>
+                <tr class="row">
+                    <td class="square4 color-code"></td>
+                    <td class="trail-name">Trail 4: 0.9 Miles</td>
+                    <td class="square9 icon"><img src="images/parking-15.svg"></td>
+                    <td class="trail-name">Parking/ Trailheads</td>
+                </tr>
+                <tr class="row">
+                    <td class="square5 color-code"></td>
+                    <td class="trail-name">Trail 5: 1.1 Miles</td>
+                    <td class="square10 icon"><img src="images/campsite-15.svg"></td>
+                    <td class="trail-name">Shelters</td>
+                </tr>
+            </table>  <!-- END legend-container -->
+        </div>
+</div>
 <section class="body-container">
 
 	<!--
@@ -356,7 +356,7 @@
 </script>
 </body>
 
-<?php include 'footer.php'?>
+<?php include 'footer.php';?>
 
 <script>
     var mybutton = document.getElementById("myBtn");
