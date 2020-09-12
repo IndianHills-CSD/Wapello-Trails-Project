@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/trail-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/Style.php">
-	<link rel="stylesheet" href="css/masterstyle.css">
 	<meta charset="UTF-8">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
