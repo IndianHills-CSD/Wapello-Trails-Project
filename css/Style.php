@@ -293,7 +293,8 @@ td{border: 1px solid black;
     Title and activity container
 */
 .page-title {
-    color: #F7F7FF;
+    color: #533747;
+	font-size: 2em;
     padding: 1% 0 0 5%;
 }
 
@@ -315,7 +316,7 @@ td{border: 1px solid black;
     height: 65%;
     width: 85%;
     margin: 3% auto 0 auto;
-    background: #BDD5EA;
+	border: 3px solid #533747;
 }
 
 /* Clickable Buttons */
@@ -380,9 +381,9 @@ td{border: 1px solid black;
 
 /* Area Plan Styling */
 .plans-page-title {
-    color: #FE5F55;
     font-size: 2em;
     padding: 2% 0 0 5%;
+	color: #533747;
 }
 
 hr.plans-hr {
@@ -412,19 +413,19 @@ hr.plans-hr {
     width: 100%;
     align-items: baseline;
     padding: 2%;
-    border: 2px solid #FE5F55;
+    border: 2px solid #5F506B;
  }
 
 .area-plan-heading {
     padding: .5% 0 .5% 8%;
-    color: #FE5F55;
+	color: #533747;
 }
 
 .plan-p-info {
     display: flex;
     padding: .2% 11% 1% 11%;
     object-fit: cover;
-    color: #BDD5EA;
+    color: white;
 }
 
 

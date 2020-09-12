@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <?php include 'nav.php';?>
 
 <section class="body-container">
@@ -354,18 +353,10 @@
     }   // END for loop
 
 </script>
+<?php include 'footer.php';?>
 </body>
 
-<?php include 'footer.php';?>
 
-<script>
-    var mybutton = document.getElementById("myBtn");
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
-<script src="js/master.js"></script>
 </body>
 </html>
