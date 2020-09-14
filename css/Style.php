@@ -2,6 +2,7 @@
     header("Content-type: text/css; charset: UTF-8");
 ?>
 
+
 /*the styles for the home page */
 th{border: 1px solid black;
 	color: black;}
@@ -89,9 +90,74 @@ td{border: 1px solid black;
 
 
 
-/*BEGINING OF GALLERY PAGE STYLES*/
+/*BEGINING OF SIGN UP PAGE*/
+body{
+  background: #152836;
+}
+.signup-forms img{
+  width: 70px;
+  margin-top: -50px;
+}
 
-/* content styles */
+.signup-forms{
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+  background: #fff;
+  padding: 20px;
+  margin: 8% auto;
+  text-align: center;
+
+}
+
+.signup-forms h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.signupbtn, .facebookbtn {
+  width: 100%;
+  color: #fff;
+  padding:10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+a{ text-decoration: none;}
+hr{ margin-top: 20px; width: 100%; }
+
+.or{
+  background: #fff;
+  width: 30px;
+  margin: -12px auto 12px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens*/
+@media screen and (max-width: 300px) {
+  .signup-forms, .signInbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/* END OF SIGN UP PAGE */
+
+
+
+
+/*BEGINING OF GALLERY PAGE STYLES*/
 
 /* content styles */
 .container {
@@ -99,23 +165,24 @@ td{border: 1px solid black;
    color: #f2f2f2;
    padding: 20px 20px;
    background-color: #152836;
-
 }
 
+/*Style Filter Button*/
 .ContainerBtn{
 	margin: 25px;
 	padding: 25px 25px;
 	text-align:center;
 }
 
-
 .btn {
   border: none;
   outline: none;
+  border-radius: 20px;
   padding: 12px 16px;
-  background-color: white;
+  background-color: #fff;
   cursor: pointer;
 }
+
 
 /* Add a grey background color on mouse-over */
 .btn:hover {
@@ -127,7 +194,6 @@ td{border: 1px solid black;
   background-color: #666;
    color: white;
 }
-
 
 .flex-img {
  	display: flex;
@@ -229,7 +295,7 @@ td{border: 1px solid black;
  }
  img { margin-bottom: -4px; }
 
- .caption{
+.caption{
 	text-align: center;
 	color: #EEE;
  	background-color: #000;
@@ -240,10 +306,7 @@ td{border: 1px solid black;
 .Video-container{
 	height: auto;
 	color: #f2f2f2;
-	margin: 50px 25px;
-	display: flex;
-	padding: 25px 20px;
-	justify-content: center;
+	text-align:center;
 }
 .Video-container h2{ padding: 20px}
 

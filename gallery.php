@@ -4,8 +4,9 @@
 	   <meta charset="UTF-8">
 	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	   <title> Gallery Page </title>
-	   <link  rel="stylesheet" type="text/css" href="css/Style.php">
-	   <script src="js/slide-img.js"></script>
+		<link  rel="stylesheet" type="text/css" href="css/gallery-style.css">
+	    <link  rel="stylesheet" type="text/css" href="css/Style.php">
+		<script src="js/slide-img.js"></script>
 	</head>
 	<body>
 		<?php include 'nav.php';?>
@@ -13,35 +14,35 @@
 		<!-- Container for the image gallery -->
 		<main class="container">
 			<h1 style="text-align:center"><strong>Wapello County Trails Council Gallery</strong></h1>
-			
+
 			<div class="ContainerBtn">
 				<button class="btn active" data-class="all"> Show All</button>
 				<button class="btn" data-class="videos"> Videos</button>
 				<button class="btn" data-class="chief"> Chief Wapello</button>
 				<button class="btn" data-class="Volunteers"> Volunteers</button>
 				<button class="btn" data-class="wabash"> Wabash Bridge</button>
-				<button class="btn" data-class="trails"> Trails & Nature</button>		  
+				<button class="btn" data-class="trails"> Trails & Nature</button>
 			</div>
 
 			<div class="Video-container">
 				<div class="item" data-class="videos">
 					<h2 style="text-align:center"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
-					<iframe width="560" height="315"
+					<iframe width="550" height="415"
 						src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media;
 						gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
 
-					<iframe width="560" height="315"
+					<iframe width="550" height="415"
 						src="https://www.youtube.com/embed/kqGcuXj-rMk" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope;
 						picture-in-picture" allowfullscreen>
 					</iframe>
 				</div>
 			</div>
-			
+
 			<h2 style="text-align:center"><strong>Photos</strong></h2>
-			<div class="flex-img">				
+			<div class="flex-img">
 				<div class="item" data-class="chief">
 					<img src="images/img-01.jpg" onclick="openModal(); currentSlide(01)">
 				</div>
@@ -104,7 +105,7 @@
 				</div>
 				<div class="item" data-class="trails">
 					<img src="images/trail-site17.jpg"  onclick="openModal();currentSlide(21)">
-				</div>			
+				</div>
 				<div class="item" data-class="trails">
 					<img src="images/trail-site09.jpg" onclick="openModal(); currentSlide(22)">
 				</div>
@@ -132,7 +133,7 @@
 				<div class="item" data-class="wabash">
 					<img src="images/trail-site20.jpg"  onclick="openModal();currentSlide(30)">
 				</div>
-				
+
 				<div class="item" data-class="trails">
 					<img src="images/trail-site21.jpg" onclick="openModal(); currentSlide(31)">
 				</div>
@@ -165,7 +166,7 @@
 				</div>
 				<div class="item" data-class="trails">
 					<img src="images/trail-site31.jpg"  onclick="openModal();currentSlide(41)">
-				</div>			
+				</div>
 				<div class="item" data-class="trails">
 					<img src="images/trail-site32.jpg" onclick="openModal(); currentSlide(42)">
 				</div>
@@ -536,31 +537,31 @@
 					<!--Previous and Next Button on images slideshow -->
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					
+
 					<!--slideshow images caption-->
 					<div class="content-caption">
 						<p id="caption"></p>
 					</div>
-					
+
 				</div>
 			</div>
 		</main>
 
 		<?php include 'footer.php';?>
-		
+
 		<script>
-		
+
 			// javaScript for filter
 			const listItems = document.querySelectorAll('.ContainerBtn .btn');
 			const allimages = document.querySelectorAll('.container .item');
-			 
+
 			function toggleActiveClass(active){
 				listItems.forEach(item => {
 				  item.classList.remove('active');
 				})
 				active.classList.add('active');
 			}
-			 
+
 			function toggleimages(dataClass){
 				if(dataClass === 'all'){
 					for(let i = 0; i<allimages.length; i++){
@@ -571,7 +572,7 @@
 						allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
 				}
 			}
-			 
+
 			for(let i = 0; i < listItems.length; i++){
 				listItems[i].addEventListener('click', function(){
 					toggleActiveClass(listItems[i]);
