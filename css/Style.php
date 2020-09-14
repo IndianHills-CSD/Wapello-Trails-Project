@@ -488,10 +488,11 @@ nav {
 }
 
 .nav-links {
+  width: 40%;
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	width: 35%;
+	z-index: 1;
 }
 
 .nav-links a {
@@ -557,20 +558,6 @@ footer {
 	padding-top: 30px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .footerInfo {
-		display: inline;
-  }
-
-	footer {
-		height: 800px;
-	}
-
-	.toTop {
-		padding-top: 30px;
-	}
-}
-
 .contact {
 	text-align: center;
 	height: 200px;
@@ -616,8 +603,34 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 1600px) {
-	.nav-links {
-		width: 35%;
+  .logo {
+    width: 35%;
+  }
+
+  .nav-links {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+  h1.nav  {
+    font-size: 20px;
+  }
+
+  .nav-links {
+		width: 55%;
+	}
+
+  .footerInfo {
+		display: inline;
+  }
+
+	footer {
+		height: 800px;
+	}
+
+	.toTop {
+		padding-top: 30px;
 	}
 }
 
@@ -630,7 +643,7 @@ button#myBtn:focus {
 		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
-		height: 10%;
+		height: 20%;
 		top: 20vh;
 		display: flex;
 		flex-direction: column;

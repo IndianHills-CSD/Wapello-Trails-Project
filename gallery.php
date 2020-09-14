@@ -12,7 +12,7 @@
 		<?php include 'nav.php';?>
 
 		<!-- Container for the image gallery -->
-		<main class="container">
+		<main class="body-container">
 			<h1 style="text-align:center"><strong>Wapello County Trails Council Gallery</strong></h1>
 
 			<div class="ContainerBtn">
