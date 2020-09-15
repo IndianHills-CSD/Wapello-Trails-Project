@@ -104,9 +104,86 @@ td{border: 1px solid black;
 
 
 
-/*BEGINING OF GALLERY PAGE STYLES*/
+/*BEGINING SIGN UP PAGE STYLES*/
 
-/* content styles */
+.signup-forms img{
+    width: 70px;
+    margin-top: -50px;
+}
+
+.signup-forms{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 8%;
+    text-align: center;  
+}
+
+.signup-forms h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+
+.signup-forms p{
+    color: #000;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.signupbtn{
+	width: 100%;
+	color: #fff;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+	background-color: #1c8adb;		
+}
+		
+.facebookbtn{ 
+	color: #fff;
+	background-color: #21afde;
+	width: 100%;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+}
+	
+.signup-forms a{ text-decoration: none;}
+
+
+hr{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -12px auto 12px;
+}
+
+
+/*END OF SIGN UP PAGE STYLES*/
+
+
+
+/*BEGINING OF GALLERY PAGE STYLES*/
 
 /* content styles */
 .container {
