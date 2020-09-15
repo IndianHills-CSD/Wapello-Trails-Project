@@ -1,0 +1,150 @@
+
+
+/* Trail Maps Page */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.head-container {
+    text-align: justify;
+    padding: 2%;
+    color: #F7F7FF;
+}
+
+section.head-container {
+    background-color: #495867;
+}
+
+.body-container {
+    padding: 2%;
+    background-color: #577399;
+}
+
+section.body-container {
+    background-color: #577399;
+}
+
+/* Title and activity container */
+
+.page-title {
+    color: #F7F7FF;
+    padding: 1% 0 0 5%;
+}
+
+.activities {
+    color: #F7F7FF;
+    padding: .5% 0 .5% 8%;
+}
+
+.p-info {
+    display: flex;
+    object-fit: cover;
+    padding: .2% 11% 1% 11%;
+}
+
+/* Map thumbnails and text areas */
+.trail-info-box {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    width: 50%;
+}
+
+.map-thumb {
+    max-width: 100%;
+}
+
+.trailName {
+    color: #FE5F55;
+}
+
+.trail-info-box > .trail-info > p {
+    color: #F7F7FF;
+    text-align: justify;
+}
+
+/*
+
+.trailName {
+    display: flex;
+    align-items: baseline;
+    color: #FE5F55;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.trail-info {
+    line-height: 20px;
+    align-items: baseline;
+    display: flex;
+    flex: 1 0 25%;
+    padding: 0 2% 0 1.7%;
+    text-align: justify;
+    color: #BDD5EA;
+}
+*/
+
+
+/* Area Plan Styling */
+.plans-page-title {
+    color: #FE5F55;
+    font-size: 2em;
+    padding: 2% 0 0 5%;
+}
+
+hr.plans-hr {
+    border: 1px solid #FE5F55;
+    margin-inline-start: 3%;
+    margin-inline-end: 3%;
+    margin-block-start: 3%;
+}
+
+.area-plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3%;
+    list-style: none;
+}
+
+.areaPlanIMG {
+    display: flex;
+    object-fit: cover;
+    padding: 5% 0 0 0;
+}
+
+.area-plan-img > img {
+    resize: both;
+    object-fit: cover;
+    width: 100%;
+    align-items: baseline;
+    padding: 2%;
+    border: 2px solid #FE5F55;
+}
+
+.area-plan-heading {
+    padding: .5% 0 .5% 8%;
+    color: #FE5F55;
+}
+
+.plan-p-info {
+    display: flex;
+    padding: .2% 11% 1% 11%;
+    object-fit: cover;
+    color: #BDD5EA;
+}
+
+
+
