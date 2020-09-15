@@ -2,6 +2,7 @@
     header("Content-type: text/css; charset: UTF-8");
 ?>
 
+
 /*the styles for the home page */
 th{border: 1px solid black;
 	color: black;}
@@ -89,8 +90,78 @@ td{border: 1px solid black;
 /*END OF HOME PAGE STYLES*/
 
 /*BEGINING OF GALLERY PAGE STYLES*/
+=======
 
-/* content styles */
+
+/*BEGINING OF SIGN UP PAGE*/
+body{
+  background: #152836;
+}
+.signup-forms img{
+  width: 70px;
+  margin-top: -50px;
+}
+
+.signup-forms{
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+  background: #fff;
+  padding: 20px;
+  margin: 8% auto;
+  text-align: center;
+
+}
+
+.signup-forms h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.signupbtn, .facebookbtn {
+  width: 100%;
+  color: #fff;
+  padding:10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+a{ text-decoration: none;}
+hr{ margin-top: 20px; width: 100%; }
+
+.or{
+  background: #fff;
+  width: 30px;
+  margin: -12px auto 12px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens*/
+@media screen and (max-width: 300px) {
+  .signup-forms, .signInbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/* END OF SIGN UP PAGE */
+
+
+
+
+
+/*BEGINING OF GALLERY PAGE STYLES*/
 
 /* content styles */
 .container {
@@ -98,23 +169,24 @@ td{border: 1px solid black;
    color: #f2f2f2;
    padding: 20px 20px;
    background-color: #152836;
-
 }
 
+/*Style Filter Button*/
 .ContainerBtn{
 	margin: 25px;
 	padding: 25px 25px;
 	text-align:center;
 }
 
-
 .btn {
   border: none;
   outline: none;
+  border-radius: 20px;
   padding: 12px 16px;
-  background-color: white;
+  background-color: #fff;
   cursor: pointer;
 }
+
 
 /* Add a grey background color on mouse-over */
 .btn:hover {
@@ -126,7 +198,6 @@ td{border: 1px solid black;
   background-color: #666;
    color: white;
 }
-
 
 .flex-img {
  	display: flex;
@@ -228,7 +299,7 @@ td{border: 1px solid black;
  }
  img { margin-bottom: -4px; }
 
- .caption{
+.caption{
 	text-align: center;
 	color: #EEE;
  	background-color: #000;
@@ -239,10 +310,7 @@ td{border: 1px solid black;
 .Video-container{
 	height: auto;
 	color: #f2f2f2;
-	margin: 50px 25px;
-	display: flex;
-	padding: 25px 20px;
-	justify-content: center;
+	text-align:center;
 }
 .Video-container h2{ padding: 20px}
 
@@ -424,10 +492,10 @@ nav {
 }
 
 .nav-links {
+  width: 40%;
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	width: 35%;
 	z-index: 1;
 }
 
@@ -494,20 +562,6 @@ footer {
 	padding-top: 30px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .footerInfo {
-		display: inline;
-  }
-
-	footer {
-		height: 800px;
-	}
-
-	.toTop {
-		padding-top: 30px;
-	}
-}
-
 .contact {
 	text-align: center;
 	height: 200px;
@@ -553,8 +607,34 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 1600px) {
-	.nav-links {
-		width: 35%;
+  .logo {
+    width: 35%;
+  }
+
+  .nav-links {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+  h1.nav  {
+    font-size: 20px;
+  }
+
+  .nav-links {
+		width: 55%;
+	}
+
+  .footerInfo {
+		display: inline;
+  }
+
+	footer {
+		height: 800px;
+	}
+
+	.toTop {
+		padding-top: 30px;
 	}
 }
 
@@ -567,7 +647,7 @@ button#myBtn:focus {
 		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
-		height: 10%;
+		height: 20%;
 		top: 20vh;
 		display: flex;
 		flex-direction: column;
@@ -651,20 +731,12 @@ transform:  rotate(-45deg) translate(-5px,6px);
 
 
 div.projectContent {
-  display: flex;
-}
-
-div.filter {
-  border: 1px black solid;
-  width: 15%;
-  height: 45vh;
-  position: sticky;
-  top: 0;
-  margin-bottom: 5px;
+  width: 100%;
 }
 
 div.projects {
-  width: 85%;
+  width: 95%;
+  margin: auto;
 }
 
 div.project1 {
@@ -702,31 +774,70 @@ div.projectdescription {
   border: 1px black solid;
 }
 
-div.projectinfo {
-  width: 33.33%;
-  border: 1px black solid;
-}
-
 div.thumbnail {
-  width: 80%;
+  width: 100%;
   background-color: #909090;
-}
-
-div.imgselection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 20%;
-}
-
-div.imgselection > * {
-    border: 1px black solid;
-    height: 20%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 div.projecttitle {
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  div.projects {
+    width: 100%;
+  }
+
+  div.projectimage {
+    width: 100%;
+    height: 200px;
+    border: 1px black solid;
+    display: lex;
+  }
+
+  div.projectdescription {
+    width: 100%;
+    border: 1px black solid;
+    height: 250px;
+  }
+
+  div.projectinfo {
+    width: 100%;
+    height: 200px;
+  }
+
+  div.project1 {
+    width: 90%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project2 {
+    width: 90%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project3 {
+    width: 90%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }

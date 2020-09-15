@@ -16,7 +16,7 @@
     <div class="ticker-item">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
     <div class="ticker-item">Pellentesque auctor molestie orci ut blandit.</div>
   </div></div></div>
-	<div class="conContainer">
+	<div class="body-container">
 
 			<img class="center" src="images/placehold.png" width="300" height="400">
 
