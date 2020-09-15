@@ -141,180 +141,45 @@
 **** The following code will create clickable boxes to show and hide the different trails on the map ****
 	*/
     map.on('load', function() {
-        // add source and layer for trail 1
+        // add source for trail 1
         map.addSource('Trail_1', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckccuis8j0lvn24prl707kt0m-36b55'
         });
-        map.addLayer({
-            'id': '1',
-            'type': 'line',
-            'source': 'Trail_1',
-	        'source-layer': 'Trail_1',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#f8ff33',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 2
+        // add source for trail 2
         map.addSource('Trail_2_-_2.5_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1'
         });
-        map.addLayer({
-            'id': '2',
-            'type': 'line',
-            'source': 'Trail_2_-_2.5_Mile',
-            'source-layer': 'Trail_2_-_2.5_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#ff9029',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 3
+        // add source for trail 3
         map.addSource('Trail_3_-_1.6_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz'
         });
-        map.addLayer({
-            'id': '3',
-            'type': 'line',
-            'source': 'Trail_3_-_1.6_Mile',
-            'source-layer': 'Trail_3_-_1.6_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#21db00',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 4
+        // add source for trail 4
         map.addSource('Trail_4_-_0.9_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q'
         });
-        map.addLayer({
-            'id': '4',
-            'type': 'line',
-            'source': 'Trail_4_-_0.9_Mile',
-            'source-layer': 'Trail_4_-_0.9_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#ff2424',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 5
+        // add source for trail 5
         map.addSource('Trail_5_-_1.1_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn'
         });
-        map.addLayer({
-            'id': '5',
-            'type': 'line',
-            'source': 'Trail_5_-_1.1_Mile',
-            'source-layer': 'Trail_5_-_1.1_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#0206f2',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 6
+        // add source for trail 6
         map.addSource('Trail_6_-_1.7_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9'
         });
-        map.addLayer({
-            'id': '6',
-            'type': 'line',
-            'source': 'Trail_6_-_1.7_Mile',
-            'source-layer': 'Trail_6_-_1.7_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#f8ff33',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 7
+        // add source for trail 7
         map.addSource('Trail_7_-_1.2_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm'
         });
-        map.addLayer({
-            'id': '7',
-            'type': 'line',
-            'source': 'Trail_7_-_1.2_Mile',
-            'source-layer': 'Trail_7_-_1.2_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#6800b3',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 8
+        // add source for trail 8
         map.addSource('Trail_8_-_1.4_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t'
-        });
-        map.addLayer({
-            'id': '8',
-            'type': 'line',
-            'source': 'Trail_8_-_1.4_Mile',
-            'source-layer': 'Trail_8_-_1.4_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#f8ff33',
-                'line-width': 4
-            }
         });
     });
 
@@ -326,14 +191,13 @@
         var id = toggleableLayerIds[i];
 
         var link = document.createElement('a');
-        link.href = '#';
-        link.className = 'active';
+        link.href = 'javascript:void();';
+        link.className = '';
         link.textContent = id;
 
-        link.onclick = function(e) {
+        link.onmousedown = function(e) {
             var clickedLayer = this.textContent;
             e.preventDefault();
-            e.stopPropagation();
 
             var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
 
