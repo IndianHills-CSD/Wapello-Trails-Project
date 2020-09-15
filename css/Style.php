@@ -33,8 +33,7 @@ td{border: 1px solid black;
     margin-right: auto;
 	background-color: white;
 }
-.conContainer {
-    background: #577399;
+.conContainer {;
     color: #F7F7FF;
 }
 .center {
