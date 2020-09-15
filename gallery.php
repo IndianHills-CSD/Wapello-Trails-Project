@@ -13,8 +13,7 @@
 
 		<!-- Container for the image gallery -->
 		<main class="body-container">
-			<h1 style="text-align:center"><strong>Wapello County Trails Council Gallery</strong></h1>
-
+			<h1 class="page-heading" style="text-align:center"><strong>Wapello County Trails Council Gallery</strong></h1>
 			<div class="ContainerBtn">
 				<button class="btn active" data-class="all"> Show All</button>
 				<button class="btn" data-class="videos"> Videos</button>
@@ -23,22 +22,24 @@
 				<button class="btn" data-class="wabash"> Wabash Bridge</button>
 				<button class="btn" data-class="trails"> Trails & Nature</button>
 			</div>
-
+			<h2 class="video-heading"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
 			<div class="Video-container">
+
 				<div class="item" data-class="videos">
 					<h2 style="text-align:center"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
 					<iframe width="550" height="415"
+
 						src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media;
 						gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
-
-					<iframe width="550" height="415"
+			
+					<iframe width="560" height="415"
 						src="https://www.youtube.com/embed/kqGcuXj-rMk" frameborder="0"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope;
 						picture-in-picture" allowfullscreen>
 					</iframe>
-				</div>
+				
 			</div>
 
 			<h2 style="text-align:center"><strong>Photos</strong></h2>
@@ -553,8 +554,8 @@
 
 			// javaScript for filter
 			const listItems = document.querySelectorAll('.ContainerBtn .btn');
-			const allimages = document.querySelectorAll('.container .item');
-
+			const allimages = document.querySelectorAll('.body-container .item');
+			 
 			function toggleActiveClass(active){
 				listItems.forEach(item => {
 				  item.classList.remove('active');
