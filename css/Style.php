@@ -2,6 +2,18 @@
     header("Content-type: text/css; charset: UTF-8");
 ?>
 
+/*
+	#533747
+	#5F506B
+	#6A6B83
+	#76949F
+	#86BBBD
+*/
+
+body {
+	background: #76949F;
+	color: white;
+}
 
 /*the styles for the home page */
 th{border: 1px solid black;
@@ -78,6 +90,7 @@ td{border: 1px solid black;
   display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
   font-size: 2em;
+  color: black;
 }
 
 .historytext{
@@ -85,79 +98,15 @@ td{border: 1px solid black;
 	padding-left:10%;
 	padding-right:10%;
 	font-size: 200%;
+	text-align: justify;
 }
 /*END OF HOME PAGE STYLES*/
 
 
 
-/*BEGINING OF SIGN UP PAGE*/
-body{
-  background: #152836;
-}
-.signup-forms img{
-  width: 70px;
-  margin-top: -50px;
-}
-
-.signup-forms{
-  width: 300px;
-  box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
-  background: #fff;
-  padding: 20px;
-  margin: 8% auto;
-  text-align: center;
-
-}
-
-.signup-forms h1{
-    color: #1c8adb;
-    margin-bottom: 30px;
-}
-
-.input-box{
-    border-radius: 20px;
-    padding: 10px;
-    margin: 8px 0;
-    width: 100%;
-    border: 1px solid #999;
-    outline: none;
-}
-
-.signupbtn, .facebookbtn {
-  width: 100%;
-  color: #fff;
-  padding:10px;
-  border-radius: 20px;
-  font-size: 15px;
-  margin: 10px 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-
-a{ text-decoration: none;}
-hr{ margin-top: 20px; width: 100%; }
-
-.or{
-  background: #fff;
-  width: 30px;
-  margin: -12px auto 12px;
-}
-
-/* Change styles for cancel button and signup button on extra small screens*/
-@media screen and (max-width: 300px) {
-  .signup-forms, .signInbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
-/* END OF SIGN UP PAGE */
-
-
-
-
 /*BEGINING OF GALLERY PAGE STYLES*/
+
+/* content styles */
 
 /* content styles */
 .container {
@@ -165,9 +114,9 @@ hr{ margin-top: 20px; width: 100%; }
    color: #f2f2f2;
    padding: 20px 20px;
    background-color: #152836;
+
 }
 
-/*Style Filter Button*/
 .ContainerBtn{
 	margin: 25px;
 	padding: 25px 25px;
@@ -176,23 +125,31 @@ hr{ margin-top: 20px; width: 100%; }
 
 .btn {
   border: none;
+  width: 125px;
   outline: none;
-  border-radius: 20px;
   padding: 12px 16px;
-  background-color: #fff;
+  background-color: white;
   cursor: pointer;
+  margin: 5px;
 }
 
-
-/* Add a grey background color on mouse-over */
+/* Add a background color on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+	background-color: #5F506B;
+    color: #404040;
 }
 
 /* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
+.btn:active {
+	background-color: #533747;
+    color: #ffffff;
+    border: 1px solid #577399;
+}
+
+.btn:focus {
+	background-color: #533747;
+    color: #ffffff;
+    border: 1px solid #577399;
 }
 
 .flex-img {
@@ -204,7 +161,9 @@ hr{ margin-top: 20px; width: 100%; }
 	padding: 30px;
 }
 
-.item { padding: 0 10px 10px;}
+.item { 
+	padding: 0 10px 10px;
+}
 
  /* Add a transparency effect for thumnbail images */
 .item img{
@@ -295,7 +254,7 @@ hr{ margin-top: 20px; width: 100%; }
  }
  img { margin-bottom: -4px; }
 
-.caption{
+ .caption{
 	text-align: center;
 	color: #EEE;
  	background-color: #000;
@@ -306,10 +265,25 @@ hr{ margin-top: 20px; width: 100%; }
 .Video-container{
 	height: auto;
 	color: #f2f2f2;
-	text-align:center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-.Video-container h2{ padding: 20px}
 
+.video-heading {
+	text-align: center;
+	color: #F7F7FF;
+	padding: 20px;
+}
+
+.page-heading {
+	text-align: center;
+	padding-top: 5%;
+}
+
+.Video-container > iframe {
+		padding: 10px;
+	}
 
 /*END OF GALLERY PAGE STYLES*/
 
@@ -319,7 +293,8 @@ hr{ margin-top: 20px; width: 100%; }
     Title and activity container
 */
 .page-title {
-    color: #F7F7FF;
+    color: #533747;
+	font-size: 2em;
     padding: 1% 0 0 5%;
 }
 
@@ -331,7 +306,8 @@ hr{ margin-top: 20px; width: 100%; }
 .p-info {
     display: flex;
     object-fit: cover;
-    padding: .2% 11% 1% 11%;
+	padding: .2% 11% 1% 11%;
+	color: #F7F7FF;
 }
 
 /* Map */
@@ -340,7 +316,7 @@ hr{ margin-top: 20px; width: 100%; }
     height: 65%;
     width: 85%;
     margin: 3% auto 0 auto;
-    background: #BDD5EA;
+	border: 3px solid #533747;
 }
 
 /* Clickable Buttons */
@@ -349,25 +325,26 @@ hr{ margin-top: 20px; width: 100%; }
     color: #24252A;
     display: block;
     margin: 2px;
-    padding: 10px;
+    padding: 12px 16px;
     text-decoration: none;
     border: 1px solid #577399;
-    text-align: center;
+	text-align: center;
+	background-color: white;
 }
 
 #menu a:hover {
-    background-color: #f8f8f8;
+    background-color: #5F506B;
     color: #404040;
 }
 
 #menu a.active {
-    background-color: #3887be;
+    background-color: #533747;
     color: #ffffff;
     border: 1px solid #577399;
 }
 
 #menu a.active:hover {
-    background: #3074a4;
+    background: #6A6B83;
 }
 
 .square1 {
@@ -404,9 +381,9 @@ hr{ margin-top: 20px; width: 100%; }
 
 /* Area Plan Styling */
 .plans-page-title {
-    color: #FE5F55;
     font-size: 2em;
     padding: 2% 0 0 5%;
+	color: #533747;
 }
 
 hr.plans-hr {
@@ -436,19 +413,19 @@ hr.plans-hr {
     width: 100%;
     align-items: baseline;
     padding: 2%;
-    border: 2px solid #FE5F55;
+    border: 2px solid #5F506B;
  }
 
 .area-plan-heading {
     padding: .5% 0 .5% 8%;
-    color: #FE5F55;
+	color: #533747;
 }
 
 .plan-p-info {
     display: flex;
     padding: .2% 11% 1% 11%;
     object-fit: cover;
-    color: #BDD5EA;
+    color: white;
 }
 
 
@@ -471,7 +448,7 @@ h1.nav {
   padding-top: 3vh;
   padding-left: 10%;
   text-align: center;
-  color: black;
+  color: white;
   font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 25px;
@@ -480,11 +457,42 @@ h1.nav {
 
 nav {
 	padding: 30px 10%;
-	background-color: #ffffff;
+	color: white;
+	background-color: #5F506B;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 15vh;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+nav:before, nav:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+nav:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
 }
 
 .nav-links {
@@ -503,8 +511,8 @@ li, a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	color: black;
 	text-decoration: none;
+	color: white;
 }
 
 li:hover, a:hover {
@@ -535,9 +543,14 @@ h2.footer {
 }
 
 p.footer {
+	color: black;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	padding-bottom: 5px;
+}
+
+p.footer > a {
+	color: black
 }
 
 footer {
@@ -607,6 +620,10 @@ button#myBtn:focus {
     width: 35%;
   }
 
+  li, a {
+	  color: white;
+  }
+
   .nav-links {
 		width: 45%;
 	}
@@ -620,6 +637,10 @@ button#myBtn:focus {
   .nav-links {
 		width: 55%;
 	}
+
+	li, a {
+	  color: white;
+  }
 
   .footerInfo {
 		display: inline;
@@ -651,6 +672,10 @@ button#myBtn:focus {
 		width: 100%;
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
+	}
+
+	li, a {
+		color: black;
 	}
 
   nav {

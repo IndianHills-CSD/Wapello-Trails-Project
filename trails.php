@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/trail-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/Style.php">
-	<link rel="stylesheet" href="css/masterstyle.css">
 	<meta charset="UTF-8">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
@@ -17,10 +16,9 @@
 </head>
 
 <body>
+    <?php include 'nav.php';?>
 
-<?php include 'nav.php'; ?>
-
-<section class="head-container">
+<section class="body-container">
 	<h1 class="page-title">Activities</h1>
 
 	<h2 class="activities">Walking</h2>
@@ -45,44 +43,44 @@
     <em class="instruct">** Use the trail buttons below to toggle the trails off and on. **</em>
 <div id="menu"></div>
 
-<hr>
-
-<h3 class="legend-head">Map Legend:</h3>
-<!-- Legend for trail map -->
-    <div class="legend-container">
-        <table>
-            <tr class="row">
-                <td class="square1 color-code"></td>
-                <td class="trail-name">Trail 1: 3.2 Miles</td>
-                <td class="square6 color-code"></td>
-                <td class="trail-name">Trail 6: 1.7 Miles</td>
-            </tr>
-            <tr class="row">
-                <td class="square2 color-code"></td>
-                <td class="trail-name">Trail 2: 2.5 Miles</td>
-                <td class="square7 color-code"></td>
-                <td class="trail-name">Trail 7: 1.2 Miles</td>
-            </tr>
-            <tr class="row">
-                <td class="square3 color-code"></td>
-                <td class="trail-name">Trail 3: 1.6 Miles</td>
-                <td class="square8 color-code"></td>
-                <td class="trail-name">Trail 8: 1.4 Miles</td>
-            </tr>
-            <tr class="row">
-                <td class="square4 color-code"></td>
-                <td class="trail-name">Trail 4: 0.9 Miles</td>
-                <td class="square9 icon"><img src="images/parking-15.svg"></td>
-                <td class="trail-name">Parking/ Trailheads</td>
-            </tr>
-            <tr class="row">
-                <td class="square5 color-code"></td>
-                <td class="trail-name">Trail 5: 1.1 Miles</td>
-                <td class="square10 icon"><img src="images/campsite-15.svg"></td>
-                <td class="trail-name">Shelters</td>
-            </tr>
-        </table>  <!-- END legend-container -->
-    </div>
+<div class="legend">
+    <h3 class="legend-head">Map Legend:</h3>
+    <!-- Legend for trail map -->
+        <div class="legend-container">
+            <table>
+                <tr class="row">
+                    <td class="square1 color-code"></td>
+                    <td class="trail-name">Trail 1: 3.2 Miles</td>
+                    <td class="square6 color-code"></td>
+                    <td class="trail-name">Trail 6: 1.7 Miles</td>
+                </tr>
+                <tr class="row">
+                    <td class="square2 color-code"></td>
+                    <td class="trail-name">Trail 2: 2.5 Miles</td>
+                    <td class="square7 color-code"></td>
+                    <td class="trail-name">Trail 7: 1.2 Miles</td>
+                </tr>
+                <tr class="row">
+                    <td class="square3 color-code"></td>
+                    <td class="trail-name">Trail 3: 1.6 Miles</td>
+                    <td class="square8 color-code"></td>
+                    <td class="trail-name">Trail 8: 1.4 Miles</td>
+                </tr>
+                <tr class="row">
+                    <td class="square4 color-code"></td>
+                    <td class="trail-name">Trail 4: 0.9 Miles</td>
+                    <td class="square9 icon"><img src="images/parking-15.svg"></td>
+                    <td class="trail-name">Parking/ Trailheads</td>
+                </tr>
+                <tr class="row">
+                    <td class="square5 color-code"></td>
+                    <td class="trail-name">Trail 5: 1.1 Miles</td>
+                    <td class="square10 icon"><img src="images/campsite-15.svg"></td>
+                    <td class="trail-name">Shelters</td>
+                </tr>
+            </table>  <!-- END legend-container -->
+        </div>
+</div>
 <section class="body-container">
 
 	<!--
@@ -143,180 +141,45 @@
 **** The following code will create clickable boxes to show and hide the different trails on the map ****
 	*/
     map.on('load', function() {
-        // add source and layer for trail 1
+        // add source for trail 1
         map.addSource('Trail_1', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckccuis8j0lvn24prl707kt0m-36b55'
         });
-        map.addLayer({
-            'id': '1',
-            'type': 'line',
-            'source': 'Trail_1',
-	        'source-layer': 'Trail_1',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#f8ff33',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 2
+        // add source for trail 2
         map.addSource('Trail_2_-_2.5_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckccvqmm83ebt29nva5ffon5p-5mho1'
         });
-        map.addLayer({
-            'id': '2',
-            'type': 'line',
-            'source': 'Trail_2_-_2.5_Mile',
-            'source-layer': 'Trail_2_-_2.5_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#ff9029',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 3
+        // add source for trail 3
         map.addSource('Trail_3_-_1.6_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce8yd5p0qwk26qlxombf42j-52phz'
         });
-        map.addLayer({
-            'id': '3',
-            'type': 'line',
-            'source': 'Trail_3_-_1.6_Mile',
-            'source-layer': 'Trail_3_-_1.6_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#21db00',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 4
+        // add source for trail 4
         map.addSource('Trail_4_-_0.9_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce952in3woq2fnvkhlpyg3r-84s4q'
         });
-        map.addLayer({
-            'id': '4',
-            'type': 'line',
-            'source': 'Trail_4_-_0.9_Mile',
-            'source-layer': 'Trail_4_-_0.9_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#ff2424',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 5
+        // add source for trail 5
         map.addSource('Trail_5_-_1.1_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce9akfz0ng623o51n8sm7qb-30ltn'
         });
-        map.addLayer({
-            'id': '5',
-            'type': 'line',
-            'source': 'Trail_5_-_1.1_Mile',
-            'source-layer': 'Trail_5_-_1.1_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#0206f2',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 6
+        // add source for trail 6
         map.addSource('Trail_6_-_1.7_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckce9p5nm0udd23py4dvq3tse-1nrg9'
         });
-        map.addLayer({
-            'id': '6',
-            'type': 'line',
-            'source': 'Trail_6_-_1.7_Mile',
-            'source-layer': 'Trail_6_-_1.7_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#f8ff33',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 7
+        // add source for trail 7
         map.addSource('Trail_7_-_1.2_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckceaaowm0sux22pyxhsc3t9d-0l3nm'
         });
-        map.addLayer({
-            'id': '7',
-            'type': 'line',
-            'source': 'Trail_7_-_1.2_Mile',
-            'source-layer': 'Trail_7_-_1.2_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#6800b3',
-                'line-width': 4
-            }
-        });
-
-        // add source and layer for trail 8
+        // add source for trail 8
         map.addSource('Trail_8_-_1.4_Mile', {
             type: 'vector',
             url: 'mapbox://joshua-delong.ckcf6q2ht5drl29p5s4j4hraa-5xt9t'
-        });
-        map.addLayer({
-            'id': '8',
-            'type': 'line',
-            'source': 'Trail_8_-_1.4_Mile',
-            'source-layer': 'Trail_8_-_1.4_Mile',
-            'layout': {
-                // make layer visible by default
-                'visibility': 'none',
-                'line-cap': 'butt',
-                'line-join': 'miter'
-            },
-            'paint': {
-                'line-color':  '#f8ff33',
-                'line-width': 4
-            }
         });
     });
 
@@ -328,14 +191,13 @@
         var id = toggleableLayerIds[i];
 
         var link = document.createElement('a');
-        link.href = '#';
-        link.className = 'active';
+        link.href = 'javascript:void();';
+        link.className = '';
         link.textContent = id;
 
-        link.onclick = function(e) {
+        link.onmousedown = function(e) {
             var clickedLayer = this.textContent;
             e.preventDefault();
-            e.stopPropagation();
 
             var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
 
@@ -354,18 +216,10 @@
     }   // END for loop
 
 </script>
+<?php include 'footer.php';?>
 </body>
 
-<?php include 'footer.php'?>
 
-<script>
-    var mybutton = document.getElementById("myBtn");
 
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
-<script src="js/master.js"></script>
 </body>
 </html>
