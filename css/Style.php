@@ -13,7 +13,7 @@ td{border: 1px solid black;
 	color: black;}
 
 .milestones-con {
-	padding:3%;
+	padding:7%;
 }
 .milestones{
 	border: 1px solid black;
@@ -32,7 +32,6 @@ td{border: 1px solid black;
     width: 50%;
 	height: 50%
 }
-
 .newsbox{
 	background:red;
 	color: white;
@@ -45,7 +44,6 @@ td{border: 1px solid black;
   height: 3em ;
   overflow: hidden; /* Hide scroll bar */
 }
-
 /* MIDDLE CONTAINER */
 .ticker-wrap {
 	height: 100%;
@@ -53,7 +51,6 @@ td{border: 1px solid black;
 	padding-left: 100%; /* Push contents to right side of screen */
 	background-color: #eee;
 }
-
 /* INNER CONTAINER */
 @keyframes ticker {
   0% { transform: translate3d(0, 0, 0); }
@@ -81,13 +78,19 @@ td{border: 1px solid black;
 }
 
 .historytext{
+	float: left;
 	padding-top: 5%;
 	padding-left:10%;
 	padding-right:10%;
-	font-size: 200%;
+	font-size: 2em;
+}
+.Calender{
+	float: right;
 }
 /*END OF HOME PAGE STYLES*/
 
+/*BEGINING OF GALLERY PAGE STYLES*/
+=======
 
 
 /*BEGINING OF SIGN UP PAGE*/
@@ -153,6 +156,7 @@ hr{ margin-top: 20px; width: 100%; }
 }
 
 /* END OF SIGN UP PAGE */
+
 
 
 
@@ -706,7 +710,16 @@ transform:  rotate(-45deg) translate(-5px,6px);
 .toggle .line3 {
 	transform:  rotate(45deg) translate(-5px,-6px);
 }
-/* stragtice plans page*/
+/* strat. plans page*/
+.PlanImg{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	height: 50%
+	padding-top: 5em;
+}
+
 .Plandesc{
 	padding: 2%;
 	font-size: 20px;
