@@ -22,11 +22,9 @@
 				<button class="btn" data-class="wabash"> Wabash Bridge</button>
 				<button class="btn" data-class="trails"> Trails & Nature</button>
 			</div>
-			<h2 class="video-heading"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
 			<div class="Video-container">
 
 				<div class="item" data-class="videos">
-					<h2 style="text-align:center"><strong>Chief Wapello Carving and Wabash Video</strong></h2>
 					<iframe width="550" height="415"
 
 						src="https://www.youtube.com/embed/-W1m8Kw5UHE" frameborder="0"
@@ -39,7 +37,7 @@
 						allow="accelerometer; autoplay; encrypted-media; gyroscope;
 						picture-in-picture" allowfullscreen>
 					</iframe>
-				
+				</div>
 			</div>
 
 			<h2 style="text-align:center"><strong>Photos</strong></h2>
