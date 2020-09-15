@@ -160,7 +160,7 @@ td{border: 1px solid black;
 	padding: 30px;
 }
 
-.item { 
+.item {
 	padding: 0 10px 10px;
 }
 
@@ -756,6 +756,7 @@ div.filter {
 
 div.projects {
   width: 85%;
+  margin: auto;
 }
 
 div.project1 {
@@ -799,25 +800,70 @@ div.projectinfo {
 }
 
 div.thumbnail {
-  width: 80%;
+  width: 100%;
   background-color: #909090;
-}
-
-div.imgselection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 20%;
-}
-
-div.imgselection > * {
-    border: 1px black solid;
-    height: 20%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 div.projecttitle {
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  div.projects {
+    width: 100%;
+  }
+
+  div.projectimage {
+    width: 100%;
+    height: 200px;
+    border: 1px black solid;
+    display: lex;
+  }
+
+  div.projectdescription {
+    width: 100%;
+    border: 1px black solid;
+    height: 250px;
+  }
+
+  div.projectinfo {
+    width: 100%;
+    height: 200px;
+  }
+
+  div.project1 {
+    width: 90%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project2 {
+    width: 90%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project3 {
+    width: 90%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
