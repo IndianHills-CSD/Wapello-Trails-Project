@@ -12,10 +12,6 @@
 
 		<div class="projectContent">
 
-			<div class="filter">
-				This is the filter area
-			</div>
-
 			<div class="projects">
 
 				<!--project 1-->
@@ -23,17 +19,6 @@
 					<div class="projectimage">
 						<div class="thumbnail">
 							<p>thumbnail</p>
-						</div>
-						<div class="imgselection">
-							<div class="selection1">
-								<p>img1</p>
-							</div>
-							<div class="selection2">
-								<p>img2</p>
-							</div>
-							<div class="selection3">
-								<p>img3</p>
-							</div>
 						</div>
 					</div>
 					<div class="projectdescription">
@@ -55,17 +40,6 @@
 						<div class="thumbnail">
 							<p>thumbnail</p>
 						</div>
-						<div class="imgselection">
-							<div class="selection1">
-								<p>img1</p>
-							</div>
-							<div class="selection2">
-								<p>img2</p>
-							</div>
-							<div class="selection3">
-								<p>img3</p>
-							</div>
-						</div>
 					</div>
 					<div class="projectdescription">
 						<div class="projecttitle">
@@ -85,17 +59,6 @@
 					<div class="projectimage">
 						<div class="thumbnail">
 							<p>thumbnail</p>
-						</div>
-						<div class="imgselection">
-							<div class="selection1">
-								<p>img1</p>
-							</div>
-							<div class="selection2">
-								<p>img2</p>
-							</div>
-							<div class="selection3">
-								<p>img3</p>
-							</div>
 						</div>
 					</div>
 					<div class="projectdescription">
