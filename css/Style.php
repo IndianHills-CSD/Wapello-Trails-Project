@@ -912,7 +912,7 @@ div.projecttitle {
   }
 
   div.project1 {
-    width: 90%;
+    width: 75%;
     background-color: #cfcfcf;
     height: 650px;
     margin: auto;
@@ -924,7 +924,7 @@ div.projecttitle {
   }
 
   div.project2 {
-    width: 90%;
+    width: 75%;
     background-color: #cfcfcf;
     height: 650px;
     margin: auto;
@@ -935,7 +935,7 @@ div.projecttitle {
   }
 
   div.project3 {
-    width: 90%;
+    width: 75%;
     background-color: #cfcfcf;
     height: 650px;
     margin: auto;
