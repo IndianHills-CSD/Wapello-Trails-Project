@@ -740,7 +740,7 @@ button#myBtn:focus {
 		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
-		height: 20%;
+		height: 100%;
 		top: 20vh;
 		display: flex;
 		flex-direction: column;
