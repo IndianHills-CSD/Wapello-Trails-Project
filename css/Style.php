@@ -116,7 +116,7 @@ td{border: 1px solid black;
     background: #fff;
     padding: 20px;
     margin: 8% auto 8%;
-    text-align: center;  
+    text-align: center;
 }
 
 .signup-forms h1{
@@ -147,10 +147,10 @@ td{border: 1px solid black;
 	outline:none;
 	border: none;
 	cursor: pointer;
-	background-color: #1c8adb;		
+	background-color: #1c8adb;
 }
-		
-.facebookbtn{ 
+
+.facebookbtn{
 	color: #fff;
 	background-color: #21afde;
 	width: 100%;
@@ -162,7 +162,7 @@ td{border: 1px solid black;
 	border: none;
 	cursor: pointer;
 }
-	
+
 .signup-forms a{ text-decoration: none;}
 
 
@@ -839,6 +839,7 @@ div.projects {
 div.project1 {
   background-color: #cfcfcf;
   height: 30vh;
+  margin-top: 25px;
   margin-bottom: 5px;
   display: flex;
   text-align: center;
@@ -855,7 +856,7 @@ div.project2 {
 div.project3 {
   background-color: #cfcfcf;
   height: 30vh;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   display: flex;
   text-align: center;
 }
