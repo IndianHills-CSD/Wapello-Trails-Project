@@ -116,7 +116,7 @@ td{border: 1px solid black;
     background: #fff;
     padding: 20px;
     margin: 8% auto 8%;
-    text-align: center;  
+    text-align: center;
 }
 
 .signup-forms h1{
@@ -147,10 +147,10 @@ td{border: 1px solid black;
 	outline:none;
 	border: none;
 	cursor: pointer;
-	background-color: #1c8adb;		
+	background-color: #1c8adb;
 }
-		
-.facebookbtn{ 
+
+.facebookbtn{
 	color: #fff;
 	background-color: #21afde;
 	width: 100%;
@@ -162,7 +162,7 @@ td{border: 1px solid black;
 	border: none;
 	cursor: pointer;
 }
-	
+
 .signup-forms a{ text-decoration: none;}
 
 
@@ -237,7 +237,7 @@ hr{
 	padding: 30px;
 }
 
-.item { 
+.item {
 	padding: 0 10px 10px;
 }
 
@@ -740,7 +740,7 @@ button#myBtn:focus {
 		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
-		height: 20%;
+		height: 100%;
 		top: 20vh;
 		display: flex;
 		flex-direction: column;
@@ -833,11 +833,13 @@ div.filter {
 
 div.projects {
   width: 85%;
+  margin: auto;
 }
 
 div.project1 {
   background-color: #cfcfcf;
   height: 30vh;
+  margin-top: 25px;
   margin-bottom: 5px;
   display: flex;
   text-align: center;
@@ -854,7 +856,7 @@ div.project2 {
 div.project3 {
   background-color: #cfcfcf;
   height: 30vh;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   display: flex;
   text-align: center;
 }
@@ -876,25 +878,70 @@ div.projectinfo {
 }
 
 div.thumbnail {
-  width: 80%;
+  width: 100%;
   background-color: #909090;
-}
-
-div.imgselection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 20%;
-}
-
-div.imgselection > * {
-    border: 1px black solid;
-    height: 20%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 div.projecttitle {
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  div.projects {
+    width: 100%;
+  }
+
+  div.projectimage {
+    width: 100%;
+    height: 200px;
+    border: 1px black solid;
+    display: lex;
+  }
+
+  div.projectdescription {
+    width: 100%;
+    border: 1px black solid;
+    height: 250px;
+  }
+
+  div.projectinfo {
+    width: 100%;
+    height: 200px;
+  }
+
+  div.project1 {
+    width: 75%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project2 {
+    width: 75%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project3 {
+    width: 75%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
