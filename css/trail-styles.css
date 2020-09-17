@@ -78,6 +78,10 @@ tr {
         padding-bottom: 4%;
     }
 
+    #menu a {
+        margin: 15px 15px;
+    }
+
     table {
         text-align: left;
         margin-left: auto;
@@ -157,9 +161,10 @@ tr {
        flex-flow: row nowrap;       
        width: 75%;
    }
-    #menu a {
-        width: 125px;
-    }
+
+   #menu a {
+       width: 300px;
+   }
 
    .color-code {
        width: 7%;

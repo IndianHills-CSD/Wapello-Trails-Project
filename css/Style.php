@@ -312,38 +312,44 @@ td{border: 1px solid black;
 /* Map */
 #map {
     display: flex;
-    height: 65%;
-    width: 85%;
+    height: 95%;
+    width: 65%;
     margin: 3% auto 0 auto;
 	border: 3px solid #533747;
 }
 
 /* Clickable Buttons */
 #menu a {
-    font-size: 13px;
-    color: #24252A;
-    display: block;
-    margin: 2px;
-    padding: 12px 16px;
+    font-size: inherit;
+	font-family: inherit;
+    color: black;
+	transition: none;
+    display: inline-block;
+    margin: 15px 30px;
+    padding: 25px 80px;
     text-decoration: none;
-    border: 1px solid #577399;
+	letter-spacing: 1px;
+	border-radius: 15px;
 	text-align: center;
 	background-color: white;
+	cursor: pointer;
+	outline: none;
+	position: relative
 }
 
 #menu a:hover {
-    background-color: #5F506B;
-    color: #404040;
-}
-
-#menu a.active {
-    background-color: #533747;
-    color: #ffffff;
-    border: 1px solid #577399;
+	background: #86737E;
+	color: white;
 }
 
 #menu a.active:hover {
-    background: #6A6B83;
+	background: #86737E;
+	color: black;
+}
+
+#menu a.active {
+	background: #533747;
+	color: white;
 }
 
 .square1 {
