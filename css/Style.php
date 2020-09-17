@@ -103,9 +103,86 @@ td{border: 1px solid black;
 
 
 
-/*BEGINING OF GALLERY PAGE STYLES*/
+/*BEGINING SIGN UP PAGE STYLES*/
 
-/* content styles */
+.signup-forms img{
+    width: 70px;
+    margin-top: -50px;
+}
+
+.signup-forms{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 8%;
+    text-align: center;
+}
+
+.signup-forms h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+
+.signup-forms p{
+    color: #000;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.signupbtn{
+	width: 100%;
+	color: #fff;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+	background-color: #1c8adb;
+}
+
+.facebookbtn{
+	color: #fff;
+	background-color: #21afde;
+	width: 100%;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+}
+
+.signup-forms a{ text-decoration: none;}
+
+
+hr{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -12px auto 12px;
+}
+
+
+/*END OF SIGN UP PAGE STYLES*/
+
+
+
+/*BEGINING OF GALLERY PAGE STYLES*/
 
 /* content styles */
 .container {
@@ -160,7 +237,7 @@ td{border: 1px solid black;
 	padding: 30px;
 }
 
-.item { 
+.item {
 	padding: 0 10px 10px;
 }
 
@@ -669,7 +746,7 @@ button#myBtn:focus {
 		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
-		height: 20%;
+		height: 100%;
 		top: 20vh;
 		display: flex;
 		flex-direction: column;
@@ -762,11 +839,13 @@ div.filter {
 
 div.projects {
   width: 85%;
+  margin: auto;
 }
 
 div.project1 {
   background-color: #cfcfcf;
   height: 30vh;
+  margin-top: 25px;
   margin-bottom: 5px;
   display: flex;
   text-align: center;
@@ -783,7 +862,7 @@ div.project2 {
 div.project3 {
   background-color: #cfcfcf;
   height: 30vh;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   display: flex;
   text-align: center;
 }
@@ -805,25 +884,70 @@ div.projectinfo {
 }
 
 div.thumbnail {
-  width: 80%;
+  width: 100%;
   background-color: #909090;
-}
-
-div.imgselection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 20%;
-}
-
-div.imgselection > * {
-    border: 1px black solid;
-    height: 20%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 div.projecttitle {
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  div.projects {
+    width: 100%;
+  }
+
+  div.projectimage {
+    width: 100%;
+    height: 200px;
+    border: 1px black solid;
+    display: lex;
+  }
+
+  div.projectdescription {
+    width: 100%;
+    border: 1px black solid;
+    height: 250px;
+  }
+
+  div.projectinfo {
+    width: 100%;
+    height: 200px;
+  }
+
+  div.project1 {
+    width: 75%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project2 {
+    width: 75%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.project3 {
+    width: 75%;
+    background-color: #cfcfcf;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
