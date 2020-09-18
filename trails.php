@@ -88,7 +88,10 @@
     mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zaHVhLWRlbG9uZyIsImEiOiJja2MzcHZ1a3owMDl2MnBrMDE5M3J4c3UxIn0.kFA68Avg1OaqG0QMq6f7dg';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/joshua-delong/ckcfn77730anb1ilibata5gt6'
+        style: 'mapbox://styles/joshua-delong/ckcfn77730anb1ilibata5gt6',
+        center: [-92.413295, 41.010626],
+        zoom: 12,
+        attributionControl: false
     });
 
     /*
@@ -146,7 +149,7 @@
 
         var link = document.createElement('a');
         link.href = 'javascript:void();';
-        link.className = '';
+        link.className = 'active';
         link.textContent = id;
 
         link.onmousedown = function(e) {

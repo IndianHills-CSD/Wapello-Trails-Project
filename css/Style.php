@@ -200,32 +200,42 @@ hr{
 }
 
 .btn {
-  border: none;
-  width: 125px;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-  margin: 5px;
+    font-size: inherit;
+	font-family: inherit;
+    color: black;
+	transition: none;
+    display: inline-block;
+    margin: 15px 5px;
+    padding: 15px 38px;
+    text-decoration: none;
+	border-radius: 15px;
+	text-align: center;
+	background-color: white;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	border: none;
+	width: 225px;
 }
 
-/* Add a background color on mouse-over */
 .btn:hover {
-	background-color: #5F506B;
-    color: #404040;
+	background: #86737E;
+	color: white;
 }
 
-/* Add a dark background color to the active button */
+.btn:hover {
+	background: #86737E;
+	color: black;
+}
+
 .btn:active {
-	background-color: #533747;
-    color: #ffffff;
-    border: 1px solid #577399;
+	background: #533747;
+	color: white;
 }
 
 .btn:focus {
-	background-color: #533747;
-    color: #ffffff;
-    border: 1px solid #577399;
+	background: #533747;
+	color: white;
 }
 
 .flex-img {
@@ -371,7 +381,7 @@ hr{
 .page-title {
     color: #533747;
 	font-size: 2em;
-    padding: 1% 0 0 5%;
+    padding: 5% 0 1% 5%;
 }
 
 .activities {
@@ -402,10 +412,9 @@ hr{
     color: black;
 	transition: none;
     display: inline-block;
-    margin: 15px 30px;
-    padding: 25px 80px;
+    margin: 5px 5px;
+    padding: 15px 38px;
     text-decoration: none;
-	letter-spacing: 1px;
 	border-radius: 15px;
 	text-align: center;
 	background-color: white;
@@ -463,8 +472,7 @@ hr{
 
 /* Area Plan Styling */
 .plans-page-title {
-    font-size: 2em;
-    padding: 2% 0 0 5%;
+    padding: 4% 0 0 20%;
 	color: #533747;
 }
 
@@ -508,6 +516,10 @@ hr.plans-hr {
     padding: .2% 11% 1% 11%;
     object-fit: cover;
     color: white;
+}
+
+.plan-p-info.bottom {
+	margin-bottom: 5%;
 }
 
 
@@ -738,6 +750,11 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 900px) {
+
+	#map {
+		height: 45%;
+		width: 95%;
+	}
 
 	body {
 		overflow-x: hidden;
