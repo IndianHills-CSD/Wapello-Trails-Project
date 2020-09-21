@@ -13,6 +13,7 @@
 body {
 	background: #76949F;
 	color: white;
+	width: 100%;
 }
 
 /*the styles for the home page */
@@ -219,22 +220,17 @@ hr{
 }
 
 .btn:hover {
-	background: #86737E;
+	background: #6A6B83;
 	color: white;
 }
 
-.btn:hover {
-	background: #86737E;
-	color: black;
-}
-
 .btn:active {
-	background: #533747;
+	background: #5F506B;
 	color: white;
 }
 
 .btn:focus {
-	background: #533747;
+	background: #5F506B;
 	color: white;
 }
 
@@ -379,7 +375,7 @@ hr{
     Title and activity container
 */
 .page-title {
-    color: #533747;
+    color: white;
 	font-size: 2em;
     padding: 5% 0 1% 5%;
 }
@@ -424,17 +420,17 @@ hr{
 }
 
 #menu a:hover {
-	background: #86737E;
+	background: #6A6B83;
 	color: white;
 }
 
 #menu a.active:hover {
-	background: #86737E;
-	color: black;
+	background: #6A6B83;
+	color: white;
 }
 
 #menu a.active {
-	background: #533747;
+	background: #5F506B;
 	color: white;
 }
 
@@ -473,7 +469,8 @@ hr{
 /* Area Plan Styling */
 .plans-page-title {
     padding: 4% 0 0 20%;
-	color: #533747;
+	color: white;
+	font-style: inherit;
 }
 
 hr.plans-hr {
