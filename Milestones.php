@@ -3,7 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/Style.php">
-	<link rel="stylesheet" href="css/masterstyle.css">
 	<title>Home</title>
 </head>
 <body>
@@ -113,10 +112,12 @@
 				  <tr>
 					<td>Hwy 34 Underpass -<br/> Between Ottumwa Park & Wayside Park</td>
 					<td>2015</td>
+
 					<td>Legacy Foundation, City of 
 						Ottumwa,<br/> Wapello County, Vision <br/>
 						Iowa - C.A.T. Project,  John Deere <br/>
 						Foundation, Wapello County Foundation,<br/>  Community Donations.
+
 					</td>
 					<td>$654,375.00 </td>
 				  </tr>
@@ -126,7 +127,7 @@
 					<td> Total Invested in Wapello County Trails<br/> to Date:</td>
 					<td>$2,131,128.72</td>
 				  </tr>
-				  
+
 			</table>
 </body>
 </html>
