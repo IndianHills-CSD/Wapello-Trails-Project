@@ -466,6 +466,85 @@ hr{
     background: #8a0000;
 }
 
+/* Admin Login Page */
+
+.form-container {
+	border-radius: 5px;
+	width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+    background: #fff;
+    padding: 20px;
+	text-align: center;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	margin: 10% auto;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form-container:before, .form-container:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 25px rgba(0,0,0,0.8);
+    top:4%;
+    bottom:0;
+    left:1%;
+    right:5%;
+}
+
+.form-container:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.form-container, td{
+	border: none;
+}
+
+.form-container img{
+    width: 70px;
+    margin-top: -50px;
+}
+
+.sign-in-btn{
+	width: 100%;
+	color: #fff;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+	background-color: #1c8adb;
+}
+
+.reset-btn{
+	color: #fff;
+	background-color: #1c8adb;
+	width: 100%;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+}
+
 /* Area Plan Styling */
 .plans-page-title {
     padding: 4% 0 0 20%;
