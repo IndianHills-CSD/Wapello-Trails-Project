@@ -44,13 +44,6 @@ td{border: 1px solid black;
     width: 50%;
 	height: 50%
 }
-
-.newsbox{
-	background:red;
-	color: white;
-	text-align: center;
-	float:inline;
-}
 /* OUTER CONTAINER */
 .tcontainer {
   width: 100%;
@@ -94,12 +87,25 @@ td{border: 1px solid black;
 }
 
 .historytext{
-	padding-top: 5%;
-	padding-left:10%;
-	padding-right:10%;
+	float: left;
+	width: 62.5%;
 	font-size: 200%;
+	padding: 3% 0% 2% 0%;
+}
+.historylist{
+	float: left;
+	padding: 1% 10% 2% 10%;
+	font-size: 150%;
 	text-align: justify;
 }
+.calendar{
+	width: 30.5%;
+	padding-right:2%;
+	padding-left: 3%;
+	float: left;
+	
+}
+
 /*END OF HOME PAGE STYLES*/
 
 
