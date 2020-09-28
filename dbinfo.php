@@ -20,7 +20,7 @@
           values(?,?,?,?)");
       $stmt->bind_param("ssss",$phone, $fname, $lname, $email);
       $stmt->execute();
-      echo "Registration Successul...";
+      echo "Registration Successul...! <a href='index.php'>Home page</a>";
       $stmt->close();
       $conn->close();
     }
