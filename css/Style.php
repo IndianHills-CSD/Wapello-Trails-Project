@@ -44,6 +44,16 @@ td{border: 1px solid black;
     width: 50%;
 	height: 50%
 }
+
+.weatherwidget-io {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* OUTER CONTAINER */
 .tcontainer {
   width: 100%;
@@ -103,7 +113,7 @@ td{border: 1px solid black;
 	padding-right:2%;
 	padding-left: 3%;
 	float: left;
-	
+
 }
 
 /*END OF HOME PAGE STYLES*/
