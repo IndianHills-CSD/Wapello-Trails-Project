@@ -13,6 +13,7 @@
 body {
 	background: #76949F;
 	color: white;
+	width: 100%;
 }
 
 /*the styles for the home page */
@@ -206,32 +207,37 @@ hr{
 }
 
 .btn {
-  border: none;
-  width: 125px;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-  margin: 5px;
+    font-size: inherit;
+	font-family: inherit;
+    color: black;
+	transition: none;
+    display: inline-block;
+    margin: 15px 5px;
+    padding: 15px 38px;
+    text-decoration: none;
+	border-radius: 15px;
+	text-align: center;
+	background-color: white;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	border: none;
+	width: 225px;
 }
 
-/* Add a background color on mouse-over */
 .btn:hover {
-	background-color: #5F506B;
-    color: #404040;
+	background: #6A6B83;
+	color: white;
 }
 
-/* Add a dark background color to the active button */
 .btn:active {
-	background-color: #533747;
-    color: #ffffff;
-    border: 1px solid #577399;
+	background: #5F506B;
+	color: white;
 }
 
 .btn:focus {
-	background-color: #533747;
-    color: #ffffff;
-    border: 1px solid #577399;
+	background: #5F506B;
+	color: white;
 }
 
 .flex-img {
@@ -375,9 +381,9 @@ hr{
     Title and activity container
 */
 .page-title {
-    color: #533747;
+    color: white;
 	font-size: 2em;
-    padding: 1% 0 0 5%;
+    padding: 5% 0 1% 5%;
 }
 
 .activities {
@@ -395,38 +401,43 @@ hr{
 /* Map */
 #map {
     display: flex;
-    height: 65%;
-    width: 85%;
+    height: 95%;
+    width: 65%;
     margin: 3% auto 0 auto;
 	border: 3px solid #533747;
 }
 
 /* Clickable Buttons */
 #menu a {
-    font-size: 13px;
-    color: #24252A;
-    display: block;
-    margin: 2px;
-    padding: 12px 16px;
+    font-size: inherit;
+	font-family: inherit;
+    color: black;
+	transition: none;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 15px 38px;
     text-decoration: none;
-    border: 1px solid #577399;
+	border-radius: 15px;
 	text-align: center;
 	background-color: white;
+	cursor: pointer;
+	outline: none;
+	position: relative
 }
 
 #menu a:hover {
-    background-color: #5F506B;
-    color: #404040;
-}
-
-#menu a.active {
-    background-color: #533747;
-    color: #ffffff;
-    border: 1px solid #577399;
+	background: #6A6B83;
+	color: white;
 }
 
 #menu a.active:hover {
-    background: #6A6B83;
+	background: #6A6B83;
+	color: white;
+}
+
+#menu a.active {
+	background: #5F506B;
+	color: white;
 }
 
 .square1 {
@@ -461,11 +472,90 @@ hr{
     background: #8a0000;
 }
 
+/* Admin Login Page */
+
+.form-container {
+	border-radius: 5px;
+	width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
+    background: #fff;
+    padding: 20px;
+	text-align: center;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	margin: 10% auto;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.form-container:before, .form-container:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 25px rgba(0,0,0,0.8);
+    top:4%;
+    bottom:0;
+    left:1%;
+    right:5%;
+}
+
+.form-container:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.form-container, td{
+	border: none;
+}
+
+.form-container img{
+    width: 70px;
+    margin-top: -50px;
+}
+
+.sign-in-btn{
+	width: 100%;
+	color: #fff;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+	background-color: #1c8adb;
+}
+
+.reset-btn{
+	color: #fff;
+	background-color: #1c8adb;
+	width: 100%;
+	padding:10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	outline:none;
+	border: none;
+	cursor: pointer;
+}
+
 /* Area Plan Styling */
 .plans-page-title {
-    font-size: 2em;
-    padding: 2% 0 0 5%;
-	color: #533747;
+    padding: 4% 0 0 20%;
+	color: white;
+	font-style: inherit;
 }
 
 hr.plans-hr {
@@ -508,6 +598,10 @@ hr.plans-hr {
     padding: .2% 11% 1% 11%;
     object-fit: cover;
     color: white;
+}
+
+.plan-p-info.bottom {
+	margin-bottom: 5%;
 }
 
 
@@ -738,6 +832,11 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 900px) {
+
+	#map {
+		height: 45%;
+		width: 95%;
+	}
 
 	body {
 		overflow-x: hidden;
