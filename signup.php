@@ -3,12 +3,13 @@
  <head>
    <meta charset="UTF-8">
    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-   <title> Gallery Page </title>
+   <title> Signup Page </title>
    <link  rel="stylesheet" type="text/css" href="css/Style.php">
  </head>
   <body>
     <?php include 'nav.php';?>
-    <div class="signup-forms">
+
+    <main class="signup-forms">
       <img src="images/user-logo.png">
       <h1>Sign up Here</h1>
       <form action="dbinfo.php" method="POST">
@@ -26,9 +27,9 @@
          <hr>
          <p class="or">OR</p>
         <button type="button" class="facebookbtn" style="background:#21afde">Login with facebook</button>
-        <p>Already have an account?<a href="signIn.html" style="color:dodgerblue">Sign In</a>.</p>
+        <p>Already a Member? <a href="signIn.html" style="color:dodgerblue">Sign In</a>.</p>
       </form>
-    </div>
-    	<?php include 'footer.php';?>
+    </main>
+    <?php include 'footer.php';?>
   </body>
 </html>
