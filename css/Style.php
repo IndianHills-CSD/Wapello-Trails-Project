@@ -951,3 +951,9 @@ div.projecttitle {
     text-align: center;
   }
 }
+/*admin email main*/
+
+.Maintence{
+	border: 5px solid white;
+	
+}
