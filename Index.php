@@ -19,13 +19,19 @@
 
 			<img class="center" src="images/placehold.png" width="300" height="400">
 			<br/>
+
+			<a class="weatherwidget-io" href="https://forecast7.com/en/41d02n92d41/ottumwa/?unit=us" data-label_1="OTTUMWA" data-label_2="WEATHER" data-theme="original" >OTTUMWA WEATHER</a>
+			<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+			</script>
+
 		<iframe src="https://calendar.google.com/calendar/embed?src=wapellocountytrailscouncil%40gmail.com&ctz=America%2FChicago" style="border: 0" width="385" height="300" frameborder="0" scrolling="no" class="calendar"></iframe>
 		<p class="historytext">
 			In 2006, increased interest in trail development led to the formation of the Wapello County Trails Council. After hosting several public meetings,
-			a mission statement and master plan for a paved trail system was developed. The trail sections were then prioritized and fundraising began. 
-			Since that time, over 10 miles of levee trail has been completed with projects totaling over $2 million. Trail projects included:		
+			a mission statement and master plan for a paved trail system was developed. The trail sections were then prioritized and fundraising began.
+			Since that time, over 10 miles of levee trail has been completed with projects totaling over $2 million. Trail projects included:
 			</p>
-			
+
 			<ul class="historylist">
 			  <li>In 2007, a section of north levee (.7 miles) was paved. An abandoned rail bridge spanning the Des Moines River was also decked for pedestrian use. </li>
 			  <br/>
@@ -43,7 +49,7 @@
 			  <br/>
 			  <li> Paved the Gray Eagle parking lot and installed solar lights in 2016-17. </li>
 			</ul>
-		
+
 		<div class="milestones-con">
 			<?php include 'Milestones.php';?>
 		</div>

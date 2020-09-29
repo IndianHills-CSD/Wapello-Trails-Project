@@ -36,7 +36,7 @@ tr {
 .instruct {
     display: flex;
     justify-content: center;
-    margin: 2% auto 2% auto;
+    margin: .5% auto .5% auto;
     font-weight: bolder;
     font-size: 1.2em;
 }
@@ -47,12 +47,12 @@ tr {
     border-radius: 2px;
     width: 100%;
     justify-content: center;
-    margin-bottom: 2%;
 }
 
 /* Map Legend */
 .legend-head {
     padding-left: 5%;
+    color: black;
 }
 
 .row {
@@ -74,8 +74,10 @@ tr {
     #menu {
         margin: 0 auto 0 auto;
         flex-direction: column;
-        width: 65%;
-        padding-bottom: 4%;
+    }
+
+    #menu a {
+        margin: 15px 15px;
     }
 
     table {
@@ -95,7 +97,8 @@ tr {
         background: white;
         padding: 2%;
         border: 3px solid #533747;
-        margin: 2%;
+        margin: 1% auto;
+        width: 65%;
     }
 
     .color-code {
@@ -126,7 +129,7 @@ tr {
 @media (min-width: 768px) {
     .instruct {
         display: flex;
-        margin: 4% auto 4% auto;
+        margin: 2.3% auto 1% auto;
         font-weight: bolder;
         font-size: 1em;
         justify-content: center;
@@ -136,7 +139,6 @@ tr {
         margin: 0 auto 0 auto;
         flex-direction: column;
         width: 35%;
-        padding-bottom: 4%;
     }
 
     .icon {
@@ -157,9 +159,6 @@ tr {
        flex-flow: row nowrap;       
        width: 75%;
    }
-    #menu a {
-        width: 125px;
-    }
 
    .color-code {
        width: 7%;
