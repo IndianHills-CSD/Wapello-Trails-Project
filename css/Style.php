@@ -855,7 +855,7 @@ button#myBtn:focus {
 		background-color: #ffffff;
 		position: absolute;
 		right: 0px;
-		height: 100%;
+		height: 145%;
 		top: 20vh;
 		display: flex;
 		flex-direction: column;
