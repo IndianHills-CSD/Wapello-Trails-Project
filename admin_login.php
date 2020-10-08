@@ -1,11 +1,11 @@
 
-    <!-- 
+    <!--
         Login page that allows admin access to email, etc
     -->
 
     <!DOCTYPE html>
 
-    <?php 
+    <?php
         ob_start();
         session_start();
     ?>
@@ -22,7 +22,7 @@
         <?php include 'nav.php';?>
 
             <div class="form-container">
-            
+
             <?php
                 $msg = '';
 
@@ -32,6 +32,7 @@
                             $_SESSION['timeout'] = time();
                             $_SESSION['username'] = 'wapelloct';
                             $msg = '';
+                            header("Location:admin_dash.php");
                             // TODO Insert redirect code if valid user and pw
                     } else {
                         $msg = 'Incorrect username or password';
