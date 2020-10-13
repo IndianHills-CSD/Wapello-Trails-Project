@@ -128,7 +128,7 @@ td{border: 1px solid black;
 }
 
 .signup-forms{
-    width: 300px;
+    width: 460px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
     background: #fff;
     padding: 20px;
@@ -141,21 +141,42 @@ td{border: 1px solid black;
     margin-bottom: 30px;
 }
 
-.signup-forms p{
-    color: #000;
+.signup-forms p{ color: #000; }
+
+.firstName, .lastName{
+  width: 48%;
+  line-height: 30px;
+  padding: 4px 18px;
+  border-radius: 18px;
+  border: 1px solid #999;
+  outline: none;
 }
 
-.input-box{
-    border-radius: 20px;
-    padding: 10px;
-    margin: 8px 0;
+.city, .state, .zip-code{
+  width: 29.9%;
+  line-height: 30px;
+  padding: 1.2%;
+  margin-right: 2%;
+  border-radius: 18px;
+  border: 1px solid #999;
+  outline: none;
+}
+
+form, .input {
     width: 100%;
+    border-radius: 18px;
+    padding: 14px;
+    margin: 6px 0;
     border: 1px solid #999;
     outline: none;
 }
 
+input:focus {
+  border:2px solid #486255;
+}
+
 .signupbtn{
-	width: 100%;
+	width: 80%;
 	color: #fff;
 	padding:10px;
 	border-radius: 20px;
@@ -167,33 +188,12 @@ td{border: 1px solid black;
 	background-color: #1c8adb;
 }
 
-.facebookbtn{
-	color: #fff;
-	background-color: #21afde;
-	width: 100%;
-	padding:10px;
-	border-radius: 20px;
-	font-size: 15px;
-	margin: 10px 0;
-	outline:none;
-	border: none;
-	cursor: pointer;
-}
-
 .signup-forms a{ text-decoration: none;}
-
 
 hr{
     margin-top: 20px;
     width: 100%;
 }
-
-.or{
-    background: #fff;
-    width: 30px;
-    margin: -12px auto 12px;
-}
-
 
 /*END OF SIGN UP PAGE STYLES*/
 

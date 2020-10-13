@@ -22,7 +22,7 @@
     text-align: center;
    }
 
-   
+
   input,textarea {
      width: 50%;
      color: #2F4F4F;
@@ -49,7 +49,7 @@
       <form  action="getUsers.php" method="POST" enctype="multipart/form-data">
         <!--message input forms-->
           <h1>Message Inbox</h1>
-            <input type="file" name="file" /><br>
+            <input type="file" name="file[]" multiple="multiple"><br>
             <!--<textarea name="emails" id="selected-address"></textarea>-->
             <input type="text" placeholder="Subject" name="subject">
             <textarea name="message" placeholder="Enter Message" style="height:200px"></textarea><br>
