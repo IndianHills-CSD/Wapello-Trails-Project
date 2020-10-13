@@ -33,7 +33,6 @@
                             $_SESSION['username'] = 'wapelloct';
                             $msg = '';
                             header("Location:admin_dash.php");
-                            // TODO Insert redirect code if valid user and pw
                     } else {
                         $msg = 'Incorrect username or password';
                     }
@@ -56,13 +55,18 @@
                     <p id="val-label" class="val-label" style="color:red"><strong><?php echo $msg; ?></strong></p>
                     <input type="submit" name="submit" value="Submit" class="sign-in-btn">
                     <input type="button" onclick="reset()" value="Reset" class="reset-btn">
-                </form>
+                </form><br>
+
+                <!-- 
+                    TODO: link sends email that allows user to change password securely 
+                 -->
+                <a href="db_connect.php" style = "color:blue">Reset password</a><br><br> 
 
                 <!--
                        Link button to clear username and pw from session data when clicked. This will be handled by logout button following its implementation.
                 -->
-                Click <a href = "admin_logout.php" tite = "Logout" style="color: blue">HERE </a>to clean session data. This will be handled by a Logout button later.
-            </div>
+                Click <a href = "admin_logout.php" title = "Logout" style = "color: blue">HERE </a>to clean session data. This will be handled by a Logout button later.
+            </div> 
 
             <?php include 'footer.php';?>
             <script type="text/javascript" src="js/logScripts.js"></script>
