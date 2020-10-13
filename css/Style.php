@@ -651,7 +651,7 @@ h1.nav {
 }
 
 nav {
-	padding: 30px 10%;
+	padding: 30px 5%;
 	color: white;
 	background-color: #5F506B;
 	display: flex;
@@ -691,7 +691,7 @@ nav:after
 }
 
 .nav-links {
-  width: 40%;
+  width: 50%;
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
@@ -820,7 +820,7 @@ button#myBtn:focus {
   }
 
   .nav-links {
-		width: 45%;
+		width: 60%;
 	}
 }
 
