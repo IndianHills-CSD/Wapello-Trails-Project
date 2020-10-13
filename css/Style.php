@@ -526,7 +526,7 @@ hr{
             transform:skew(8deg) rotate(3deg);
 }
 
-.form-container, td{
+.form-container {
 	border: none;
 }
 
@@ -559,6 +559,15 @@ hr{
 	outline:none;
 	border: none;
 	cursor: pointer;
+}
+
+.inputBox{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
 }
 
 /* Area Plan Styling */
