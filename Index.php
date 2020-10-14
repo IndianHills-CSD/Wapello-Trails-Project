@@ -8,13 +8,33 @@
 <body>
 
 	<?php include 'nav.php';?>
+	<?php 
+	require_once('inc_ConnecttoDatabase.php');
+	$SELECTSTATEMENT = "SELECT News FROM news ";
+	$QueryResult = @$DBConnect->query($SELECTSTATEMENT); 
+	if($QueryResult->num_rows ==0){
+		echo "<p>that service was not found</p>";
+	}
+	echo '<marquee direction="right"
+	onmouseover="this.stop()"onmouseout="this.start()"
+	class="ticker-wrap"
+	>';
+	echo "<p>";
+	while (($Row = $QueryResult->fetch_assoc())!== NULL) 
+	{ 
+	echo $Row['News']; 
 
-	<div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
-    <div class="ticker-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-    <div class="ticker-item">Aliquam consequat varius consequat.</div>
-    <div class="ticker-item">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
-    <div class="ticker-item">Pellentesque auctor molestie orci ut blandit.</div>
-  </div></div></div>
+	} // end of loop
+	echo "</p>";
+	echo "</marquee>";
+	// close the connection.
+	$DBConnect->close();
+	
+	
+	
+	
+	
+	?>
 	<div class="body-container">
 
 			<img class="center" src="images/placehold.png" width="300" height="400">
