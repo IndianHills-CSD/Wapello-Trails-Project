@@ -4,7 +4,7 @@
     <h1 class="nav">Wapello County Trails Council</h1>
   </div>
   <ul class="nav-links">
-    <li><a href="index.php">Home</a></li>
+    <li><a href="Index.php">Home</a></li>
     <li><a href="gallery.php">Gallery</a></li>
     <li><a href="trails.php">Trails</a></li>
     <li><a href="projects.php">Projects</a></li>
