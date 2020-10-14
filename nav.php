@@ -9,6 +9,8 @@
     <li><a href="trails.php">Trails</a></li>
     <li><a href="projects.php">Projects</a></li>
     <li><a href="strategicplans.php">Strategic Plans</a></li>
+    <li><a href="signup.php">Sign Up</a></li>
+    <li><a href="admin_login.php">Admin Login</a></li>
   </ul>
   <div class="burger">
     <div class="line1"></div>
