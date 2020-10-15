@@ -833,9 +833,10 @@ button#myBtn:focus {
 		width: 95%;
 	}
 
-	body {
-		overflow-x: hidden;
-	}
+  html,body{
+      overflow-x: hidden;
+  }
+  
 	.nav-links {
 		background-color: #ffffff;
 		position: absolute;
