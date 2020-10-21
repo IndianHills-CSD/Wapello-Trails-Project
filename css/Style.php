@@ -535,7 +535,7 @@ hr{
     margin-top: -50px;
 }
 
-.sign-in-btn{
+.login_btn{
 	width: 100%;
 	color: #fff;
 	padding:10px;
@@ -561,13 +561,33 @@ hr{
 	cursor: pointer;
 }
 
-.inputBox{
+.input_box{
     border-radius: 20px;
     padding: 10px;
     margin: 8px 0;
     width: 100%;
     border: 1px solid #999;
     outline: none;
+}
+
+.msg {
+	color: red;
+	padding: 25px 0;
+	font-weight: bold;
+}
+
+.email_confirm_msg {
+	padding: 1% 1% 0 1%;
+}
+
+.btm_line {
+	padding: 0 1% 1% 1%;
+}
+
+.logout_msg {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1%;
 }
 
 /* Area Plan Styling */
