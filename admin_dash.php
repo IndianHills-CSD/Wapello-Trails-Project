@@ -11,7 +11,7 @@
 		<?php include 'admin_nav.php';?>
 
 		<div class="projectContent">
-			<h1 class="admin_dash">Welcome admin</h1>
+			<h1 class="admin_dash">Welcome Admin</h1>
 		</div>
 
 		<?php include 'footer.php';?>

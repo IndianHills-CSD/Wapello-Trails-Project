@@ -1,11 +1,12 @@
 <?php
 require_once ('phpMailer/PHPMailerAutoload.php');
+require_once ('phpMailer/class.phpmailer.php');
 require_once ('phpMailer/class.smtp.php');
 
 //database connection
   $host="localhost";
-  $dbUser="root";
-  $dbpassword="";
+  $dbUser="trailsAdmin";
+  $dbpassword="trailsAdmin";
   $dbname = "wp_contacts";
 
   $conn = new mysqli($host, $dbUser, $dbpassword, $dbname);
@@ -37,6 +38,23 @@ function sendEmail($email,$fName,$lName){
 
       $mail = new PHPMailer();
 
+/*
+$mail->IsSMTP();
+     $mail->CharSet = 'UTF-8';
+     $mail->Host='localhost'; // relay-hosting.secureserver.net smtp.gmail.com
+    // $mail->Port = 25; //465 587
+     $mail->SMTPAuth = false;
+     $mail->SMTPSecure = false;
+     $mail->SMTPAutoTLS = false;
+   //  $mail->SMTPDebug = 3; //check detailes about errors
+    // $mail->Port=465; //465 587
+    // $mail->SMTPAuth=true;
+     //$mail->SMTPSecure='ssl'; //tls
+     //$mail->Username='beautysika13@gmail.com';  //Ahofe1999  beautysika13@gmail.com  user email address
+     //$mail->Password='Ahofe1999';
+
+*/
+
       $mail->IsSMTP();
       $mail->CharSet = 'UTF-8';
       $mail->Host='smtp.gmail.com';
@@ -53,16 +71,20 @@ function sendEmail($email,$fName,$lName){
       $mail->AddBCC($email);
       $mail->addReplyTo('beautysika13@gmail.com');
 
+      foreach($_FILES['file']['name'] as $key => $value){
+          $mail->AddAttachment($_FILES['file']['tmp_name'][$key], $_FILES['file']['name'][$key]);
+      }
+
       $mail->isHTML(true);
 
       $mail->Subject = $subject;
       $mail->Body = 'Dear '.$fName. ' '.$lName.',<br>' .$message;
 
       if(!$mail->send()) {
-          echo 'Message Failed.'.$fName.'';
+          echo 'Message Failed.';
           echo 'Mailer Error: ' . $mail->ErrorInfo;
       } else {
-          echo 'Message send to : '.$fName.'';
+          echo 'Message send.';
           echo 'Message sent... <a href="index.php">Home page</a>';
       }
     }

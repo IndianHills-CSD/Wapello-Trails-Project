@@ -54,47 +54,23 @@ td{border: 1px solid black;
   width: 50%;
 }
 
-/* OUTER CONTAINER */
-.tcontainer {
-  width: 100%;
-  height: 3em ;
-  overflow: hidden; /* Hide scroll bar */
-}
-
-/* MIDDLE CONTAINER */
 .ticker-wrap {
 	height: 100%;
 	width: 100%;
 	padding-left: 100%; /* Push contents to right side of screen */
 	background-color: #eee;
-}
-
-/* INNER CONTAINER */
-@keyframes ticker {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-100%, 0, 0); }
-}
-.ticker-move {
-  /* Basically move items from right side of screen to left in infinite loop */
-  display: inline-block;
-  white-space: nowrap;
-  padding-right: 100%;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-name: ticker;
-  animation-duration: 10s;
-}
-.ticker-move:hover{
-  animation-play-state: paused; /* Pause scroll on mouse hover */
-}
-
-/* ITEMS */
-.ticker-item{
-  display: inline-block; /* Lay items in a horizontal line */
+	color: black;
+	display: inline-block; /* Lay items in a horizontal line */
   padding: 0 2rem;
   font-size: 2em;
   color: black;
 }
+
+
+
+
+
+
 
 .historytext{
 	float: left;
@@ -128,7 +104,7 @@ td{border: 1px solid black;
 }
 
 .signup-forms{
-    width: 300px;
+    width: 460px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
     background: #fff;
     padding: 20px;
@@ -141,21 +117,42 @@ td{border: 1px solid black;
     margin-bottom: 30px;
 }
 
-.signup-forms p{
-    color: #000;
+.signup-forms p{ color: #000; }
+
+.firstName, .lastName{
+  width: 48%;
+  line-height: 30px;
+  padding: 4px 18px;
+  border-radius: 18px;
+  border: 1px solid #999;
+  outline: none;
 }
 
-.input-box{
-    border-radius: 20px;
-    padding: 10px;
-    margin: 8px 0;
+.city, .state, .zip-code{
+  width: 29.9%;
+  line-height: 30px;
+  padding: 1.2%;
+  margin-right: 2%;
+  border-radius: 18px;
+  border: 1px solid #999;
+  outline: none;
+}
+
+form, .input {
     width: 100%;
+    border-radius: 18px;
+    padding: 14px;
+    margin: 6px 0;
     border: 1px solid #999;
     outline: none;
 }
 
+input:focus {
+  border:2px solid #486255;
+}
+
 .signupbtn{
-	width: 100%;
+	width: 80%;
 	color: #fff;
 	padding:10px;
 	border-radius: 20px;
@@ -167,33 +164,12 @@ td{border: 1px solid black;
 	background-color: #1c8adb;
 }
 
-.facebookbtn{
-	color: #fff;
-	background-color: #21afde;
-	width: 100%;
-	padding:10px;
-	border-radius: 20px;
-	font-size: 15px;
-	margin: 10px 0;
-	outline:none;
-	border: none;
-	cursor: pointer;
-}
-
 .signup-forms a{ text-decoration: none;}
-
 
 hr{
     margin-top: 20px;
     width: 100%;
 }
-
-.or{
-    background: #fff;
-    width: 30px;
-    margin: -12px auto 12px;
-}
-
 
 /*END OF SIGN UP PAGE STYLES*/
 
@@ -877,9 +853,10 @@ button#myBtn:focus {
 		width: 95%;
 	}
 
-	body {
-		overflow-x: hidden;
-	}
+  html,body{
+      overflow-x: hidden;
+  }
+  
 	.nav-links {
 		background-color: #ffffff;
 		position: absolute;
@@ -1089,3 +1066,4 @@ div.projecttitle {
     text-align: center;
   }
 }
+
