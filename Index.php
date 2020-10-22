@@ -22,7 +22,7 @@
 	echo "<p>";
 	while (($Row = $QueryResult->fetch_assoc())!== NULL) 
 	{ 
-	echo $Row['News']; 
+	echo $Row['New']; 
 
 	} // end of loop
 	echo "</p>";
