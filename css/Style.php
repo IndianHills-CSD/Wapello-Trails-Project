@@ -1067,3 +1067,11 @@ div.projecttitle {
   }
 }
 
+/* Admin Dash Styling */
+
+
+h1.admin_dash {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

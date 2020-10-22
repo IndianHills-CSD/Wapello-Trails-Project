@@ -1,3 +1,16 @@
+<!Doctype html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+   <title> Email Page </title>
+   <link  rel="stylesheet" type="text/css" href="css/Style.php">
+</head>
+
+<body>
+  <?php include 'nav.php';?>
+<main style="color: #000; height: 100px; font-size: 25px; text-align: center; margin-top: 95px;">
+
 <?php
   $phone = $_POST['phone'];
   $fname = $_POST['fName'];
@@ -14,10 +27,10 @@
   /* Trails-Database Credentials
     username: trailsAdmin
     password: trailsAdmin*/
-    
+
     $host="localhost";
-    $dbUser="trailsAdmin";
-    $dbpassword="trailsAdmin";
+    $dbUser="root";
+    $dbpassword="";
     $dbname = "wp_contacts";
 
     $conn = new mysqli($host, $dbUser, $dbpassword, $dbname);
@@ -28,8 +41,14 @@
           values(?,?,?,?,?,?,?,?)");
       $stmt->bind_param("ssssssss",$phone, $fname, $lname, $street, $city, $state, $zip, $email);
       $stmt->execute();
-      echo "Registration Successul...! <a href='index.php'>Home page</a>";
+      echo 'Registration Successul...! </br> click here - <a href="upload.php" style="color: #fff;">Upload your favorite image from your visit.</a> or expore other pages';
       $stmt->close();
       $conn->close();
     }
 ?>
+
+</main>
+
+<?php include 'footer.php';?>
+</body>
+</html>
