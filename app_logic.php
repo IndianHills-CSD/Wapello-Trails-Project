@@ -8,11 +8,6 @@
 
   // create connection string
   $db = mysqli_connect('localhost', 'root', '', 'password_recovery');
-  // check connection
-  if (mysqli_connect_errno()) {
-    alert ("Failed to connect to MySQL: " .mysql_connect_error);
-    exit();
-  } else {
 
     // LOG USER IN
     if (isset($_POST['login_user'])) {
@@ -40,7 +35,7 @@
           array_push($errors, "Invalid username or password");
         }
       }
-    } // END logic for user login
+    } 
     
     /*
       Accept email of user whose password is to be reset
@@ -100,5 +95,4 @@
         }
       }
     }
-  }
 ?>
