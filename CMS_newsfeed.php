@@ -14,7 +14,7 @@
 	{
 		require_once('inc_ConnecttoDatabase.php');
 		
-		$ORDERSTATEMENT = "SELECT * FROM News ORDER BY NewsID DESC LIMIT 1";
+		$ORDERSTATEMENT = "SELECT * FROM NewsFeed ORDER BY NewsID DESC LIMIT 1";
 		$QueryResult = @$DBConnect->query($ORDERSTATEMENT); 
 		if($QueryResult->num_rows ==0){
 			echo "<p>that service was not found</p>";
@@ -28,10 +28,10 @@
 		$message = $_POST['message'];
 		$newsnumber +=1;
 		// Insert a row into the table.
-	$InsertTableStatement = "INSERT INTO News VALUES ('$newsnumber','$message')";
+	$InsertTableStatement = "INSERT INTO NewsFeed VALUES ('$newsnumber','$message')";
 	$QueryResult = $DBConnect->query($InsertTableStatement);
 	If ($QueryResult)
-		echo "<br /><p>news table has accepted input.</p>";
+		echo "<br /><p>NewsFeed table has accepted input.</p>";
 	else
 		echo "<br /><p>Insert did not work. Error number is " . $DBConnect->errno . 	" " . $DBConnect->error . ".</p>";
 	}  
@@ -49,7 +49,7 @@
 	</form>
 	<?php 
 		require_once('inc_ConnecttoDatabase.php');
-		$sql = "SELECT NewsID, new FROM news";
+		$sql = "SELECT NewsID, NewsMsg FROM NewsFeed";
 		
 		$QueryResult = $DBConnect->query($sql);
 		if (!empty($QueryResult) && $QueryResult->num_rows > 0) {
@@ -78,10 +78,10 @@
 		require_once('inc_ConnecttoDatabase.php');
 		// Delete a row into the table.
 		$deleteid = $_POST['delID'];
-	$DeleteTableStatement = "DELETE FROM news WHERE NewsID = $deleteid";
+	$DeleteTableStatement = "DELETE FROM NewsFeed WHERE NewsID = $deleteid";
 	$QueryResult = $DBConnect->query($DeleteTableStatement);
 	If ($QueryResult)
-		echo "<br /><p>news table has deleted entry.</p>";
+		echo "<br /><p>NewsFeed table has deleted entry.</p>";
 	else
 		echo "<br /><p>delete did not work. Error number is " . $DBConnect->errno . 	" " . $DBConnect->error . ".</p>";
 	}  

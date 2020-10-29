@@ -10,7 +10,7 @@
 	<?php include 'nav.php';?>
 	<?php 
 	require_once('inc_ConnecttoDatabase.php');
-	$SELECTSTATEMENT = "SELECT New FROM news ";
+	$SELECTSTATEMENT = "SELECT NewsMsg FROM NewsFeed ";
 	$QueryResult = @$DBConnect->query($SELECTSTATEMENT); 
 	if($QueryResult->num_rows ==0){
 		echo "<p>that service was not found</p>";
