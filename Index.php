@@ -13,7 +13,6 @@
 	$SELECTSTATEMENT = "SELECT NewsMsg FROM NewsFeed ";
 	$QueryResult = @$DBConnect->query($SELECTSTATEMENT); 
 	if($QueryResult->num_rows ==0){
-		echo "<p>that service was not found</p>";
 	}
 	echo '<marquee direction="right"
 	onmouseover="this.stop()"onmouseout="this.start()"
@@ -22,7 +21,7 @@
 	echo "<p>";
 	while (($Row = $QueryResult->fetch_assoc())!== NULL) 
 	{ 
-	echo $Row['New']; 
+	echo $Row['NewsMsg']; 
 	echo "         ";
 	} // end of loop
 	echo "</p>";
