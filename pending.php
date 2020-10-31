@@ -1,4 +1,13 @@
-<?php include('app_logic.php'); ?>
+
+
+<?php
+	include('isLoggedIn.php');
+	if (!isLoggedIn()) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: admin_login.php');
+	}
+?>
+
 <?php include('nav.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +18,7 @@
 </head>
 <body>
 
+	<?php include('app_logic.php'); ?>
 	<form class="login-form" action="login.php" method="post" style="text-align: center;">
 		<p class="email_confirm_msg">
 			We sent an email to  <b><?php echo $_GET['email'] ?></b> to help you recover your account. 

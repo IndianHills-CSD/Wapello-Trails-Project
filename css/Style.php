@@ -869,7 +869,7 @@ button#myBtn:focus {
   html,body{
       overflow-x: hidden;
   }
-  
+
 	.nav-links {
 		background-color: #ffffff;
 		position: absolute;

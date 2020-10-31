@@ -2,7 +2,7 @@
   <div class="footerInfo">
     <div class="contact">
       <h2 class="footer">Contact Us</h2>
-      <p class="footer">email@gmail.com</p>
+      <p class="footer">WapelloCountyTrailsCouncil@gmail.com</p>
       <p class="footer">Name | 123-456-7899</p>
       <p class="footer">Name | 123-456-7899</p>
       <p class="footer">Name | 123-456-7899</p>
