@@ -2,8 +2,10 @@
 	// Connect to the database.
 	$host = "localhost"; 
 	$user= "root";
-	$password = "";
-	$database="wapellonews";
+	$password ="";
+	//$user ="trailsAdmin"
+	//$password = "trailsAdmin";
+	$database="wapello_trails_db";
 	$DBConnect = @new mysqli($host,$user,$password,$database); 
 	if ($DBConnect->connect_error) 
 		echo "The database server is not available. " . 

@@ -65,13 +65,6 @@ td{border: 1px solid black;
   font-size: 2em;
   color: black;
 }
-
-
-
-
-
-
-
 .historytext{
 	float: left;
 	width: 62.5%;
@@ -89,7 +82,27 @@ td{border: 1px solid black;
 	padding-right:2%;
 	padding-left: 3%;
 	float: left;
-
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 /*END OF HOME PAGE STYLES*/
