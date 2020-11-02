@@ -47,20 +47,7 @@
 			<input type="submit" name="Submit"  value="new message" />
 		</p>
 	</form>
-	<?php 
-		require_once('inc_ConnecttoDatabase.php');
-		$sql = "SELECT NewsID, NewsMsg FROM NewsFeed";
-		
-		$QueryResult = $DBConnect->query($sql);
-		if (!empty($QueryResult) && $QueryResult->num_rows > 0) {
-		  // output data of each row
-		  while($row = $QueryResult->fetch_assoc()) {	
-				echo "<p>NewsID: " . $row["NewsID"]. " - news message: " . $row["new"].  "</p><br>";
-		  }
-		} else {
-		  echo "No news messages";
-		}
-	?>
+	
 	
 	<p><b>Delete Newsfeed Message</b></p>	
 	<div class ="textbox">
@@ -86,6 +73,21 @@
 		echo "<br /><p>delete did not work. Error number is " . $DBConnect->errno . 	" " . $DBConnect->error . ".</p>";
 	}  
  ?>
+ 
+ <?php 
+		require_once('inc_ConnecttoDatabase.php');
+		$sql = "SELECT NewsID, NewsMsg FROM NewsFeed";
+		
+		$QueryResult = $DBConnect->query($sql);
+		if (!empty($QueryResult) && $QueryResult->num_rows > 0) {
+		  // output data of each row
+		  while($row = $QueryResult->fetch_assoc()) {	
+				echo "<p>NewsID: " . $row["NewsID"]. " - news message: " . $row["NewsMsg"].  "</p><br>";
+		  }
+		} else {
+		  echo "No news messages";
+		}
+	?>
 
 <?php include 'footer.php';?>
 </body>
