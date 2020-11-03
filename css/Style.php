@@ -937,134 +937,84 @@ transform:  rotate(-45deg) translate(-5px,6px);
 
 /* Project Page Styling */
 
-
-
-div.projectContent {
-  display: flex;
-}
-
-div.filter {
-  border: 1px black solid;
-  width: 15%;
-  height: 45vh;
-  position: sticky;
-  top: 0;
-  margin-bottom: 5px;
-}
-
 div.projects {
-  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 75%;
   margin: auto;
 }
 
-div.project1 {
+div.project {
   background-color: #cfcfcf;
   height: 30vh;
-  margin-top: 25px;
-  margin-bottom: 5px;
+  width: 35vw;
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
-}
-
-div.project2 {
-  background-color: #cfcfcf;
-  height: 30vh;
-  margin-bottom: 5px;
-  display: flex;
-  text-align: center;
-}
-
-div.project3 {
-  background-color: #cfcfcf;
-  height: 30vh;
-  margin-bottom: 25px;
-  display: flex;
-  text-align: center;
-}
-
-div.projectimage {
-  width: 33.33%;
-  border: 1px black solid;
-  display: flex;
-}
-
-div.projectdescription {
-  width: 33.33%;
-  border: 1px black solid;
-}
-
-div.projectinfo {
-  width: 33.33%;
-  border: 1px black solid;
 }
 
 div.thumbnail {
-  width: 100%;
-  background-color: #909090;
+  width: 50%;
+  background-color: #B56262;
 }
 
-div.projecttitle {
-  padding-top: 20px;
-  padding-bottom: 60px;
+div.projectContent {
+  background-color: #627bb5;
+  width: 50%;
 }
 
-@media only screen and (max-width: 900px) {
-
+@media only screen and (max-width: 1800px) {
   div.projects {
-    width: 100%;
+    width: 85%;
   }
 
-  div.projectimage {
-    width: 100%;
-    height: 200px;
-    border: 1px black solid;
-    display: lex;
+  div.project {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  div.projects {
+    justify-content: center;
   }
 
-  div.projectdescription {
-    width: 100%;
-    border: 1px black solid;
-    height: 250px;
-  }
-
-  div.projectinfo {
-    width: 100%;
-    height: 200px;
-  }
-
-  div.project1 {
-    width: 75%;
-    background-color: #cfcfcf;
-    height: 650px;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    display: flex;
+  div.project {
+    width: 60vw;
+    height: 60vh;
     flex-direction: column;
-    text-align: center;
   }
 
-  div.project2 {
-    width: 75%;
-    background-color: #cfcfcf;
-    height: 650px;
-    margin: auto;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  div.thumbnail {
+    height: 50%;
+    width: 100%;
   }
 
-  div.project3 {
-    width: 75%;
-    background-color: #cfcfcf;
-    height: 650px;
-    margin: auto;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  div.projectContent {
+    width: 100%;
+    height: 50%;
   }
+}
+
+@media only screen and (max-width: 800px) {
+
+  div.project {
+    width: 80vw;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  div.thumbnail {
+    height: 50%;
+    width: 100%;
+  }
+
+  div.projectContent {
+    width: 100%;
+    height: 50%;
+  }
+
 }
 
 /* Admin Dash Styling */
