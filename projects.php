@@ -1,5 +1,24 @@
 <!Doctype html>
 <html lang="en">
+
+<?php
+
+		$servername = "localhost";
+		$username = "devenTrails";
+		$password = "trails";
+		$dbname = "Wapello_Trails_DB";
+
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		//$conn = mysqli_connect($servername, $adminJosh, $password, $dbname);
+
+		// Check connection
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+	?>
+
 	<head>
 	   <meta charset="UTF-8">
 	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,71 +29,34 @@
 	<body>
 		<?php include 'nav.php';?>
 
-		<div class="projectContent">
 
-			<div class="projects">
+		<div class="projects">
 
-				<!--project 1-->
-				<div class="project1">
-					<div class="projectimage">
-						<div class="thumbnail">
-							<p>thumbnail</p>
-						</div>
-					</div>
-					<div class="projectdescription">
-						<div class="projecttitle">
-							<p>Project Title</p>
-						</div>
-						<div class="descriptioncontent">
-							<p>Project Description</p>
-						</div>
-					</div>
-					<div class="projectinfo">
-						<p>additional info area</p>
-					</div>
-				</div>
+				<?php
 
-				<!--project 2-->
-				<div class="project2">
-					<div class="projectimage">
-						<div class="thumbnail">
-							<p>thumbnail</p>
-						</div>
-					</div>
-					<div class="projectdescription">
-						<div class="projecttitle">
-							<p>Project Title</p>
-						</div>
-						<div class="descriptioncontent">
-							<p>Project Description</p>
-						</div>
-					</div>
-					<div class="projectinfo">
-						<p>additional info area</p>
-					</div>
-				</div>
+				$projectSet = $conn->query("SELECT projects.title, projects.description, projects.time, projects.location, projects.additional_info, projects.image_name FROM projects");
 
-				<!--project 3-->
-				<div class="project3">
-					<div class="projectimage">
-						<div class="thumbnail">
-							<p>thumbnail</p>
-						</div>
-					</div>
-					<div class="projectdescription">
-						<div class="projecttitle">
-							<p>Project Title</p>
-						</div>
-						<div class="descriptioncontent">
-							<p>Project Description</p>
-						</div>
-					</div>
-					<div class="projectinfo">
-						<p>additional info area</p>
-					</div>
-				</div>
+				while ($row = $projectSet->fetch_assoc()) {
 
-			</div>
+					$title = $row['title'];
+					$description = $row['description'];
+					$additional_info = $row['additional_info'];
+
+					//<!--project 1-->
+					echo '<div class="project">';
+					echo		'<div class="thumbnail">';
+					echo			'<p>thumbnail</p>';
+				  echo   	'</div>';
+					echo   	'<div class="projectContent">';
+					echo			'<p class="title">'.$title.'</p>';
+					echo			'<p>'.$description.'</p>';
+					echo		'<p>'.$additional_info.'</p>';
+					echo    '</div>';
+					echo '</div>';
+			 }
+
+				?>
+
 		</div>
 
 		<?php include 'footer.php';?>
