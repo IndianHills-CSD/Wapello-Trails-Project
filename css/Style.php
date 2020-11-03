@@ -959,22 +959,34 @@ div.projects {
 }
 
 div.project {
-  background-color: #cfcfcf;
   height: 30vh;
   width: 35vw;
+  min-height: 252px;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 6vh;
+  margin-bottom: 7vh;
   text-align: center;
 }
 
 div.thumbnail {
   width: 50%;
-  background-color: #B56262;
+  background-color: #5e5e5e;
+}
+
+div.thumbnail img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.helper {
+  display: inline-block;
+  height: 98%;
+  vertical-align: middle;
 }
 
 div.projectContent {
-  background-color: #627bb5;
+  background-color: #787878;
   width: 50%;
 }
 

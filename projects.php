@@ -45,7 +45,7 @@
 					//<!--project 1-->
 					echo '<div class="project">';
 					echo		'<div class="thumbnail">';
-					echo			'<p>thumbnail</p>';
+					echo			'<span class="helper"></span><img src="images/trail-site30-bigger.jpg">';
 				  echo   	'</div>';
 					echo   	'<div class="projectContent">';
 					echo			'<p class="title">'.$title.'</p>';
