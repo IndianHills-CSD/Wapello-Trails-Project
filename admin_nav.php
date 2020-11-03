@@ -4,8 +4,8 @@
     <h1 class="nav">Wapello County Trails Council(admin)</h1>
   </div>
   <ul class="nav-links">
-    <li><a href="#">Email</a></li>
-    <li><a href="#">Marquee Update</a></li>
+    <li><a href="email.php">Email</a></li>
+    <li><a href="CMS_newsfeed.php">Marquee Update</a></li>
     <li><a href="#">Credential Change</a></li>
     <li><a href="admin_logout.php">Admin Logout</a></li>
   </ul>
