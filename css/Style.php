@@ -65,6 +65,13 @@ td{border: 1px solid black;
   font-size: 2em;
   color: black;
 }
+
+
+
+
+
+
+
 .historytext{
 	float: left;
 	width: 62.5%;
@@ -82,27 +89,7 @@ td{border: 1px solid black;
 	padding-right:2%;
 	padding-left: 3%;
 	float: left;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+
 }
 
 /*END OF HOME PAGE STYLES*/
@@ -959,22 +946,34 @@ div.projects {
 }
 
 div.project {
-  background-color: #cfcfcf;
   height: 30vh;
   width: 35vw;
+  min-height: 252px;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 6vh;
+  margin-bottom: 7vh;
   text-align: center;
 }
 
 div.thumbnail {
   width: 50%;
-  background-color: #B56262;
+  background-color: #5e5e5e;
+}
+
+div.thumbnail img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.helper {
+  display: inline-block;
+  height: 98%;
+  vertical-align: middle;
 }
 
 div.projectContent {
-  background-color: #627bb5;
+  background-color: #787878;
   width: 50%;
 }
 

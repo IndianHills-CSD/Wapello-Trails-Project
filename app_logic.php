@@ -7,7 +7,7 @@
   $user_id = "";
 
   // create connection string
-  $db = mysqli_connect('localhost', 'root', '', 'password_recovery');
+  $db = mysqli_connect('localhost', 'trailsAdmin', 'trailsAdmin', 'Wapello_Trails_DB');
 
     // LOG USER IN
     if (isset($_POST['login_user'])) {
@@ -22,9 +22,7 @@
       // if no error in form, log user in
       if (count($errors) == 0) {
         $pw = md5($pw);
-        echo $user_id;
-        echo $pw;
-        $sql = "SELECT * FROM users WHERE (username = '$user_id' OR email = '$user_id') AND pw = '$pw'";
+        $sql = "SELECT * FROM admin_account WHERE (username = '$user_id' OR email = '$user_id') AND pw = '$pw'";
         $results = mysqli_query($db, $sql);
 
         if (mysqli_num_rows($results) == 1) {
@@ -44,7 +42,7 @@
     if (isset($_POST['reset-password'])) {
       $email = mysqli_real_escape_string($db, $_POST['email']);
       // ensure that the user exists on our system
-      $query = "SELECT email FROM users WHERE email='$email'";
+      $query = "SELECT email FROM admin_account WHERE email='$email'";
       $results = mysqli_query($db, $query);
 
       // Form validation
@@ -57,16 +55,16 @@
       $token = bin2hex(random_bytes(50));
 
       if (count($errors) == 0) {
-        // store token in the password-reset database table against the user's email
+        // store token in the password-reset database table with the user's email
         $sql = "INSERT INTO password_resets(email, token) VALUES ('$email', '$token')";
         $results = mysqli_query($db, $sql);
 
         // Send email to user with the token in a link they can click on
         $to = $email;
         $subject = "Reset your password on wapellocountytrails.com";
-        $msg = "Hi there, click on this <a href=\"new_pass.php?token=" . $token . "\">link</a> to reset your password on our site";
+        $msg = "Hi there, click on this \"http://selectmeservices.com/WapelloCoTrails/new_pass.php?token=" . $token . "\" to reset your password on our site";
         $msg = wordwrap($msg,70);
-        $headers = "From: info@examplesite.com";
+        $headers = "From: donotreply@selectmeservices.com";
         mail($to, $subject, $msg, $headers);
         header('location: pending.php?email=' . $email);
       }
@@ -89,10 +87,18 @@
 
         if ($email) {
           $new_pass = md5($new_pass);
-          $sql = "UPDATE users SET pw='$new_pass' WHERE email='$email'";
+          $sql = "UPDATE admin_account SET pw='$new_pass' pass='$new_pass_c' WHERE email='$email'";
           $results = mysqli_query($db, $sql);
           header('location: admin_dash.php');
         }
       }
+    }
+    
+    function isLoggedIn() {
+        if (isset($_SESSION['username'])) {
+            return true;
+        }else{
+            return false;
+        }
     }
 ?>
