@@ -9,9 +9,9 @@
 
 	<?php include 'nav.php';?>
 	<?php 
-	require_once('inc_ConnecttoDatabase.php');
+	require_once('inc_connecttodatabase.php');
 	$SELECTSTATEMENT = "SELECT NewsMsg FROM NewsFeed ";
-	$QueryResult = @$DBConnect->query($SELECTSTATEMENT); 
+	$QueryResult = @$DBConnect->query($SELECTSTATEMENT);
 	if($QueryResult->num_rows ==0){
 	}
 	echo '<marquee direction="right"
@@ -21,19 +21,14 @@
 	echo "<p>";
 	while (($Row = $QueryResult->fetch_assoc())!== NULL) 
 	{ 
-	echo $Row['NewsMsg']; 
-	echo "         ";
+	echo $Row['NewsMsg'] . str_repeat('&nbsp;',10); 
 	} // end of loop
 	echo "</p>";
 	echo "</marquee>";
 	// close the connection.
 	$DBConnect->close();
-	
-	
-	
-	
-	
 	?>
+	
 	<div class="body-container">
 
 			<div class="slideshow-container">
