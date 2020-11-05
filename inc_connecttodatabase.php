@@ -3,7 +3,7 @@
 	$host = "localhost"; 
 	$user= "root";
 	$password ="";
-	//$user ="trailsAdmin"
+	//$user ="trailsAdmin";
 	//$password = "trailsAdmin";
 	$database="Wapello_Trails_DB";
 	$DBConnect = @new mysqli($host,$user,$password,$database); 

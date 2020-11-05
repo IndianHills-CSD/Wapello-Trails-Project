@@ -1,23 +1,27 @@
+
 <!DOCTYPE html>
 <html> 
  <head>
-	<link rel='stylesheet' type='text/CSS' href='css/style.php' />
+	<link rel='stylesheet' type='text/CSS' href='css/Style.php' />
 	<meta charset="UTF-8">
 	<title>Newsfeed Message Control</title>
 </head>
 <body>
 
-<?php include 'nav.php';?>
+<?php include 'admin_nav.php';?>
 <p><b>Newsfeed Message Control</b></p>
-<?php	
+<?php
+
 	if (isset($_POST['Submit'])) 
 	{
-		require_once('inc_ConnecttoDatabase.php');
-		
+   
+		require_once('inc_connecttodatabase.php');
 		$ORDERSTATEMENT = "SELECT * FROM NewsFeed ORDER BY NewsID DESC LIMIT 1";
 		$QueryResult = @$DBConnect->query($ORDERSTATEMENT); 
+		
 		if($QueryResult->num_rows ==0){
 			echo "<p>that service was not found</p>";
+			echo("test query1");
 		}
 		while (($Row = $QueryResult->fetch_assoc())!== NULL) 
 		{ 
@@ -62,7 +66,7 @@
 	<?php	
 	if (isset($_POST['Delete'])) 
 	{
-		require_once('inc_ConnecttoDatabase.php');
+		require_once('inc_connecttodatabase.php');
 		// Delete a row into the table.
 		$deleteid = $_POST['delID'];
 	$DeleteTableStatement = "DELETE FROM NewsFeed WHERE NewsID = $deleteid";
@@ -75,7 +79,7 @@
  ?>
  
  <?php 
-		require_once('inc_ConnecttoDatabase.php');
+		require_once('inc_connecttodatabase.php');
 		$sql = "SELECT NewsID, NewsMsg FROM NewsFeed";
 		
 		$QueryResult = $DBConnect->query($sql);
