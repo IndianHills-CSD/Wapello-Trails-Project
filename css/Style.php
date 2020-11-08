@@ -65,6 +65,13 @@ td{border: 1px solid black;
   font-size: 2em;
   color: black;
 }
+
+
+
+
+
+
+
 .historytext{
 	float: left;
 	width: 62.5%;
@@ -82,27 +89,7 @@ td{border: 1px solid black;
 	padding-right:2%;
 	padding-left: 3%;
 	float: left;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+
 }
 
 /*END OF HOME PAGE STYLES*/
@@ -1050,3 +1037,135 @@ h1.admin_dash {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+/* Admin Project Page Styling */
+
+
+button.alter {
+  background-color: #5e5e5e;
+  border: none;
+  color: white;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button.alter:hover {
+  background-color: #787878;
+}
+
+form.alter {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input.alter {
+  background-color: #5e5e5e;
+  border: none;
+  color: white;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input.alter:hover {
+  background-color: #787878;
+}
+
+textarea.textBoxStyle1 {
+  width: 350px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea.textBoxStyle2 {
+  width: 350px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form.projectUpdate {
+  margin-top: 6vh;
+  margin-bottom: 7vh;
+}
+
+input.update {
+  background-color: #5e5e5e;
+  border: none;
+  color: white;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-left: 40%;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+div.projectUpdate {
+  height: 30vh;
+  width: 35vw;
+  min-height: 280px;
+  display: flex;
+  margin-top: 6vh;
+  margin-bottom: 7vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1800px) {
+
+  div.projectUpdate {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  div.projectUpdate {
+    width: 60vw;
+    height: 60vh;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  div.projectUpdate {
+    width: 80vw;
+    height: 60vh;
+    flex-direction: column;
+  }
