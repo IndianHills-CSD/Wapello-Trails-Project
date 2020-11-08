@@ -34,7 +34,7 @@
 
 				<?php
 
-				$projectSet = $conn->query("SELECT projects.title, projects.description, projects.time, projects.location, projects.additional_info, projects.image_name FROM projects");
+				$projectSet = $conn->query("SELECT projects.title, projects.description, projects.projectTime, projects.location, projects.additional_info, projects.image_name FROM projects");
 
 				while ($row = $projectSet->fetch_assoc()) {
 
