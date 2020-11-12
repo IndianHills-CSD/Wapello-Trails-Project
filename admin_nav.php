@@ -1,6 +1,6 @@
 <nav>
   <div class="logo">
-    <img class="nav" src="images/WCTC_Logo_84x100.jpg">
+    <img class="nav" src="images/WCTC_Logo_84x100.png">
     <h1 class="nav">Wapello County Trails Council(admin)</h1>
   </div>
   <ul class="nav-links">
