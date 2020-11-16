@@ -96,7 +96,7 @@ td{border: 1px solid black;
 
 
 
-/*BEGINING SIGN UP PAGE STYLES*/
+/*BEGINNING SIGN UP PAGE STYLES*/
 
 .signup-forms img{
     width: 70px;
@@ -104,11 +104,11 @@ td{border: 1px solid black;
 }
 
 .signup-forms{
-    width: 460px;
+    width: 30%;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
     background: #fff;
     padding: 20px;
-    margin: 8% auto 8%;
+    margin: 4% auto 8%;
     text-align: center;
 }
 
@@ -154,7 +154,7 @@ input:focus {
 .signupbtn{
 	width: 80%;
 	color: #fff;
-	padding:10px;
+	padding: 10px;
 	border-radius: 20px;
 	font-size: 15px;
 	margin: 10px 0;
@@ -171,11 +171,40 @@ hr{
     width: 100%;
 }
 
+.info{
+	  text-align: center;
+	  margin-top: 4%;
+	  font-size: 18px;
+}
+
 /*END OF SIGN UP PAGE STYLES*/
 
 
+/* BEGINNING UPLOAD IMAGES PAGE */
 
-/*BEGINING OF GALLERY PAGE STYLES*/
+.upload-forms{
+  width: 65%;
+  height: auto;
+  padding: 20px;
+  margin: 2% auto 8%;
+  text-align: center;
+}
+
+input, textarea{
+  width: 50%;
+  color: #2F4F4F;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 6px auto 16px;
+}
+
+
+/* END OF UPLOAD IMAGES PAGE */
+
+
+
+/*BEGINNING OF GALLERY PAGE STYLES*/
 
 /* content styles */
 .container {
@@ -189,26 +218,23 @@ hr{
 .ContainerBtn{
 	margin: 25px;
 	padding: 25px 25px;
-	text-align:center;
+	text-align: center;
 }
 
 .btn {
     font-size: inherit;
 	font-family: inherit;
-    color: black;
 	transition: none;
     display: inline-block;
-    margin: 15px 5px;
-    padding: 15px 38px;
-    text-decoration: none;
+	text-decoration: none;
+    border: none;
+	width: 150px;
 	border-radius: 15px;
-	text-align: center;
+	outline: none;
+	padding: 12px 16px;
 	background-color: white;
 	cursor: pointer;
-	outline: none;
-	position: relative;
-	border: none;
-	width: 225px;
+	margin: 5px;
 }
 
 .btn:hover {
@@ -712,6 +738,52 @@ li:hover, a:hover {
 	cursor: pointer;
 }
 
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropbtn:hover {
+  color: #a7beae;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style-type: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* End of The dropdown container */
+
+
 .burger div {
 	width: 25px;
 	height: 3px;
@@ -847,6 +919,37 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 900px) {
+    
+    .signup-forms{
+      width: 91.5%;
+	    margin-top: 42px;
+    }
+  
+  .info{
+	  margin-top:12%;
+	  font-size: 15px;
+   }
+	
+	
+    .btn{
+  		/*change into two column */
+  		display: inline;
+  		width: 120px;
+  		height: 45px;
+  		padding: 5px;
+  		margin: 5px;
+  	}
+  	
+  	.Video-container iframe {
+		width: 100%;
+		height: auto;
+	}
+
+
+    .upload-forms, input, textarea{
+        width: 100%;
+    }
+
 
 	#map {
 		height: 45%;
@@ -902,6 +1005,20 @@ button#myBtn:focus {
 	}
 }
 
+
+@media only screen and (max-width: 400px){
+	.btn{
+  		/*change into two column */
+  		display: inline;
+		font-size: 12.5px;
+  		width: 100px;
+  		height: 45px;
+  		padding: 4px;
+		margin: 4px;
+  	}
+}
+
+
 .nav-active {
 	transform: translateX(0%);
 }
@@ -937,134 +1054,96 @@ transform:  rotate(-45deg) translate(-5px,6px);
 
 /* Project Page Styling */
 
-
-
-div.projectContent {
-  display: flex;
-}
-
-div.filter {
-  border: 1px black solid;
-  width: 15%;
-  height: 45vh;
-  position: sticky;
-  top: 0;
-  margin-bottom: 5px;
-}
-
 div.projects {
-  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 75%;
   margin: auto;
 }
 
-div.project1 {
-  background-color: #cfcfcf;
+div.project {
   height: 30vh;
-  margin-top: 25px;
-  margin-bottom: 5px;
+  width: 35vw;
+  min-height: 252px;
   display: flex;
+  margin-top: 6vh;
+  margin-bottom: 7vh;
   text-align: center;
-}
-
-div.project2 {
-  background-color: #cfcfcf;
-  height: 30vh;
-  margin-bottom: 5px;
-  display: flex;
-  text-align: center;
-}
-
-div.project3 {
-  background-color: #cfcfcf;
-  height: 30vh;
-  margin-bottom: 25px;
-  display: flex;
-  text-align: center;
-}
-
-div.projectimage {
-  width: 33.33%;
-  border: 1px black solid;
-  display: flex;
-}
-
-div.projectdescription {
-  width: 33.33%;
-  border: 1px black solid;
-}
-
-div.projectinfo {
-  width: 33.33%;
-  border: 1px black solid;
 }
 
 div.thumbnail {
+  width: 50%;
+  background-color: #5e5e5e;
+}
+
+div.thumbnail img {
   width: 100%;
-  background-color: #909090;
+  height: auto;
+  vertical-align: middle;
 }
 
-div.projecttitle {
-  padding-top: 20px;
-  padding-bottom: 60px;
+.helper {
+  display: inline-block;
+  height: 98%;
+  vertical-align: middle;
 }
 
-@media only screen and (max-width: 900px) {
+div.projectContent {
+  background-color: #787878;
+  width: 50%;
+}
 
+@media only screen and (max-width: 1800px) {
   div.projects {
-    width: 100%;
+    width: 85%;
   }
 
-  div.projectimage {
-    width: 100%;
-    height: 200px;
-    border: 1px black solid;
-    display: lex;
+  div.project {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  div.projects {
+    justify-content: center;
   }
 
-  div.projectdescription {
-    width: 100%;
-    border: 1px black solid;
-    height: 250px;
-  }
-
-  div.projectinfo {
-    width: 100%;
-    height: 200px;
-  }
-
-  div.project1 {
-    width: 75%;
-    background-color: #cfcfcf;
-    height: 650px;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    display: flex;
+  div.project {
+    width: 60vw;
+    height: 60vh;
     flex-direction: column;
-    text-align: center;
   }
 
-  div.project2 {
-    width: 75%;
-    background-color: #cfcfcf;
-    height: 650px;
-    margin: auto;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  div.thumbnail {
+    height: 50%;
+    width: 100%;
   }
 
-  div.project3 {
-    width: 75%;
-    background-color: #cfcfcf;
-    height: 650px;
-    margin: auto;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  div.projectContent {
+    width: 100%;
+    height: 50%;
   }
+}
+
+@media only screen and (max-width: 800px) {
+
+  div.project {
+    width: 80vw;
+    height: 60vh;
+    flex-direction: column;
+  }
+
+  div.thumbnail {
+    height: 50%;
+    width: 100%;
+  }
+
+  div.projectContent {
+    width: 100%;
+    height: 50%;
+  }
+
 }
 
 /* Admin Dash Styling */
@@ -1075,3 +1154,135 @@ h1.admin_dash {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+/* Admin Project Page Styling */
+
+
+button.alter {
+  background-color: #5e5e5e;
+  border: none;
+  color: white;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button.alter:hover {
+  background-color: #787878;
+}
+
+form.alter {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input.alter {
+  background-color: #5e5e5e;
+  border: none;
+  color: white;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input.alter:hover {
+  background-color: #787878;
+}
+
+textarea.textBoxStyle1 {
+  width: 350px;
+  height: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea.textBoxStyle2 {
+  width: 350px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form.projectUpdate {
+  margin-top: 6vh;
+  margin-bottom: 7vh;
+}
+
+input.update {
+  background-color: #5e5e5e;
+  border: none;
+  color: white;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-left: 40%;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+div.projectUpdate {
+  height: 30vh;
+  width: 35vw;
+  min-height: 280px;
+  display: flex;
+  margin-top: 6vh;
+  margin-bottom: 7vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1800px) {
+
+  div.projectUpdate {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  div.projectUpdate {
+    width: 60vw;
+    height: 60vh;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  div.projectUpdate {
+    width: 80vw;
+    height: 60vh;
+    flex-direction: column;
+  }
