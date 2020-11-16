@@ -1,4 +1,9 @@
-
+<?php
+    include('app_logic.php');
+    if (!isLoggedIn()) {
+        header('location: admin_login.php');
+    }
+?>
 <!DOCTYPE html>
 <html> 
  <head>
