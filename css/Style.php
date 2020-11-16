@@ -96,7 +96,7 @@ td{border: 1px solid black;
 
 
 
-/*BEGINING SIGN UP PAGE STYLES*/
+/*BEGINNING SIGN UP PAGE STYLES*/
 
 .signup-forms img{
     width: 70px;
@@ -104,11 +104,11 @@ td{border: 1px solid black;
 }
 
 .signup-forms{
-    width: 460px;
+    width: 30%;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0,3);
     background: #fff;
     padding: 20px;
-    margin: 8% auto 8%;
+    margin: 4% auto 8%;
     text-align: center;
 }
 
@@ -154,7 +154,7 @@ input:focus {
 .signupbtn{
 	width: 80%;
 	color: #fff;
-	padding:10px;
+	padding: 10px;
 	border-radius: 20px;
 	font-size: 15px;
 	margin: 10px 0;
@@ -171,11 +171,40 @@ hr{
     width: 100%;
 }
 
+.info{
+	  text-align: center;
+	  margin-top: 4%;
+	  font-size: 18px;
+}
+
 /*END OF SIGN UP PAGE STYLES*/
 
 
+/* BEGINNING UPLOAD IMAGES PAGE */
 
-/*BEGINING OF GALLERY PAGE STYLES*/
+.upload-forms{
+  width: 65%;
+  height: auto;
+  padding: 20px;
+  margin: 2% auto 8%;
+  text-align: center;
+}
+
+input, textarea{
+  width: 50%;
+  color: #2F4F4F;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 6px auto 16px;
+}
+
+
+/* END OF UPLOAD IMAGES PAGE */
+
+
+
+/*BEGINNING OF GALLERY PAGE STYLES*/
 
 /* content styles */
 .container {
@@ -189,26 +218,23 @@ hr{
 .ContainerBtn{
 	margin: 25px;
 	padding: 25px 25px;
-	text-align:center;
+	text-align: center;
 }
 
 .btn {
     font-size: inherit;
 	font-family: inherit;
-    color: black;
 	transition: none;
     display: inline-block;
-    margin: 15px 5px;
-    padding: 15px 38px;
-    text-decoration: none;
+	text-decoration: none;
+    border: none;
+	width: 150px;
 	border-radius: 15px;
-	text-align: center;
+	outline: none;
+	padding: 12px 16px;
 	background-color: white;
 	cursor: pointer;
-	outline: none;
-	position: relative;
-	border: none;
-	width: 225px;
+	margin: 5px;
 }
 
 .btn:hover {
@@ -712,6 +738,52 @@ li:hover, a:hover {
 	cursor: pointer;
 }
 
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropbtn:hover {
+  color: #a7beae;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style-type: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* End of The dropdown container */
+
+
 .burger div {
 	width: 25px;
 	height: 3px;
@@ -847,6 +919,37 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 900px) {
+    
+    .signup-forms{
+      width: 91.5%;
+	    margin-top: 42px;
+    }
+  
+  .info{
+	  margin-top:12%;
+	  font-size: 15px;
+   }
+	
+	
+    .btn{
+  		/*change into two column */
+  		display: inline;
+  		width: 120px;
+  		height: 45px;
+  		padding: 5px;
+  		margin: 5px;
+  	}
+  	
+  	.Video-container iframe {
+		width: 100%;
+		height: auto;
+	}
+
+
+    .upload-forms, input, textarea{
+        width: 100%;
+    }
+
 
 	#map {
 		height: 45%;
@@ -901,6 +1004,20 @@ button#myBtn:focus {
 		padding-top: 30px;
 	}
 }
+
+
+@media only screen and (max-width: 400px){
+	.btn{
+  		/*change into two column */
+  		display: inline;
+		font-size: 12.5px;
+  		width: 100px;
+  		height: 45px;
+  		padding: 4px;
+		margin: 4px;
+  	}
+}
+
 
 .nav-active {
 	transform: translateX(0%);

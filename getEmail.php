@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-  <title> Upload File - page </title>
+  <title> Send Email From Database - page </title>
   <link  rel="stylesheet" type="text/css" href="css/Style.php">
 
   <style>
@@ -44,7 +44,7 @@
   $host="localhost";
   $dbUser="trailsAdmin";
   $dbpassword="trailsAdmin";
-  $dbname = "wp_contacts";
+  $dbname = "Wapello_Trails_DB";
 
   $conn = new mysqli($host, $dbUser, $dbpassword, $dbname);
 
@@ -75,38 +75,20 @@ function sendEmail($email,$fName,$lName){
 
       $mail = new PHPMailer();
 
-/*
+
 $mail->IsSMTP();
      $mail->CharSet = 'UTF-8';
      $mail->Host='localhost'; // relay-hosting.secureserver.net smtp.gmail.com
-    // $mail->Port = 25; //465 587
      $mail->SMTPAuth = false;
      $mail->SMTPSecure = false;
      $mail->SMTPAutoTLS = false;
-   //  $mail->SMTPDebug = 3; //check detailes about errors
-    // $mail->Port=465; //465 587
-    // $mail->SMTPAuth=true;
-     //$mail->SMTPSecure='ssl'; //tls
-     //$mail->Username='beautysika13@gmail.com';  //Ahofe1999  beautysika13@gmail.com  user email address
-     //$mail->Password='Ahofe1999';
-
-*/
-
-      $mail->IsSMTP();
-      $mail->CharSet = 'UTF-8';
-      $mail->Host='smtp.gmail.com';
-    //  $mail->SMTPDebug = 3; //check detailes about errors
-      $mail->Port=25;
-      $mail->SMTPAuth=true;
-      $mail->SMTPSecure='tls';
-      $mail->Username='beautysika13@gmail.com';  // user email address
-      $mail->Password='Ahofe1999';
+   
 
       //email settings
-      $mail->setFrom('beautysika13@gmail.com', 'Wapello Trails');
+      $mail->setFrom('WapelloCountyTrailsCouncil@gmail.com', 'Wapello Trails');
       $mail->addAddress($email);     // Add a recipient
       $mail->AddBCC($email);
-      $mail->addReplyTo('beautysika13@gmail.com');
+      $mail->addReplyTo('WapelloCountyTrailsCouncil@gmail.com');
 
       foreach($_FILES['file']['name'] as $key => $value){
           $mail->AddAttachment($_FILES['file']['tmp_name'][$key], $_FILES['file']['name'][$key]);

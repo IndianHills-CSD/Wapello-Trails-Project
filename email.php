@@ -1,7 +1,14 @@
+
+<?php
+    include('app_logic.php');
+    if (!isLoggedIn()) {
+        header('location: admin_login.php');
+    }
+?>
+
 <!Doctype html>
 <html lang="en">
  <head>
-   <meta charset="UTF-8">
    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
    <title> Email Page </title>
    <link  rel="stylesheet" type="text/css" href="css/Style.php">
@@ -44,9 +51,9 @@
 
  </head>
   <body>
-    <?php include 'nav.php';?>
+    <?php include 'admin_nav.php';?>
      <main class ="contact-forms">
-      <form  action="getUsers.php" method="POST" enctype="multipart/form-data">
+      <form  action="getEmail.php" method="POST" enctype="multipart/form-data">
         <!--message input forms-->
           <h1>Message Inbox</h1>
             <input type="file" name="file[]" multiple="multiple"><br>
