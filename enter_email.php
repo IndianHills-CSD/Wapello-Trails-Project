@@ -1,4 +1,14 @@
-<?php include('app_logic.php'); ?>
+
+
+
+<?php
+	include('isLoggedIn.php');
+	if (!isLoggedIn()) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: admin_login.php');
+	}
+?>
+
 <?php include('nav.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +24,7 @@
 		<h1>Password Reset</h1>
 		<form class="login-form" action="enter_email.php" method="POST">
 
+			<?php include('app_logic.php'); ?>
 			<!-- form validation messages -->
 			<?php include('messages.php'); ?>
 

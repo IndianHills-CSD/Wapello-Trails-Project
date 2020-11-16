@@ -1,3 +1,13 @@
+
+
+<?php
+	include('isLoggedIn.php');
+	if (!isLoggedIn()) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: admin_login.php');
+	}
+?>
+
 <!Doctype html>
 <html lang="en">
 	<head>

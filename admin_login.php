@@ -1,4 +1,6 @@
-<?php include('app_logic.php'); ?>
+
+
+
 <?php include('nav.php'); ?>
 
 <!DOCTYPE html>
@@ -13,7 +15,9 @@
 			<img class="login-icon" src="images/user-logo.png">
 			<h1>Admin Login</h1>
 			<form class="login-form" action="admin_login.php" method="POST">
-			
+
+				<!-- login and pw reset logic -->
+				<?php include('app_logic.php'); ?>
 				<!-- form validation messages -->
 				<?php include('messages.php'); ?>
 

@@ -2,7 +2,7 @@
 
 <nav>
   <div class="logo">
-    <img class="nav" src="images/WCTC_Logo_84x100.jpg">
+    <img class="nav" src="images/WCTC_Logo_84x100.png">
     <h1 class="nav">Wapello County Trails Council</h1>
   </div>
   <ul class="nav-links">
@@ -15,7 +15,7 @@
 		<li><a href="upload.php">Upload Image</a></li>
 		<li><a href="uploadedImages.php">View Upload Images</a></li>
 	</div>
-	</div>	
+	</div>	   
     <li><a href="trails.php">Trails</a></li>
     <li><a href="projects.php">Projects</a></li>
     <li><a href="strategicplans.php">Strategic Plans</a></li>
