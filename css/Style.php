@@ -680,6 +680,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	height: 15vh;
+  min-height: 100px;
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -919,18 +920,18 @@ button#myBtn:focus {
 }
 
 @media only screen and (max-width: 900px) {
-    
+
     .signup-forms{
       width: 91.5%;
 	    margin-top: 42px;
     }
-  
+
   .info{
 	  margin-top:12%;
 	  font-size: 15px;
    }
-	
-	
+
+
     .btn{
   		/*change into two column */
   		display: inline;
@@ -939,7 +940,7 @@ button#myBtn:focus {
   		padding: 5px;
   		margin: 5px;
   	}
-  	
+
   	.Video-container iframe {
 		width: 100%;
 		height: auto;
@@ -1070,6 +1071,20 @@ div.project {
   margin-top: 6vh;
   margin-bottom: 7vh;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p.projectTitle {
+  color: #91B2BF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
+p.projectContent {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding-top: 15px;
 }
 
 div.thumbnail {
