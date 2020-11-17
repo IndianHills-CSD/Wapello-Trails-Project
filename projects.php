@@ -41,16 +41,17 @@
 					$title = $row['title'];
 					$description = $row['description'];
 					$additional_info = $row['additional_info'];
+					$image_name = $row['image_name'];
 
 					//<!--project 1-->
 					echo '<div class="project">';
 					echo		'<div class="thumbnail">';
-					echo			'<span class="helper"></span><img src="images/trail-site30-bigger.jpg">';
+					echo			'<span class="helper"></span><img src="images/'.$image_name.'">';
 				  echo   	'</div>';
 					echo   	'<div class="projectContent">';
-					echo			'<p class="title">'.$title.'</p>';
-					echo			'<p>'.$description.'</p>';
-					echo		'<p>'.$additional_info.'</p>';
+					echo			'<p class="projectTitle">'.$title.'</p>';
+					echo			'<p class="projectContent">'.$description.'</p>';
+					echo			'<p class="projectContent">'.$additional_info.'</p>';
 					echo    '</div>';
 					echo '</div>';
 			 }

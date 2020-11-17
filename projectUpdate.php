@@ -54,9 +54,9 @@
 					echo			'<span class="helper"></span><img src="images/trail-site30-bigger.jpg">';
 				  echo   	'</div>';
 					echo   	'<div class="projectContent">';
-					echo			'<p class="title">'.$title.'</p>';
-					echo			'<p>'.$description.'</p>';
-					echo		'<p>'.$additional_info.'</p>';
+					echo			'<p class="projectTitle">'.$title.'</p>';
+					echo			'<p class="projectContent">'.$description.'</p>';
+					echo			'<p class="projectContent">'.$additional_info.'</p>';
 					echo    '</div>';
 					echo '</div>';
 					echo '<div class="projectForm">';
